@@ -6552,10 +6552,10 @@ gatsby-telemetry@^2.4.1:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-hypercore@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.1.tgz#03e05e8bfdcaa93356adb400d064c2067a66e228"
-  integrity sha512-N1uhb0RN/GeKZMboWhuUDvtoc1q2JPtz4dHJwZEJvO6DK+iDwWyzugJK+h3Sh6z0QUPXWYbT5HHRNGReYmInTQ==
+gatsby-theme-hypercore@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.2.tgz#650a4919256efedce7ee4755e4fb5833facd8157"
+  integrity sha512-G/H/cXfZes6xiDx3l6e3eqQ0BvfztNd6WgwWvrFrd03eMdsqFlKhSPq9KZDjuPWVJnFSfldFkkJU+uxv9m2dcQ==
   dependencies:
     "@material-ui/core" "^4.11.3"
     "@mdx-js/mdx" "^1.6.22"
@@ -6577,9 +6577,9 @@ gatsby-theme-hypercore@^1.0.1:
     remark-slug "^6.0.0"
 
 gatsby-theme-hypersite@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.1.tgz#2ef218c6c9309430bda8d2ade27128a431856c32"
-  integrity sha512-Ms0obsAHmg6nuAWTmExE4m+GYM6+3i1glCifWzxFJaFPCS5/7QwrPwQ+OvFuTCoAfV1oOGisK97TXBDsCf2cHQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.2.tgz#aac6ba78c4bacb5535754730c2fedd7841e71554"
+  integrity sha512-P1zZ79EDv2sapOZqbTevEjvWgqiwr/gdVOWZxFPsK1uMTmTifMv/UaY+oGP5f9t23w67FOiP2QIujXW9VbOuSA==
   dependencies:
     "@hyperobjekt/material-ui-website" "1.0.12"
     "@material-ui/core" "^4.11.3"
@@ -6591,7 +6591,7 @@ gatsby-theme-hypersite@^1.0.1:
     gatsby-plugin-manifest "^3.2.0"
     gatsby-plugin-mdx "^2.2.0"
     gatsby-plugin-react-helmet "^4.2.0"
-    gatsby-theme-hypercore "^1.0.1"
+    gatsby-theme-hypercore "^1.0.2"
     lodash.pick "^4.4.0"
     react-helmet "^6.1.0"
 
@@ -6919,9 +6919,9 @@ glob-to-regexp@^0.4.1:
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
 glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
-  version "7.1.6"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
-  integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
+  version "7.1.7"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
+  integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
