@@ -1318,6 +1318,16 @@
     "@n8tb1t/use-scroll-position" "^2.0.3"
     clsx "^1.1.1"
 
+"@hyperobjekt/material-ui-website@1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@hyperobjekt/material-ui-website/-/material-ui-website-1.0.13.tgz#a53e5ecf551922bac05b6f2f5df11c5612b2ea4c"
+  integrity sha512-VTHZ1RqDIedw6sRZjkLddQL94dGQuh7nEJ4g7JkpSfiB7H1HwjTKFt16+zxNTWMKvMJp7WaZ1q0r6l5yrhsCGA==
+  dependencies:
+    "@material-ui/core" "^4.11.3"
+    "@material-ui/icons" "^4.11.2"
+    "@n8tb1t/use-scroll-position" "^2.0.3"
+    clsx "^1.1.1"
+
 "@iarna/toml@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -6552,11 +6562,12 @@ gatsby-telemetry@^2.4.1:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-hypercore@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.2.tgz#650a4919256efedce7ee4755e4fb5833facd8157"
-  integrity sha512-G/H/cXfZes6xiDx3l6e3eqQ0BvfztNd6WgwWvrFrd03eMdsqFlKhSPq9KZDjuPWVJnFSfldFkkJU+uxv9m2dcQ==
+gatsby-theme-hypercore@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.3.tgz#fe20c6bf3673eda5d695d05472b13a648dd46a57"
+  integrity sha512-jyK4cCgzXC/hwM9Rv90xTef4L/citoBRQYpjYjNXqqKVARAx609K2RWWKF204yeYQt7/DIM1q7m3k/7tnC1VxA==
   dependencies:
+    "@hyperobjekt/material-ui-website" "1.0.13"
     "@material-ui/core" "^4.11.3"
     "@mdx-js/mdx" "^1.6.22"
     "@mdx-js/react" "^1.6.22"
@@ -6576,12 +6587,12 @@ gatsby-theme-hypercore@^1.0.2:
     react-helmet "^6.1.0"
     remark-slug "^6.0.0"
 
-gatsby-theme-hypersite@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.2.tgz#aac6ba78c4bacb5535754730c2fedd7841e71554"
-  integrity sha512-P1zZ79EDv2sapOZqbTevEjvWgqiwr/gdVOWZxFPsK1uMTmTifMv/UaY+oGP5f9t23w67FOiP2QIujXW9VbOuSA==
+gatsby-theme-hypersite@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.3.tgz#fc50f87c49f978e3f90ab69beea15944402cfeb9"
+  integrity sha512-uX94FPZipakYeW/1zg322wcwZdtorTa1liOuPfJ8XCe3APZa8bqLAI6qpa8wyrVnoetWE/CYH/0NYiretVifwg==
   dependencies:
-    "@hyperobjekt/material-ui-website" "1.0.12"
+    "@hyperobjekt/material-ui-website" "1.0.13"
     "@material-ui/core" "^4.11.3"
     "@mdx-js/mdx" "^1.6.22"
     "@mdx-js/react" "^1.6.22"
@@ -6591,7 +6602,7 @@ gatsby-theme-hypersite@^1.0.1:
     gatsby-plugin-manifest "^3.2.0"
     gatsby-plugin-mdx "^2.2.0"
     gatsby-plugin-react-helmet "^4.2.0"
-    gatsby-theme-hypercore "^1.0.2"
+    gatsby-theme-hypercore "^1.0.3"
     lodash.pick "^4.4.0"
     react-helmet "^6.1.0"
 
@@ -13111,13 +13122,12 @@ sync-fetch@0.3.0:
     node-fetch "^2.6.1"
 
 table@^6.0.4:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/table/-/table-6.6.0.tgz#905654b79df98d9e9a973de1dd58682532c40e8e"
-  integrity sha512-iZMtp5tUvcnAdtHpZTWLPF0M7AgiQsURR2DwmxnJwSy8I3+cY+ozzVvYha3BOLG2TB+L0CqjIz+91htuj6yCXg==
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/table/-/table-6.7.0.tgz#26274751f0ee099c547f6cb91d3eff0d61d155b2"
+  integrity sha512-SAM+5p6V99gYiiy2gT5ArdzgM1dLDed0nkrWmG6Fry/bUS/m9x83BwpJUOf1Qj/x2qJd+thL6IkIx7qPGRxqBw==
   dependencies:
     ajv "^8.0.1"
     lodash.clonedeep "^4.5.0"
-    lodash.flatten "^4.4.0"
     lodash.truncate "^4.4.2"
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
