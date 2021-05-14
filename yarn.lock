@@ -1318,10 +1318,10 @@
     "@n8tb1t/use-scroll-position" "^2.0.3"
     clsx "^1.1.1"
 
-"@hyperobjekt/material-ui-website@1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@hyperobjekt/material-ui-website/-/material-ui-website-1.0.19.tgz#09a448b8030e4decf9117797e92cd852286f3a2d"
-  integrity sha512-wIis3ByvrPxfe2igLY9SW0TOkgvZawTRBqk+RzWfQa5vPwhLN1fn99ahOVekoAuT/O/x1rytjHwS8oWc/jDQoQ==
+"@hyperobjekt/material-ui-website@1.0.21":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@hyperobjekt/material-ui-website/-/material-ui-website-1.0.21.tgz#0fa6f70574b746733764161f0c682b92d6343bc6"
+  integrity sha512-YpkoFpAHyK4dIC4tHG7r+c5Gzc0qGIBvuYU3LkZ5LLn4D+VjvIg7RABde3xGflPcgq4lU9gWvi8V08ILL8YHDQ==
   dependencies:
     "@material-ui/core" "^4.11.3"
     "@material-ui/icons" "^4.11.2"
@@ -2080,9 +2080,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "15.0.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.3.tgz#ee09fcaac513576474c327da5818d421b98db88a"
-  integrity sha512-/WbxFeBU+0F79z9RdEOXH4CsDga+ibi5M8uEYr91u3CkT/pdWcV8MCook+4wDPnZBexRdwWS+PiVZ2xJviAzcQ==
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
+  integrity sha512-8/bnjSZD86ZfpBsDlCIkNXIvm+h6wi9g7IqL+kmFkQ+Wvu3JrasgLElfiPgoo8V8vVfnEi0QVS12gbl94h9YsQ==
 
 "@types/node@^14.14.10":
   version "14.14.45"
@@ -6626,12 +6626,12 @@ gatsby-telemetry@^2.5.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-hypercore@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.6.tgz#4a5be432be65ae30229115f041df601b1206641a"
-  integrity sha512-gigcnZ0xmfqCmAa7KIYWPeq5ohnSAb6ANfp1AjfB+DDsPBykIRzH8WMrHvJ/0s56s62dFkMFZVM2oCgW3oIzDg==
+gatsby-theme-hypercore@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypercore/-/gatsby-theme-hypercore-1.0.7.tgz#daac910d734a6cbd7c87e84bacb0676e5661c1db"
+  integrity sha512-yp2CoOzu8TeB3joZIh4N3bvI3pn8PE0c61Uy5QM3lOxPFZH4SRI47hgnflYwNiDaN70hsklmqnjeimBQUE39kg==
   dependencies:
-    "@hyperobjekt/material-ui-website" "1.0.19"
+    "@hyperobjekt/material-ui-website" "1.0.21"
     "@material-ui/core" "^4.11.3"
     "@mdx-js/mdx" "^1.6.22"
     "@mdx-js/react" "^1.6.22"
@@ -6652,12 +6652,12 @@ gatsby-theme-hypercore@^1.0.6:
     react-helmet "^6.1.0"
     remark-slug "^6.0.0"
 
-gatsby-theme-hypersite@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.8.tgz#5273c006e96f9629cd60039973a5511a8027afe8"
-  integrity sha512-etNB2IuP7/PGsVoyzDGMRmWWSb56Y4jhGbIBdRgVH6z4u8zySnCag9pmSXXMziDdIwTAny+Vdit9kHZOa9pZYw==
+gatsby-theme-hypersite@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.0.9.tgz#5d50226acf97d7c02e5a277f4478a2e76fb2cd12"
+  integrity sha512-dFc80/styh5rXoj0ecM2cwYoWQqE5fvkMlVAx+ME44IYbDTptOhQVghJ8k0AClfXSqrnifmMV+3C6luCwCm5eQ==
   dependencies:
-    "@hyperobjekt/material-ui-website" "1.0.19"
+    "@hyperobjekt/material-ui-website" "1.0.21"
     "@material-ui/core" "^4.11.3"
     "@mdx-js/mdx" "^1.6.22"
     "@mdx-js/react" "^1.6.22"
@@ -6667,7 +6667,7 @@ gatsby-theme-hypersite@^1.0.8:
     gatsby-plugin-manifest "^3.2.0"
     gatsby-plugin-mdx "^2.2.0"
     gatsby-plugin-react-helmet "^4.2.0"
-    gatsby-theme-hypercore "^1.0.6"
+    gatsby-theme-hypercore "^1.0.7"
     lodash.pick "^4.4.0"
     prism-react-renderer "^1.2.0"
     react-helmet "^6.1.0"
