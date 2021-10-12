@@ -5937,7 +5937,7 @@ gatsby-theme-hypercore@^1.1.3:
     react-helmet "^6.1.0"
     remark-slug "^6.0.0"
 
-gatsby-theme-hypersite@^1.1.2:
+gatsby-theme-hypersite@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/gatsby-theme-hypersite/-/gatsby-theme-hypersite-1.1.3.tgz#2e0ea0c5edf2cc6047b79a169222913f8a3d56e3"
   integrity sha512-atQkvmAziHnTTTLoh3IazWaLOaeKdSETTnOYdCaEsuyeVmSgkpKmm5iq6DgqcHPmub9IIORmEtgUeyan9kM5LQ==
