@@ -1,4 +1,4 @@
-import { createTheme } from "@material-ui/core/styles"
+import { createTheme } from "@material-ui/core/styles";
 
 let theme = createTheme({
   palette: {
@@ -36,6 +36,11 @@ let theme = createTheme({
     MuiDivider: {
       root: { margin: "1rem 0" },
     },
+    MuiButton: {
+      outlined: {
+        background: "#fc0",
+      },
+    },
     // make the page fill the viewport
     HypPage: {
       root: {
@@ -62,6 +67,6 @@ let theme = createTheme({
       },
     },
   },
-})
+});
 
-export default theme
+export default theme;

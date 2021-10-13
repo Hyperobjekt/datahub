@@ -1,5 +1,5 @@
-const path = require("path")
-const metadata = require("./config/metadata.json")
+const path = require("path");
+const metadata = require("./config/metadata.json");
 module.exports = {
   siteMetadata: metadata,
   plugins: [
@@ -23,4 +23,4 @@ module.exports = {
       },
     },
   ],
-}
+};
