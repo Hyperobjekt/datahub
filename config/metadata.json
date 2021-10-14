@@ -1,5 +1,5 @@
 {
-  "title": "Datahub",
+  "title": "DATA HUB",
   "description": "Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Material UI. Incorporates gatsby-theme-hyperobjekt-core.",
   "keywords": ["gatsby", "theme", "react"],
   "author": "Lane Olson",
@@ -8,16 +8,20 @@
   "image": "/images/social.jpg",
   "menuLinks": [
     {
-      "name": "Getting Started",
-      "link": "/guide"
+      "name": "About The Here Lab",
+      "link": "/test"
     },
     {
-      "name": "Components",
-      "link": "/components"
+      "name": "About The Data Hub",
+      "link": "/test"
     },
     {
-      "name": "Recipes",
-      "link": "/recipes"
+      "name": "In The News",
+      "link": "/test"
+    },
+    {
+      "name": "Contact",
+      "link": "/test"
     }
   ],
   "social": [

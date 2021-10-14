@@ -31,15 +31,24 @@ let theme = createTheme({
     MuiTypography: {
       body1: {
         margin: "1rem 0",
+        fontColor: 'black'
       },
     },
     MuiDivider: {
       root: { margin: "1rem 0" },
     },
-    MuiButton: {
-      outlined: {
-        background: "#fc0",
+    HypHeader: {
+      toolbar: {
+        backgroundColor: 'white'
+      }
+    },
+    HorizontalNavigation: {
+      listItem: {
+        background: 'white'
       },
+      link: {
+        color: 'black'
+      }
     },
     // make the page fill the viewport
     HypPage: {
@@ -49,7 +58,7 @@ let theme = createTheme({
     },
     HypBranding: {
       root: {
-        color: "#fff",
+        color: 'black',
         fontSize: 24,
         textDecoration: "none",
       },
