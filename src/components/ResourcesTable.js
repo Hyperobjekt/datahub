@@ -16,7 +16,7 @@ const useStyle = makeStyles({
 })
 
 const ResourcesTable = (props) => {
-  return <div>My table</div>
+  return <></>
 }
 
 export default ResourcesTable
