@@ -1,10 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+
+import CollapsibleRow from './CollapsibleRow'
+
+import { 
+  makeStyles,
+  Table,
+  TableBody,
+  TableRow,
+  TableCell,
+  TableHead
+} from '@material-ui/core'
+
+const useStyle = makeStyles({
+
+})
 
 const ResourcesTable = (props) => {
-  return <div>My table</div>;
-};
+  return <div>My table</div>
+}
 
-ResourcesTable.propTypes = {};
-
-export default ResourcesTable;
+export default ResourcesTable
