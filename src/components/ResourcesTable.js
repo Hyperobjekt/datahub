@@ -8,15 +8,31 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  TableHead
+  TableHead,
+  TableContainer
 } from '@material-ui/core'
 
-const useStyle = makeStyles({
+const useStyles = makeStyles({
 
 })
 
 const ResourcesTable = (props) => {
-  return <></>
+  return (
+    <TableContainer>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell />
+            <TableCell>Project Name</TableCell>
+            <TableCell>Date</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <CollapsibleRow />
+        </TableBody>
+      </Table>
+    </TableContainer>
+  )
 }
 
 export default ResourcesTable
