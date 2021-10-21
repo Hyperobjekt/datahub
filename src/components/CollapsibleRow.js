@@ -24,7 +24,7 @@ const CollapsibleRow = (props) => {
 
   return (
     <>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
+      <TableRow style={{ backgroundColor: props.index % 2 ? '#E8F5FF' : '#FFFFFF', borderBottom: 'unset' }}>
         <TableCell>
           <IconButton
             size='small'
@@ -33,8 +33,10 @@ const CollapsibleRow = (props) => {
             {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           </IconButton>
         </TableCell>
+        <TableCell></TableCell>
+        <TableCell></TableCell>
       </TableRow>
-      <TableRow>
+      <TableRow style={{ borderBottom: 'unset', background: props.index % 2 ? '#E8F5FF' : '#FFFFFF'}}>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout='auto' unmountOnExit>
             <Box sx={{ margin: 1, paddingLeft: 'calc(10.5%)' }}>

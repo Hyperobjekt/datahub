@@ -17,18 +17,22 @@ const useStyles = makeStyles({
 })
 
 const ResourcesTable = (props) => {
+  const rows = [0, 1, 2, 3, 4]
+
   return (
     <TableContainer>
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell />
+          <TableRow style={{ backgroundColor: '#FFF8ED' }} >
+            <TableCell style={{ width: '10%' }} />
             <TableCell>Project Name</TableCell>
             <TableCell>Date</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          <CollapsibleRow />
+          {rows.map(i =>
+            <CollapsibleRow index={i} />
+          )}
         </TableBody>
       </Table>
     </TableContainer>
