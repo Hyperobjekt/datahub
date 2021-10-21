@@ -42,12 +42,21 @@ let theme = createTheme({
         backgroundColor: 'white'
       }
     },
+    MuiTableCell: {
+      root: {
+        borderBottom: 'none'
+      }
+    },
     HorizontalNavigation: {
       listItem: {
         background: 'white'
       },
       link: {
-        color: 'black'
+        color: 'black',
+      },
+      linkActive: {
+        color: '#064493',
+        fontWeight: 'none'
       }
     },
     // make the page fill the viewport
