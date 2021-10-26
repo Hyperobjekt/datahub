@@ -1,31 +1,27 @@
 ---
 draft: false
-name: Home
-path: /
 meta:
   title: Hypersite
   description: A starter theme for gatsby
   image: ./images/hello.jpg
+  isBlogPost: false
+path: /
+name: Home
 ---
 
-import ResourcesTable from "components/ResourcesTable"
-import SplitHeader from "components/SplitHeader"
+import ResourcesTable from "components/ResourcesTable";
+import SplitHeader from "components/SplitHeader";
 
 <Hero
   ContainerProps={{
-    justifyContent: 'flex-start'
+    justifyContent: "flex-start",
   }}
   alignItems="flex-end"
   bgcolor="#475865"
   color="grey.900"
   variant="overlay"
 >
-  <StyledComponent
-    maxWidth={280}
-    mb={3}
-    ml={4}
-  >
-  </StyledComponent>
+  <StyledComponent maxWidth={280} mb={3} ml={4}></StyledComponent>
 </Hero>
 
 <SplitHeader />
