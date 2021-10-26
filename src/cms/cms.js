@@ -1,6 +1,7 @@
 import CMS from "netlify-cms-app";
 import pages from "./pages";
 import { config } from "@hyperobjekt/cms-config";
+import data from "./data/data";
 window.CMS_MANUAL_INIT = true;
 
 CMS.init({
@@ -15,6 +16,6 @@ CMS.init({
     },
     media_folder: "/static/images",
     public_folder: "/images",
-    collections: [config, pages],
+    collections: [config, pages, data],
   },
 });

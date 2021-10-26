@@ -1,0 +1,20 @@
+{
+  "id": "authors",
+  "authors": [
+    {
+      "id": "author1",
+      "name": "Author 1",
+      "email": "author@gmail.com"
+    },
+    {
+      "id": "author2",
+      "name": "Author 2",
+      "email": "author2@gmail.com"
+    },
+    {
+      "id": "author3",
+      "name": "Author 3",
+      "email": "author3@gmail.com"
+    }
+  ]
+}
