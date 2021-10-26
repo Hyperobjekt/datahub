@@ -19,9 +19,9 @@ module.exports = {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         manualInit: true,
-        modulePath: `./src/cms/cms.js`,
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
   ],
-  flags: { FAST_DEV: true }
+  flags: { FAST_DEV: true },
 };
