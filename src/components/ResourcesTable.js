@@ -25,7 +25,7 @@ const ResourcesTable = (props) => {
         <TableHead>
           <TableRow style={{ backgroundColor: '#FFF8ED' }} >
             <TableCell style={{ width: '10%' }} />
-            <TableCell>Project Name</TableCell>
+            <TableCell style={{ width: '45%' }}>Project Name</TableCell>
             <TableCell>Date</TableCell>
           </TableRow>
         </TableHead>

@@ -33,6 +33,16 @@ let theme = createTheme({
         margin: "1rem 0",
         fontColor: 'black'
       },
+      subtitle1: {
+        fontSize: '14px',
+
+        margin: '10px 0 10px 0'
+      },
+      subtitle2: {
+        fontSize: '12px',
+
+        margin: '10px 0 10px 0'
+      }
     },
     MuiDivider: {
       root: { margin: "1rem 0" },
