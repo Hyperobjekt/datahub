@@ -66,6 +66,28 @@ let theme = createTheme({
         paddingRight: '22px'
       }
     },
+    MuiOutlinedInput: {
+      root: {
+        "& $notchedOutline": {
+          borderColor: 'white'
+        },
+        "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
+          borderColor: 'white',
+          borderWidth: 2
+        },
+        "&$focused $notchedOutline": {
+          borderColor: 'white'
+        }
+      },
+      notchedOutline: {}
+    },
+    MuiSelect: {
+      select: {
+      '&:focus': {
+          backgroundColor: 'transparent'
+        }
+      }
+    },
     HorizontalNavigation: {
       listItem: {
         background: 'white'

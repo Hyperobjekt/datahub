@@ -14,7 +14,6 @@ import {
   FormControl,
   Select,
   MenuItem,
-  InputLabel,
   OutlinedInput,
   useTheme
 } from '@material-ui/core'
@@ -79,7 +78,7 @@ const ResourcesTable = (props) => {
             displayEmpty
             value={selectedTopics}
             onChange={handleChange}
-            input={<OutlinedInput style={{outline: 'none'}} />}
+            input={<OutlinedInput />}
             renderValue={(selected) => {
               if (selected.length === 0) {
                 return <a>Topic</a>
