@@ -79,8 +79,8 @@ const CollapsibleRow = (props) => {
         <TableCell>
           <Box className={classes.evenAlign}>
             <a>9/2/21</a>
-            <a style={{ textDecoration: 'none' }} href={'https://google.com'}>LINK</a>
-            <a style={{ textDecoration: 'none' }} href={'https://google.com'}>PUBLISH</a>
+            <a style={{ textDecoration: 'none' }} href={'https://google.com'}>REPO</a>
+            <a style={{ textDecoration: 'none' }} href={'https://google.com'}>PUBLISHED PAPER</a>
           </Box>
         </TableCell>
       </TableRow>

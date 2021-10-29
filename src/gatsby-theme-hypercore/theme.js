@@ -57,6 +57,15 @@ let theme = createTheme({
         borderBottom: 'none'
       }
     },
+    MuiInputBase: {
+      root: {
+        background: '#E8F5FF',
+        height: '40px',
+        width: '200px',
+        
+        paddingRight: '22px'
+      }
+    },
     HorizontalNavigation: {
       listItem: {
         background: 'white'
