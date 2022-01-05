@@ -124,8 +124,8 @@ let theme = createTheme({
       root: {
         display: "none",
       },
-    },
-  },
+    }
+  }
 });
 
 export default theme;
