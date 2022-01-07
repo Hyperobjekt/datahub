@@ -8,6 +8,9 @@ let theme = createTheme({
     secondary: {
       main: "#6699cc",
     },
+    background: {
+      dark: "#354049",
+    },
   },
   overrides: {
     MuiCssBaseline: {
@@ -31,74 +34,74 @@ let theme = createTheme({
     MuiTypography: {
       body1: {
         margin: "1rem 0",
-        fontColor: 'black'
+        fontColor: "black",
       },
       subtitle1: {
-        fontSize: '14px',
+        fontSize: "14px",
 
-        margin: '10px 0 10px 0'
+        margin: "10px 0 10px 0",
       },
       subtitle2: {
-        fontSize: '12px',
+        fontSize: "12px",
 
-        margin: '10px 0 10px 0'
-      }
+        margin: "10px 0 10px 0",
+      },
     },
     MuiDivider: {
       root: { margin: "1rem 0" },
     },
     HypHeader: {
       toolbar: {
-        backgroundColor: 'white'
-      }
+        backgroundColor: "white",
+      },
     },
     MuiTableCell: {
       root: {
-        borderBottom: 'none'
-      }
+        borderBottom: "none",
+      },
     },
     MuiInputBase: {
       root: {
-        background: '#E8F5FF',
-        height: '40px',
-        width: '200px',
-        
-        paddingRight: '22px'
-      }
+        background: "#E8F5FF",
+        height: "40px",
+        width: "200px",
+
+        paddingRight: "22px",
+      },
     },
     MuiOutlinedInput: {
       root: {
         "& $notchedOutline": {
-          borderColor: 'white'
+          borderColor: "white",
         },
         "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
-          borderColor: 'white',
-          borderWidth: 2
+          borderColor: "white",
+          borderWidth: 2,
         },
         "&$focused $notchedOutline": {
-          borderColor: 'white'
-        }
+          borderColor: "white",
+        },
       },
-      notchedOutline: {}
+      notchedOutline: {},
     },
     MuiSelect: {
       select: {
-      '&:focus': {
-          backgroundColor: 'transparent'
-        }
-      }
+        "&:focus": {
+          backgroundColor: "transparent",
+        },
+      },
     },
     HorizontalNavigation: {
       listItem: {
-        background: 'white'
+        background: "white",
       },
       link: {
-        color: 'black',
+        color: "black",
       },
       linkActive: {
-        color: '#064493',
-        fontWeight: 'none'
-      }
+        color: "#064493",
+        fontWeight: "none",
+      },
     },
     // make the page fill the viewport
     HypPage: {
@@ -108,7 +111,7 @@ let theme = createTheme({
     },
     HypBranding: {
       root: {
-        color: 'black',
+        color: "black",
         fontSize: 24,
         textDecoration: "none",
       },
@@ -124,8 +127,8 @@ let theme = createTheme({
       root: {
         display: "none",
       },
-    }
-  }
+    },
+  },
 });
 
 export default theme;
