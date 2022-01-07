@@ -36,7 +36,7 @@ const Footer = ({ copyright, links, social, ...props }) => {
       <Container>
         <Grid container>
           <Grid item xs={12} md={3}>
-            <img src="http://placehold.it/200x200" alt="logo" />
+            <img src={require('../../../static/images/datahub_logo.png').default} alt='logo' />
           </Grid>
           <Grid item xs={12} md={6}>
             <Box maxWidth="32em">
