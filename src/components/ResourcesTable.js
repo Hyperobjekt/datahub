@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import CollapsibleRow from './CollapsibleRow'
+import CollapsibleRow from "./CollapsibleRow";
 
-import { 
+import {
   makeStyles,
   Typography,
   Table,
@@ -15,64 +15,62 @@ import {
   Select,
   MenuItem,
   OutlinedInput,
-  useTheme
-} from '@material-ui/core'
+  useTheme,
+} from "@material-ui/core";
 
 const useStyles = makeStyles({
   centerAlign: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   evenAlign: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
 
-    margin: '25px 0 50px 0',
+    margin: "25px 0 50px 0",
 
-    '& > *': {
-      paddingRight: '22px'
-    }
-  }
-})
+    "& > *": {
+      paddingRight: "22px",
+    },
+  },
+});
 
 const ResourcesTable = (props) => {
-  const classes = useStyles()
-  const theme = useTheme()
+  const classes = useStyles();
+  const theme = useTheme();
 
-  const rows = [0, 1, 2, 3, 4]
+  const rows = [0, 1, 2, 3, 4];
 
-  const [selectedTopics, setSelectedTopics] = useState([])
-  const [selectedSources, setSelectedSources] = useState([])
+  const [selectedTopics, setSelectedTopics] = useState([]);
+  const [selectedSources, setSelectedSources] = useState([]);
 
   function getStyles(name, personName, theme) {
     return {
       fontWeight:
         personName.indexOf(name) === -1
           ? theme.typography.fontWeightRegular
-          : theme.typography.fontWeightMedium
-    }
+          : theme.typography.fontWeightMedium,
+    };
   }
 
   const handleChange = (event) => {
     setSelectedTopics(
-      typeof event.target.value === 'string' ? event.target.value.split(',') : event.target.value
-    )
-  }
+      typeof event.target.value === "string"
+        ? event.target.value.split(",")
+        : event.target.value
+    );
+  };
 
-  const names = [
-    'Steph Curry',
-    'Klay Thompson',
-    'Draymond Green'
-  ]
+  const names = ["Steph Curry", "Klay Thompson", "Draymond Green"];
 
-  const tableHeader =
+  const tableHeader = (
     <div className={classes.centerAlign}>
-      <Typography variant='h6'>ACTIVE PROJECTS</Typography>
+      <Typography variant="h6">ACTIVE PROJECTS</Typography>
       <div className={classes.evenAlign}>
-        <Typography variant='subtitle1'>Flter by:</Typography>
-        <FormControl sx={{ m: 1, width: 300, mt: 3, pr: 22 }}>
+        <Typography variant="subtitle1">Flter by:</Typography>
+        <FormControl>
           <Select
             multiple
             displayEmpty
@@ -81,23 +79,25 @@ const ResourcesTable = (props) => {
             input={<OutlinedInput />}
             renderValue={(selected) => {
               if (selected.length === 0) {
-                return <a>Topic</a>
+                return <a>Topic</a>;
               }
 
-              return selected.join(', ')
+              return selected.join(", ");
             }}
-            MenuProps={{variant:'menu'}}
+            MenuProps={{ variant: "menu" }}
           >
-          {names.map(name =>
-            <MenuItem
-              key={name}
-              value={name}
-              style={getStyles(name, selectedTopics, theme)}
-            >{name}</MenuItem>
-          )}
+            {names.map((name) => (
+              <MenuItem
+                key={name}
+                value={name}
+                style={getStyles(name, selectedTopics, theme)}
+              >
+                {name}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
+        <FormControl>
           <Select
             multiple
             displayEmpty
@@ -106,17 +106,17 @@ const ResourcesTable = (props) => {
             input={<OutlinedInput />}
             renderValue={(selected) => {
               if (selected.length === 0) {
-                return <a>Data Source</a>
+                return <a>Data Source</a>;
               }
 
-              return selected.join(', ')
+              return selected.join(", ");
             }}
-            MenuProps={{variant:'menu'}}
-          >
-          </Select>
+            MenuProps={{ variant: "menu" }}
+          ></Select>
         </FormControl>
       </div>
     </div>
+  );
 
   return (
     <>
@@ -124,21 +124,21 @@ const ResourcesTable = (props) => {
       <TableContainer>
         <Table>
           <TableHead>
-            <TableRow style={{ backgroundColor: '#FFF8ED' }} >
-              <TableCell style={{ width: '10%' }} />
-              <TableCell style={{ width: '45%' }}>Project Name</TableCell>
+            <TableRow style={{ backgroundColor: "#FFF8ED" }}>
+              <TableCell style={{ width: "10%" }} />
+              <TableCell style={{ width: "45%" }}>Project Name</TableCell>
               <TableCell>Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map(i =>
+            {rows.map((i) => (
               <CollapsibleRow index={i} />
-            )}
+            ))}
           </TableBody>
         </Table>
       </TableContainer>
     </>
-  )
-}
+  );
+};
 
-export default ResourcesTable
+export default ResourcesTable;
