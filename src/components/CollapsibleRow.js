@@ -30,14 +30,7 @@ const CollapsibleRow = (props) => {
   const [open, setOpen] = useState(false);
 
   const info = (
-    <Box
-      sx={{
-        width: "calc(75%)",
-        marginTop: "2px",
-        marginBottom: "6px",
-        marginLeft: "calc(10.5%)",
-      }}
-    >
+    <Box width="75%" mt={0.5} mb={1}>
       <Typography variant="subtitle2">
         Filed under{" "}
         <span style={{ fontWeight: "750" }}>
@@ -59,17 +52,11 @@ const CollapsibleRow = (props) => {
   );
 
   const links = (
-    <Box
-      sx={{
-        margin: "22px 0 22px calc(10.5%)",
-        padding: "21px 32px",
-        background: "#FFF8ED",
-      }}
-    >
+    <Box>
       <Typography variant="h6" component="div">
         Quick Links
       </Typography>
-      <Box sx={{ mb: "10px" }} className={classes.evenAlign}>
+      <Box className={classes.evenAlign}>
         <a style={{ textDecoration: "none" }} href={"https://google.com"}>
           README
         </a>
