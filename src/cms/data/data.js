@@ -44,7 +44,7 @@ const data = {
               name: "topics",
               widget: "list",
               fields: [
-                { label: "Name", name: "name", widget: "string" },
+                { label: "Topic", name: "topic", widget: "string" },
               ],
             },
             {
@@ -52,7 +52,7 @@ const data = {
               name: "data sets",
               widget: "list",
               fields: [
-                { label: "Name", name: "name", widget: "string" },
+                { label: "Set", name: "set", widget: "string" },
                 { label: "Link", name: "link", widget: "string", hint: "enter full URL" },
               ],
             },
@@ -62,7 +62,7 @@ const data = {
               name: "authors",
               widget: "list",
               fields: [
-                { label: "Name", name: "name", widget: "string" },
+                { label: "Author", name: "author", widget: "string" },
               ],
             },
             { label: "README", name: "readme", widget: "string", hint: "enter full URL" },

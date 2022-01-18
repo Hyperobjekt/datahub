@@ -9,19 +9,19 @@
       "topics": ["primary topic", "secondary topic"],
       "data": [
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         },
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "authors:": [
-        { "name": "John Appleseed"},
-        { "name": "Charlie Eaton"},
-        { "name": "Laura Hamilton"}
+        { "author": "John Appleseed"},
+        { "author": "Charlie Eaton"},
+        { "author": "Laura Hamilton"}
       ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
@@ -36,19 +36,19 @@
       "topics": ["primary topic", "secondary topic"],
       "data": [
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         },
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "authors:": [
-        { "name": "John Appleseed"},
-        { "name": "Charlie Eaton"},
-        { "name": "Laura Hamilton"}
+        { "author": "John Appleseed"},
+        { "author": "Charlie Eaton"},
+        { "author": "Laura Hamilton"}
       ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
@@ -63,19 +63,19 @@
       "topics": ["primary topic", "secondary topic"],
       "data": [
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         },
         {
-          "name": "Data set name",
+          "set": "Data set name",
           "link": "https://github.com"
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "authors:": [
-        { "name": "John Appleseed"},
-        { "name": "Charlie Eaton"},
-        { "name": "Laura Hamilton"}
+        { "author": "John Appleseed"},
+        { "author": "Charlie Eaton"},
+        { "author": "Laura Hamilton"}
       ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
