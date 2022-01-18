@@ -39,8 +39,14 @@ const data = {
             { label: "Name", name: "name", widget: "string" },
             { label: "Date", name: "date", widget: "string", hint: "enter date as it should appear" },
             { label: "Repo", name: "repo", widget: "string", hint: "enter full URL" },
-            { label: "Download", name: "download", widget: "string", hint: "enter full URL" },
-            { label: "Topics", name: "topics", widget: "string" },
+            {
+              label: "Topics",
+              name: "topics",
+              widget: "list",
+              fields: [
+                { label: "Name", name: "name", widget: "string" },
+              ],
+            },
             {
               label: "Data sets",
               name: "data sets",

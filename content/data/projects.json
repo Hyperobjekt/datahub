@@ -18,7 +18,11 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "authors:": [
+        { "name": "John Appleseed"},
+        { "name": "Charlie Eaton"},
+        { "name": "Laura Hamilton"}
+      ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
@@ -41,7 +45,11 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "authors:": [
+        { "name": "John Appleseed"},
+        { "name": "Charlie Eaton"},
+        { "name": "Laura Hamilton"}
+      ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
@@ -64,7 +72,11 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "authors:": [
+        { "name": "John Appleseed"},
+        { "name": "Charlie Eaton"},
+        { "name": "Laura Hamilton"}
+      ],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
