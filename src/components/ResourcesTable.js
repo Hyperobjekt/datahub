@@ -18,6 +18,8 @@ import {
   useTheme,
 } from "@material-ui/core";
 
+import authors from '../../content/data/authors.json'
+
 const useStyles = makeStyles({
   centerAlign: {
     display: "flex",
@@ -119,6 +121,7 @@ const ResourcesTable = (props) => {
   );
 
   return (
+    console.log(authors),
     <>
       {tableHeader}
       <TableContainer>

@@ -1,4 +1,74 @@
 {
   "id": "projects",
-  "projects": []
+  "projects": [
+    {
+      "name": "Project 1",
+      "date": "1/18/22",
+      "repo": "https://github.com",
+      "paper": "https://arxiv.org",
+      "topics": ["primary topic", "secondary topic"],
+      "data": [
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        },
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        }
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "readme": "https://github.com",
+      "preprint": "https://github.com",
+      "figures": "https://github.com",
+      "discussion": "https://github.com"
+    },
+    {
+      "name": "Project 2",
+      "date": "4/20/20",
+      "repo": "https://github.com",
+      "paper": "https://arxiv.org",
+      "topics": ["primary topic", "secondary topic"],
+      "data": [
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        },
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        }
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "readme": "https://github.com",
+      "preprint": "https://github.com",
+      "figures": "https://github.com",
+      "discussion": "https://github.com"
+    },
+    {
+      "name": "Project 3",
+      "date": "12/15/21",
+      "repo": "https://github.com",
+      "paper": "https://arxiv.org",
+      "topics": ["primary topic", "secondary topic"],
+      "data": [
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        },
+        {
+          "name": "Data set name",
+          "link": "https://github.com"
+        }
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "readme": "https://github.com",
+      "preprint": "https://github.com",
+      "figures": "https://github.com",
+      "discussion": "https://github.com"
+    }
+  ]
 }
