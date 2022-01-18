@@ -18,7 +18,7 @@ import {
   useTheme,
 } from "@material-ui/core";
 
-import authors from '../../content/data/authors.json'
+import projects from '../../content/data/projects.json'
 
 const useStyles = makeStyles({
   centerAlign: {
@@ -121,7 +121,7 @@ const ResourcesTable = (props) => {
   );
 
   return (
-    console.log(authors),
+    console.log(projects),
     <>
       {tableHeader}
       <TableContainer>

@@ -39,14 +39,7 @@ const data = {
             { label: "Name", name: "name", widget: "string" },
             { label: "Date", name: "date", widget: "string", hint: "enter date as it should appear" },
             { label: "Repo", name: "repo", widget: "string", hint: "enter full URL" },
-            {
-              label: "Topics",
-              name: "topics",
-              widget: "list",
-              fields: [
-                { label: "Topic", name: "topic", widget: "string" },
-              ],
-            },
+            { label: "Topics", name: "topics", widget: "list" },
             {
               label: "Data",
               name: "data",
@@ -57,14 +50,7 @@ const data = {
               ],
             },
             { label: "Summary", name: "summary", widget: "string" },
-            {
-              label: "Authors",
-              name: "authors",
-              widget: "list",
-              fields: [
-                { label: "Author", name: "author", widget: "string" },
-              ],
-            },
+            { label: "Authors", name: "authors", widget: "list" },
             { label: "README", name: "readme", widget: "string", hint: "enter full URL" },
             { label: "Preprint", name: "preprint", widget: "string", hint: "enter full URL" },
             { label: "Discussion", name: "discussion", widget: "string", hint: "enter full URL" }

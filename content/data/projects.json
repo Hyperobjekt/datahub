@@ -7,7 +7,7 @@
       "date": "1/18/22",
       "repo": "https://github.com",
       "paper": "https://arxiv.org",
-      "topics": [{ "topic": "primary topic" } , { "topic": "secondary topic" }],
+      "topics": ["primary topic", "secondary topic"],
       "data": [
         {
           "set": "Data set name",
@@ -19,11 +19,7 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": [
-        { "author": "John Appleseed"},
-        { "author": "Charlie Eaton"},
-        { "author": "Laura Hamilton"}
-      ],
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
@@ -35,7 +31,7 @@
       "date": "4/20/20",
       "repo": "https://github.com",
       "paper": "https://arxiv.org",
-      "topics": [{ "topic": "primary topic" } , { "topic": "secondary topic" }],
+      "topics": ["primary topic", "secondary topic"],
       "data": [
         {
           "set": "Data set name",
@@ -47,11 +43,7 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": [
-        { "author": "John Appleseed"},
-        { "author": "Charlie Eaton"},
-        { "author": "Laura Hamilton"}
-      ],
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
@@ -63,7 +55,7 @@
       "date": "12/15/21",
       "repo": "https://github.com",
       "paper": "https://arxiv.org",
-      "topics": [{ "topic": "primary topic" } , { "topic": "secondary topic" }],
+      "topics": ["primary topic", "secondary topic"],
       "data": [
         {
           "set": "Data set name",
@@ -75,11 +67,7 @@
         }
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": [
-        { "author": "John Appleseed"},
-        { "author": "Charlie Eaton"},
-        { "author": "Laura Hamilton"}
-      ],
+      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
       "readme": "https://github.com",
       "preprint": "https://github.com",
       "figures": "https://github.com",
