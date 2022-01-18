@@ -48,8 +48,8 @@ const data = {
               ],
             },
             {
-              label: "Data sets",
-              name: "data sets",
+              label: "Data",
+              name: "data",
               widget: "list",
               fields: [
                 { label: "Set", name: "set", widget: "string" },
