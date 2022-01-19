@@ -22,6 +22,17 @@ const useStyles = makeStyles({
       paddingRight: "40px",
     },
   },
+  info: {
+    width: 'calc(75%)', 
+    marginTop: '2px', 
+    marginBottom: '6px', 
+    marginLeft: 'calc(10.5%)'
+  },
+  links: {
+    margin: '22px 0 22px calc(10.5%)', 
+    padding: '21px 32px', 
+    background: '#FFF8ED'
+  }
 });
 
 const CollapsibleRow = (props) => {
@@ -30,7 +41,7 @@ const CollapsibleRow = (props) => {
   const [open, setOpen] = useState(false);
 
   const info = (
-    <Box width="75%" mt={0.5} mb={1}>
+    <Box className={classes.info}>
       <Typography variant="subtitle2">
         Filed under{" "}
         <span style={{ fontWeight: "750" }}>
@@ -52,11 +63,11 @@ const CollapsibleRow = (props) => {
   );
 
   const links = (
-    <Box>
+    <Box className={classes.links}>
       <Typography variant="h6" component="div">
         Quick Links
       </Typography>
-      <Box className={classes.evenAlign}>
+      <Box style={{ paddingBottom: '30px' }} className={classes.evenAlign}>
         <a style={{ textDecoration: "none" }} href={"https://google.com"}>
           README
         </a>
