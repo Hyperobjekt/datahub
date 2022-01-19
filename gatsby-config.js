@@ -29,6 +29,14 @@ module.exports = {
         path: `./content/data/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: "iam2opj",
+        },
+      },
+    }
   ],
   flags: { FAST_DEV: true },
 };

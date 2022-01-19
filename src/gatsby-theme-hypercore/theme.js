@@ -29,11 +29,16 @@ let theme = createTheme({
           borderRadius: "4px",
           display: "inline-block",
         },
+        "@font-face": {
+          fontFamily: "source-code-pro",
+          fontWeight: "400"
+        }
       },
     },
     MuiTypography: {
       body1: {
         margin: "1rem 0",
+        fontFamily: "source-code-pro",
         fontColor: "black",
       },
       subtitle1: {
@@ -52,7 +57,7 @@ let theme = createTheme({
     },
     HypHeader: {
       toolbar: {
-        backgroundColor: "white",
+        backgroundColor: "white"
       },
     },
     MuiTableCell: {

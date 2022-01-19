@@ -3,29 +3,6 @@ const data = {
   name: "data",
   files: [
     {
-      label: "Authors",
-      name: "authors",
-      file: "content/data/authors.json",
-      fields: [
-        { label: "ID", name: "id", widget: "hidden", default: "authors" },
-        {
-          label: "Authors",
-          name: "authors",
-          widget: "list",
-          fields: [
-            { label: "ID", name: "id", widget: "string" },
-            {
-              label: "Name",
-              name: "name",
-              widget: "string",
-              hint: "enter your full name",
-            },
-            { label: "Email", name: "email", widget: "string" },
-          ],
-        },
-      ],
-    },
-    {
       label: "Projects",
       name: "projects",
       file: "content/data/projects.json",
@@ -54,6 +31,31 @@ const data = {
             { label: "README", name: "readme", widget: "string", hint: "enter full URL" },
             { label: "Preprint", name: "preprint", widget: "string", hint: "enter full URL" },
             { label: "Discussion", name: "discussion", widget: "string", hint: "enter full URL" }
+          ],
+        },
+      ],
+    },
+    {
+      label: "About",
+      name: "about",
+      file: "content/data/about.json",
+      fields: [
+        { label: "About Us", name: "aboutUs", widget: "string" },
+        { label: "Location", name: "location", widget: "string" },
+        { label: "Position", name: "position", widget: "string" },
+        { label: "Lab Details", name: "labDetails", widget: "list" },
+        {
+          label: "Team",
+          name: "team",
+          widget: "list",
+          fields: [
+            {
+              label: "Name",
+              name: "name",
+              widget: "string",
+              hint: "enter your full name",
+            },
+            { label: "Bio", name: "bio", widget: "string" },
           ],
         },
       ],
