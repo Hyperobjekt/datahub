@@ -2,12 +2,44 @@
   "id": "projects",
   "projects": [
     {
-      "id": "project1",
+      "topics": [
+        "primary topic",
+        "secondary topic"
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "discussion": "https://github.com",
+      "preprint": "https://github.com",
+      "data": [
+        {
+          "set": "Data set name",
+          "link": "https://github.com"
+        },
+        {
+          "set": "Data set name",
+          "link": "https://github.com"
+        }
+      ],
       "name": "Project 1",
+      "paper": "https://arxiv.org",
+      "readme": "https://github.com",
       "date": "1/18/22",
+      "figures": "https://github.com",
+      "authors:": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
       "repo": "https://github.com",
-      "paper": "https://arxiv.org",
-      "topics": ["primary topic", "secondary topic"],
+      "id": "project1"
+    },
+    {
+      "topics": [
+        "primary topic",
+        "secondary topic"
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "discussion": "https://github.com",
+      "preprint": "https://github.com",
       "data": [
         {
           "set": "Data set name",
@@ -18,44 +50,27 @@
           "link": "https://github.com"
         }
       ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
-      "readme": "https://github.com",
-      "preprint": "https://github.com",
-      "figures": "https://github.com",
-      "discussion": "https://github.com"
-    },
-    {
-      "id": "project2",
       "name": "Project 2",
-      "date": "4/20/20",
-      "repo": "https://github.com",
       "paper": "https://arxiv.org",
-      "topics": ["primary topic", "secondary topic"],
-      "data": [
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        }
-      ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
       "readme": "https://github.com",
-      "preprint": "https://github.com",
+      "date": "4/20/20",
       "figures": "https://github.com",
-      "discussion": "https://github.com"
+      "authors:": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
+      "repo": "https://github.com",
+      "id": "project2"
     },
     {
-      "id": "project3",
-      "name": "Project 3",
-      "date": "12/15/21",
-      "repo": "https://github.com",
-      "paper": "https://arxiv.org",
-      "topics": ["primary topic", "secondary topic"],
+      "topics": [
+        "primary topic",
+        "secondary topic"
+      ],
+      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
+      "discussion": "https://github.com",
+      "preprint": "https://github.com",
       "data": [
         {
           "set": "Data set name",
@@ -66,12 +81,41 @@
           "link": "https://github.com"
         }
       ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "authors:": ["John Appleseed", "Charlie Eaton", "Laura Hamilton"],
+      "name": "Project 3",
+      "paper": "https://arxiv.org",
       "readme": "https://github.com",
-      "preprint": "https://github.com",
+      "date": "12/15/21",
       "figures": "https://github.com",
-      "discussion": "https://github.com"
+      "authors:": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
+      "repo": "https://github.com",
+      "id": "project3"
+    },
+    {
+      "topics": [
+        "primary",
+        "secondary"
+      ],
+      "summary": "test project",
+      "discussion": "github.com",
+      "authors": [
+        "vibu"
+      ],
+      "preprint": "github.com",
+      "data": [
+        {
+          "set": "set 1",
+          "link": "github.com"
+        }
+      ],
+      "name": "project4",
+      "readme": "github.com",
+      "date": "1/22/21",
+      "repo": "github.com",
+      "id": "projects"
     }
   ]
 }
