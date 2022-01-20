@@ -12,6 +12,9 @@ let theme = createTheme({
       dark: "#354049",
     },
   },
+  typography: {
+    fontFamily: "source-code-pro, monospace, sans-serif",
+  },
   overrides: {
     MuiCssBaseline: {
       "@global": {
@@ -29,17 +32,11 @@ let theme = createTheme({
           borderRadius: "4px",
           display: "inline-block",
         },
-        "@font-face": {
-          fontFamily: "source-code-pro",
-          fontWeight: "400"
-        }
       },
     },
     MuiTypography: {
       body1: {
         margin: "1rem 0",
-        fontFamily: "source-code-pro",
-        fontColor: "black",
       },
       subtitle1: {
         fontSize: "14px",
@@ -57,7 +54,7 @@ let theme = createTheme({
     },
     HypHeader: {
       toolbar: {
-        backgroundColor: "white"
+        backgroundColor: "white",
       },
     },
     MuiTableCell: {
