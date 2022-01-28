@@ -11,6 +11,7 @@ import {
   TableCell,
   TableHead,
   TableContainer,
+  TablePagination,
   FormControl,
   Select,
   MenuItem,
@@ -51,6 +52,18 @@ const ResourcesTable = (props) => {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedProjects, setSelectedProjects] = useState([]);
+
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(+event.target.value);
+    setPage(0);
+  }
 
   function getStyles(name, personName, theme) {
     return {
@@ -168,6 +181,15 @@ const ResourcesTable = (props) => {
           </TableBody>
         </Table>
       </TableContainer>
+      <TablePagination
+        rowsPerPageOptions={[10, 25, 100]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
     </>
   );
 };
