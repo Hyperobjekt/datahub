@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import CollapsibleRow from "./CollapsibleRow";
 
@@ -18,7 +18,7 @@ import {
   useTheme,
 } from "@material-ui/core";
 
-import projects from '../../../content/data/projects.json'
+import allProjects from '../../../content/data/projects.json'
 
 const useStyles = makeStyles({
   centerAlign: {
@@ -45,8 +45,8 @@ const ResourcesTable = (props) => {
 
   const rows = [0, 1, 2, 3, 4];
 
-  const [topics, setTopics] = useState([]);
-  const [sources, setSources] = useState([]);
+  const [topics, setTopics] = useState();
+  const [sources, setSources] = useState();
 
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
@@ -67,8 +67,6 @@ const ResourcesTable = (props) => {
         : event.target.value
     );
   };
-
-  const names = ["Steph Curry", "Klay Thompson", "Draymond Green"];
 
   const tableHeader = (
     <div className={classes.centerAlign}>
@@ -91,14 +89,15 @@ const ResourcesTable = (props) => {
             }}
             MenuProps={{ variant: "menu" }}
           >
-            {names.map((name) => (
-              <MenuItem
-                key={name}
-                value={name}
-                style={getStyles(name, selectedTopics, theme)}
-              >
-                {name}
-              </MenuItem>
+            {topics &&            
+              topics.map((name) => (
+                <MenuItem
+                  key={name}
+                  value={name}
+                  style={getStyles(name, selectedTopics, theme)}
+                >
+                  {name}
+                </MenuItem>
             ))}
           </Select>
         </FormControl>
@@ -116,15 +115,31 @@ const ResourcesTable = (props) => {
 
               return selected.join(", ");
             }}
-            MenuProps={{ variant: "menu" }}
-          ></Select>
+            MenuProps={{ variant: "menu" }}>
+            {sources &&            
+              sources.map((name) => (
+                <MenuItem
+                  key={name}
+                  value={name}
+                  style={getStyles(name, selectedTopics, theme)}
+                >
+                  {name}
+                </MenuItem>
+            ))}
+            </Select>
         </FormControl>
       </div>
     </div>
   );
 
+  useEffect(() => {
+    let projects = allProjects['projects']
+
+    setTopics(projects.map(p => p['topics']).flat())
+    setSources(projects.map(p => p['data']).flat().map(d => d['set']))
+  }, [])
+
   return (
-    console.log(projects),
     <>
       {tableHeader}
       <TableContainer>

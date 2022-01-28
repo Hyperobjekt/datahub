@@ -58,7 +58,7 @@ const CollapsibleRow = (props) => {
         culpa qui officia deserunt mollit anim id est laborum.
       </Typography>
       <Typography variant="subtitle1">
-        Data sets: Data Set 1, Data Set 2
+        Data sets: Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2
       </Typography>
       <Typography variant="subtitle1">
         Authors: John Appleseed, Charlie Eaton, Laura Hamilton
