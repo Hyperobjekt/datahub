@@ -50,6 +50,7 @@ const ResourcesTable = (props) => {
 
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
+  const [selectedProjects, setSelectedProjects] = useState([]);
 
   function getStyles(name, personName, theme) {
     return {
@@ -98,7 +99,8 @@ const ResourcesTable = (props) => {
                 >
                   {name}
                 </MenuItem>
-            ))}
+              ))
+            }
           </Select>
         </FormControl>
         <FormControl>
@@ -125,7 +127,8 @@ const ResourcesTable = (props) => {
                 >
                   {name}
                 </MenuItem>
-            ))}
+              ))
+            }
             </Select>
         </FormControl>
       </div>
@@ -135,9 +138,14 @@ const ResourcesTable = (props) => {
   useEffect(() => {
     let projects = allProjects['projects']
 
+    setSelectedProjects(projects)
     setTopics(projects.map(p => p['topics']).flat())
     setSources(projects.map(p => p['data']).flat().map(d => d['set']))
   }, [])
+
+  useEffect(() => {
+    //modify projects 
+  }, [topics, sources])
 
   return (
     <>
@@ -152,9 +160,11 @@ const ResourcesTable = (props) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((i) => (
-              <CollapsibleRow index={i} />
-            ))}
+            {selectedProjects &&
+              rows.map((i) => (
+                <CollapsibleRow index={i} />
+              ))
+            }
           </TableBody>
         </Table>
       </TableContainer>
