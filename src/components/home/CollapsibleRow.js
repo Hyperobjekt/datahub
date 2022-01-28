@@ -23,12 +23,16 @@ const useStyles = makeStyles({
     },
   },
   info: {
+    fontFamily: 'zeitung',
+
     width: 'calc(75%)', 
     marginTop: '2px', 
     marginBottom: '6px', 
     marginLeft: 'calc(10.5%)'
   },
   links: {
+    fontFamily: 'zeitung',
+
     margin: '22px 0 22px calc(10.5%)', 
     padding: '21px 32px', 
     background: '#FFF8ED'
@@ -67,7 +71,7 @@ const CollapsibleRow = (props) => {
       <Typography variant="h6" component="div">
         Quick Links
       </Typography>
-      <Box style={{ paddingBottom: '30px' }} className={classes.evenAlign}>
+      <Box style={{ fontFamily: 'source-code-pro', paddingBottom: '30px' }} className={classes.evenAlign}>
         <a style={{ textDecoration: "none" }} href={"https://google.com"}>
           README
         </a>
@@ -81,7 +85,7 @@ const CollapsibleRow = (props) => {
       <Typography variant="h6" component="div">
         Join the Discussion
       </Typography>
-      <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+      <a style={{ fontFamily: 'source-code-pro', textDecoration: "none" }} href={"https://google.com"}>
         DISCUSS ON GITHUB
       </a>
     </Box>

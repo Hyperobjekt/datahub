@@ -13,7 +13,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "source-code-pro, monospace, sans-serif",
+    fontFamily: ["source-code-pro, sans-serif", "zeitung, sans-serif"]
   },
   overrides: {
     MuiCssBaseline: {

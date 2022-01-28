@@ -18,7 +18,7 @@ import {
   useTheme,
 } from "@material-ui/core";
 
-import projects from '../../content/data/projects.json'
+import projects from '../../../content/data/projects.json'
 
 const useStyles = makeStyles({
   centerAlign: {
@@ -44,6 +44,9 @@ const ResourcesTable = (props) => {
   const theme = useTheme();
 
   const rows = [0, 1, 2, 3, 4];
+
+  const [topics, setTopics] = useState([]);
+  const [sources, setSources] = useState([]);
 
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
@@ -71,7 +74,7 @@ const ResourcesTable = (props) => {
     <div className={classes.centerAlign}>
       <Typography variant="h6">ACTIVE PROJECTS</Typography>
       <div className={classes.evenAlign}>
-        <Typography variant="subtitle1">Flter by:</Typography>
+        <Typography variant="subtitle1">Filter by:</Typography>
         <FormControl>
           <Select
             multiple

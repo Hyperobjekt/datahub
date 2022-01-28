@@ -9,8 +9,9 @@ path: /
 name: Home
 ---
 
-import ResourcesTable from "components/ResourcesTable";
-import SplitHeader from "components/SplitHeader";
+import HomePage from "components/home/HomePage";
+import SplitHeader from "components/home/SplitHeader";
+import ScrollButton from "components/home/ScrollButton";
 
 <Hero
   ContainerProps={{
@@ -21,11 +22,11 @@ import SplitHeader from "components/SplitHeader";
   color="grey.900"
   variant="overlay"
 >
-  <StyledComponent maxWidth={280} mb={3} ml={4}></StyledComponent>
+  <ScrollButton />
 </Hero>
 
 <SplitHeader />
 
 <Block>
-  <ResourcesTable />
+  <HomePage />
 </Block>
