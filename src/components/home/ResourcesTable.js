@@ -152,8 +152,8 @@ const ResourcesTable = (props) => {
     let projects = allProjects['projects']
 
     setSelectedProjects(projects)
-    setTopics(projects.map(p => p['topics']).flat())
-    setSources(projects.map(p => p['data']).flat().map(d => d['set']))
+    setTopics([...new Set(projects.map(p => p['topics']).flat())])
+    setSources([...new Set(projects.map(p => p['data']).flat().map(d => d['set']))])
   }, [])
 
   useEffect(() => {

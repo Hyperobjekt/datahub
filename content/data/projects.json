@@ -3,8 +3,8 @@
   "projects": [
     {
       "topics": [
-        "primary topic",
-        "secondary topic"
+        "topic 1",
+        "topic 2"
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
@@ -34,8 +34,8 @@
     },
     {
       "topics": [
-        "primary topic",
-        "secondary topic"
+        "topic 2",
+        "topic 3"
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
@@ -105,8 +105,8 @@
     },
     {
       "topics": [
-        "primary topic",
-        "secondary topic"
+        "topic 1",
+        "topic 4"
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
@@ -136,8 +136,8 @@
     },
     {
       "topics": [
-        "primary",
-        "secondary"
+        "topic 2",
+        "topic 3"
       ],
       "summary": "test project",
       "discussion": "github.com",
