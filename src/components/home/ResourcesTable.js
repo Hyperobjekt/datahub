@@ -75,8 +75,16 @@ const ResourcesTable = (props) => {
     };
   }
 
-  const handleChange = (event) => {
+  const handleTopicChange = (event) => {
     setSelectedTopics(
+      typeof event.target.value === "string"
+        ? event.target.value.split(",")
+        : event.target.value
+    );
+  };
+
+  const handleSourceChange = (event) => {
+    setSelectedSources(
       typeof event.target.value === "string"
         ? event.target.value.split(",")
         : event.target.value
@@ -93,7 +101,7 @@ const ResourcesTable = (props) => {
             multiple
             displayEmpty
             value={selectedTopics}
-            onChange={handleChange}
+            onChange={handleTopicChange}
             input={<OutlinedInput />}
             renderValue={(selected) => {
               if (selected.length === 0) {
@@ -122,7 +130,7 @@ const ResourcesTable = (props) => {
             multiple
             displayEmpty
             value={selectedSources}
-            onChange={handleChange}
+            onChange={handleSourceChange}
             input={<OutlinedInput />}
             renderValue={(selected) => {
               if (selected.length === 0) {
@@ -137,7 +145,7 @@ const ResourcesTable = (props) => {
                 <MenuItem
                   key={name}
                   value={name}
-                  style={getStyles(name, selectedTopics, theme)}
+                  style={getStyles(name, selectedSources, theme)}
                 >
                   {name}
                 </MenuItem>
@@ -149,15 +157,27 @@ const ResourcesTable = (props) => {
     </div>
   );
 
-  const comparator = (array, arrayTwo) => {
-    let intersection = array.filter(i => arrayTwo.includes(i))
+  const comparator = (projectTopics, projectSources, topics, sources) => {
+    let intersection = []
+
+    if (topics.length > 0 && sources.length > 0) {
+      let topicsIntersect = projectTopics.filter(i => topics.includes(i))
+      let sourcesIntersect = projectSources.filter(i => sources.includes(i))
+      intersection = [...topicsIntersect, ...sourcesIntersect]
+    } else {
+      if (topics.length > 0) {
+        intersection = projectTopics.filter(i => topics.includes(i))
+      } else if (sources.length > 0) {
+        intersection = projectSources.filter(i => sources.includes(i))
+      }
+    }
 
     return (intersection.length > 0) ? true : false
   }
 
   useEffect(() => {
     if (projects) {
-      const updatedProjects = projects.filter(project => comparator(project.topics, selectedTopics))
+      const updatedProjects = projects.filter(project => comparator(project.topics, project.data.map(d => d['set']).flat(), selectedTopics, selectedSources))
 
       if (selectedTopics.length > 0) {
         setSelectedProjects(updatedProjects)
@@ -165,7 +185,7 @@ const ResourcesTable = (props) => {
         setSelectedProjects()
       }
     }
-  }, [selectedTopics])
+  }, [selectedTopics, selectedSources])
 
   useEffect(() => {
     let projects = allProjects['projects']
@@ -176,7 +196,7 @@ const ResourcesTable = (props) => {
   }, [])
 
   return (
-    console.log(selectedTopics, selectedProjects),
+    // console.log(selectedTopics, selectedSources, selectedProjects),
     <>
       {tableHeader}
       <TableContainer>
