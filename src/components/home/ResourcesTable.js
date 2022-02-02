@@ -48,10 +48,11 @@ const ResourcesTable = (props) => {
 
   const [topics, setTopics] = useState();
   const [sources, setSources] = useState();
+  const [projects, setProjects] = useState();
 
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
-  const [selectedProjects, setSelectedProjects] = useState([]);
+  const [selectedProjects, setSelectedProjects] = useState();
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
@@ -148,19 +149,34 @@ const ResourcesTable = (props) => {
     </div>
   );
 
+  const comparator = (array, arrayTwo) => {
+    let intersection = array.filter(i => arrayTwo.includes(i))
+
+    return (intersection.length > 0) ? true : false
+  }
+
+  useEffect(() => {
+    if (projects) {
+      const updatedProjects = projects.filter(project => comparator(project.topics, selectedTopics))
+
+      if (selectedTopics.length > 0) {
+        setSelectedProjects(updatedProjects)
+      } else {
+        setSelectedProjects()
+      }
+    }
+  }, [selectedTopics])
+
   useEffect(() => {
     let projects = allProjects['projects']
 
-    setSelectedProjects(projects)
+    setProjects(projects)
     setTopics([...new Set(projects.map(p => p['topics']).flat())])
     setSources([...new Set(projects.map(p => p['data']).flat().map(d => d['set']))])
   }, [])
 
-  useEffect(() => {
-    //modify projects 
-  }, [topics, sources])
-
   return (
+    console.log(selectedTopics, selectedProjects),
     <>
       {tableHeader}
       <TableContainer>
@@ -174,7 +190,7 @@ const ResourcesTable = (props) => {
           </TableHead>
           <TableBody>
             {selectedProjects &&
-              rows.map((i) => (
+              rows.map(i => (
                 <CollapsibleRow index={i} />
               ))
             }
