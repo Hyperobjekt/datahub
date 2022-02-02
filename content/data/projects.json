@@ -11,11 +11,11 @@
       "preprint": "https://github.com",
       "data": [
         {
-          "set": "Data set name",
+          "set": "set 1",
           "link": "https://github.com"
         },
         {
-          "set": "Data set name",
+          "set": "set 3",
           "link": "https://github.com"
         }
       ],
@@ -42,51 +42,11 @@
       "preprint": "https://github.com",
       "data": [
         {
-          "set": "Data set name",
+          "set": "set 2",
           "link": "https://github.com"
         },
         {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
-          "link": "https://github.com"
-        },
-        {
-          "set": "Data set name",
+          "set": "set 3",
           "link": "https://github.com"
         }
       ],
@@ -113,7 +73,7 @@
       "preprint": "https://github.com",
       "data": [
         {
-          "set": "Data set name",
+          "set": "set 1",
           "link": "https://github.com"
         },
         {
@@ -121,7 +81,7 @@
           "link": "https://github.com"
         }
       ],
-      "name": "Project 3",
+      "name": "set 2",
       "paper": "https://arxiv.org",
       "readme": "https://github.com",
       "date": "12/15/21",

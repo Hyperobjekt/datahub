@@ -196,7 +196,7 @@ const ResourcesTable = (props) => {
   }, [])
 
   return (
-    // console.log(selectedTopics, selectedSources, selectedProjects),
+    console.log(selectedTopics, selectedSources, selectedProjects),
     <>
       {tableHeader}
       <TableContainer>
@@ -211,7 +211,7 @@ const ResourcesTable = (props) => {
           <TableBody>
             {selectedProjects &&
               rows.map(i => (
-                <CollapsibleRow index={i} />
+                <CollapsibleRow index={i} key={i} />
               ))
             }
           </TableBody>
