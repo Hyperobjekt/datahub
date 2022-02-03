@@ -47,34 +47,32 @@ const CollapsibleRow = (props) => {
   const { project, index } = props
 
   const convertToLink = (array) => {
-    let links
-    let name = 'text'
-
-    links =
-      array.map(data => {
-        return <a href={data.link}>{data.set}</a>
-      })
+    const links =
+      array.map((data, i) => [
+        !!i && ", ",
+        <a href={data.link}>{data.set}</a>
+      ])
 
     return links
   }
 
   const info = (
     <Box className={classes.info}>
+      <Typography variant="subtitle1">
+        {project.summary}
+      </Typography>
+      <Typography variant="subtitle1">
+        Data sets: {convertToLink(project.data)}
+      </Typography>
+      <Typography variant="subtitle1">
+        Authors: {project.authors.join(', ')}
+      </Typography>
       <Typography variant="subtitle2">
         Filed under{" "}
         <span style={{ fontWeight: "750" }}>
           {" "}
           {project.topics.join(', ').toUpperCase()}{" "}
         </span>
-      </Typography>
-      <Typography variant="subtitle1">
-        {project.summary}
-      </Typography>
-      <Typography variant="subtitle1">
-        Data sets: {convertToLink(project.data).join(', ')}
-      </Typography>
-      <Typography variant="subtitle1">
-        Authors: {<a href={'github.com'}>vibu</a>}
       </Typography>
     </Box>
   );
@@ -85,20 +83,20 @@ const CollapsibleRow = (props) => {
         Quick Links
       </Typography>
       <Box style={{ fontFamily: 'source-code-pro', paddingBottom: '30px' }} className={classes.evenAlign}>
-        <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+        <a style={{ textDecoration: "none" }} href={project.readme}>
           README
         </a>
-        <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+        <a style={{ textDecoration: "none" }} href={project.preprint}>
           PREPRINT
         </a>
-        <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+        <a style={{ textDecoration: "none" }} href={project.figures}>
           FIGURES
         </a>
       </Box>
       <Typography variant="h6" component="div">
         Join the Discussion
       </Typography>
-      <a style={{ fontFamily: 'source-code-pro', textDecoration: "none" }} href={"https://google.com"}>
+      <a style={{ fontFamily: 'source-code-pro', textDecoration: "none" }} href={project.discussion}>
         DISCUSS ON GITHUB
       </a>
     </Box>
@@ -118,10 +116,10 @@ const CollapsibleRow = (props) => {
         <TableCell>
           <Box className={classes.evenAlign}>
             <a>9/2/21</a>
-            <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+            <a style={{ textDecoration: "none" }} href={project.repo}>
               REPO
             </a>
-            <a style={{ textDecoration: "none" }} href={"https://google.com"}>
+            <a style={{ textDecoration: "none" }} href={project.paper}>
               PUBLISHED PAPER
             </a>
           </Box>
