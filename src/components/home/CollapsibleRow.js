@@ -46,6 +46,18 @@ const CollapsibleRow = (props) => {
   
   const { project, index } = props
 
+  const convertToLink = (array) => {
+    let links
+    let name = 'text'
+
+    links =
+      array.map(data => {
+        return <a href={data.link}>{data.set}</a>
+      })
+
+    return links
+  }
+
   const info = (
     <Box className={classes.info}>
       <Typography variant="subtitle2">
@@ -59,10 +71,10 @@ const CollapsibleRow = (props) => {
         {project.summary}
       </Typography>
       <Typography variant="subtitle1">
-        Data sets: Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2
+        Data sets: {convertToLink(project.data).join(', ')}
       </Typography>
       <Typography variant="subtitle1">
-        Authors: {project.authors.join(', ')}
+        Authors: {<a href={'github.com'}>vibu</a>}
       </Typography>
     </Box>
   );
@@ -93,7 +105,6 @@ const CollapsibleRow = (props) => {
   );
 
   return (
-    console.log(project),
     <>
       <TableRow
         style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}

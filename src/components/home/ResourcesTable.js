@@ -155,7 +155,7 @@ const ResourcesTable = (props) => {
     </div>
   );
 
-  const updateProjects = (projects, topics, sources) => {
+  const updateProjects = (toBeFiltered, topics, sources) => {
     let updatedProjects
 
     const comparator = (projectList, list) => {
@@ -166,7 +166,7 @@ const ResourcesTable = (props) => {
 
     if (topics.length > 0 && sources.length > 0) {
       updatedProjects = 
-        projects
+        toBeFiltered
           .filter(p => comparator(p.topics, topics))
           .filter(p => comparator(p.data.map(d => d['set']), sources))
     } else {
