@@ -44,8 +44,6 @@ const ResourcesTable = (props) => {
   const classes = useStyles();
   const theme = useTheme();
 
-  const rows = [0, 1, 2, 3, 4];
-
   const [topics, setTopics] = useState();
   const [sources, setSources] = useState();
   const [projects, setProjects] = useState();
@@ -157,29 +155,38 @@ const ResourcesTable = (props) => {
     </div>
   );
 
-  const comparator = (projectTopics, projectSources, topics, sources) => {
-    let intersection = []
+  const updateProjects = (projects, topics, sources) => {
+    let updatedProjects
+
+    const comparator = (projectList, list) => {
+      let intersection = projectList.filter(p => list.includes(p))
+
+      return (intersection.length > 0) ? true : false
+    }
 
     if (topics.length > 0 && sources.length > 0) {
-      let topicsIntersect = projectTopics.filter(i => topics.includes(i))
-      let sourcesIntersect = projectSources.filter(i => sources.includes(i))
-      intersection = [...topicsIntersect, ...sourcesIntersect]
+      updatedProjects = 
+        projects
+          .filter(p => comparator(p.topics, topics))
+          .filter(p => comparator(p.data.map(d => d['set']), sources))
     } else {
       if (topics.length > 0) {
-        intersection = projectTopics.filter(i => topics.includes(i))
+        updatedProjects = projects.filter(p => comparator(p.topics, topics))
       } else if (sources.length > 0) {
-        intersection = projectSources.filter(i => sources.includes(i))
+        updatedProjects = projects.filter(p => comparator(p.data.map(d => d['set']), sources))
       }
     }
 
-    return (intersection.length > 0) ? true : false
+    return updatedProjects
   }
 
   useEffect(() => {
-    if (projects) {
-      const updatedProjects = projects.filter(project => comparator(project.topics, project.data.map(d => d['set']).flat(), selectedTopics, selectedSources))
+    let toBeFiltered = (selectedProjects) ? selectedProjects : projects
 
-      if (selectedTopics.length > 0) {
+    if (toBeFiltered) {
+      const updatedProjects = updateProjects(toBeFiltered, selectedTopics, selectedSources)
+
+      if (updatedProjects) {
         setSelectedProjects(updatedProjects)
       } else {
         setSelectedProjects()
@@ -195,8 +202,9 @@ const ResourcesTable = (props) => {
     setSources([...new Set(projects.map(p => p['data']).flat().map(d => d['set']))])
   }, [])
 
+  const rows = (selectedProjects) ? selectedProjects : projects
+
   return (
-    console.log(selectedTopics, selectedSources, selectedProjects),
     <>
       {tableHeader}
       <TableContainer>
@@ -209,9 +217,13 @@ const ResourcesTable = (props) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {selectedProjects &&
-              rows.map(i => (
-                <CollapsibleRow index={i} key={i} />
+            {rows &&
+              rows.map(project => (
+                <CollapsibleRow 
+                  index={rows.indexOf(project)} 
+                  project={project}
+                  key={project.name}
+                />
               ))
             }
           </TableBody>
@@ -220,7 +232,7 @@ const ResourcesTable = (props) => {
       <TablePagination
         rowsPerPageOptions={[10, 25, 100]}
         component="div"
-        count={rows.length}
+        count={rows ? rows.length : 0}
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}

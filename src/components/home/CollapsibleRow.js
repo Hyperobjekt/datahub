@@ -43,6 +43,8 @@ const CollapsibleRow = (props) => {
   const classes = useStyles();
 
   const [open, setOpen] = useState(false);
+  
+  const { project, index } = props
 
   const info = (
     <Box className={classes.info}>
@@ -50,18 +52,17 @@ const CollapsibleRow = (props) => {
         Filed under{" "}
         <span style={{ fontWeight: "750" }}>
           {" "}
-          PRIMARY TOPIC, SECONDARY TOPIC{" "}
+          {project.topics.join(', ').toUpperCase()}{" "}
         </span>
       </Typography>
       <Typography variant="subtitle1">
-        Project summary. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
+        {project.summary}
       </Typography>
       <Typography variant="subtitle1">
         Data sets: Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2, Data Set 1, Data Set 2
       </Typography>
       <Typography variant="subtitle1">
-        Authors: John Appleseed, Charlie Eaton, Laura Hamilton
+        Authors: {project.authors.join(', ')}
       </Typography>
     </Box>
   );
@@ -92,9 +93,10 @@ const CollapsibleRow = (props) => {
   );
 
   return (
+    console.log(project),
     <>
       <TableRow
-        style={{ backgroundColor: props.index % 2 ? "#E8F5FF" : "#FFFFFF" }}
+        style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}
       >
         <TableCell>
           <IconButton size="small" onClick={() => setOpen(!open)}>
@@ -114,7 +116,7 @@ const CollapsibleRow = (props) => {
           </Box>
         </TableCell>
       </TableRow>
-      <TableRow style={{ background: props.index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
+      <TableRow style={{ background: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}
