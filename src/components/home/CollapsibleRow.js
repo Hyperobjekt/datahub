@@ -36,6 +36,9 @@ const useStyles = makeStyles({
     margin: '22px 0 22px calc(10.5%)', 
     padding: '21px 32px', 
     background: '#FFF8ED'
+  },
+  bold: {
+    fontWeight: 'bold'
   }
 });
 
@@ -104,15 +107,18 @@ const CollapsibleRow = (props) => {
 
   return (
     <>
-      <TableRow
-        style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}
-      >
+      <TableRow style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
         <TableCell>
           <IconButton size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           </IconButton>
         </TableCell>
-        <TableCell>Project Name</TableCell>
+        <TableCell>
+          {open ?
+            <Box className={classes.bold}>Project Name</Box> :
+            'Project Name'
+          }
+        </TableCell>
         <TableCell>
           <Box className={classes.evenAlign}>
             <a>9/2/21</a>
