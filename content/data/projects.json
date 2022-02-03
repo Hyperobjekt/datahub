@@ -8,6 +8,11 @@
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
+      "authors": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
       "preprint": "https://github.com",
       "data": [
         {
@@ -39,6 +44,11 @@
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
+      "authors": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
       "preprint": "https://github.com",
       "data": [
         {
@@ -70,6 +80,11 @@
       ],
       "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
       "discussion": "https://github.com",
+      "authors": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
       "preprint": "https://github.com",
       "data": [
         {
@@ -102,7 +117,9 @@
       "summary": "test project",
       "discussion": "github.com",
       "authors": [
-        "vibu"
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
       ],
       "preprint": "github.com",
       "data": [
