@@ -39,6 +39,10 @@ const useStyles = makeStyles({
   },
   bold: {
     fontWeight: 'bold'
+  },
+  link: {
+    color: 'inherit',
+    textDecoration: 'none'
   }
 });
 
@@ -86,20 +90,20 @@ const CollapsibleRow = (props) => {
         Quick Links
       </Typography>
       <Box style={{ fontFamily: 'source-code-pro', paddingBottom: '30px' }} className={classes.evenAlign}>
-        <a style={{ textDecoration: "none" }} href={project.readme}>
+        <a className={classes.link} href={project.readme}>
           README
         </a>
-        <a style={{ textDecoration: "none" }} href={project.preprint}>
+        <a className={classes.link} href={project.preprint}>
           PREPRINT
         </a>
-        <a style={{ textDecoration: "none" }} href={project.figures}>
+        <a className={classes.link} href={project.figures}>
           FIGURES
         </a>
       </Box>
       <Typography variant="h6" component="div">
         Join the Discussion
       </Typography>
-      <a style={{ fontFamily: 'source-code-pro', textDecoration: "none" }} href={project.discussion}>
+      <a className={classes.link} href={project.discussion}>
         DISCUSS ON GITHUB
       </a>
     </Box>
@@ -122,10 +126,10 @@ const CollapsibleRow = (props) => {
         <TableCell>
           <Box className={classes.evenAlign}>
             <a>9/2/21</a>
-            <a style={{ textDecoration: "none" }} href={project.repo}>
+            <a className={classes.link} href={project.repo}>
               REPO
             </a>
-            <a style={{ textDecoration: "none" }} href={project.paper}>
+            <a className={classes.link} href={project.paper}>
               PUBLISHED PAPER
             </a>
           </Box>

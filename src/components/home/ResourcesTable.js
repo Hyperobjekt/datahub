@@ -21,7 +21,7 @@ import {
 
 import allProjects from '../../../content/data/projects.json'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   centerAlign: {
     display: "flex",
     flexDirection: "column",
@@ -38,7 +38,21 @@ const useStyles = makeStyles({
       paddingRight: "22px",
     },
   },
-});
+  tableRow: {
+    background: "#FFF8ED"
+  },
+  projectHeader: {
+    [theme.breakpoints.down('md')]: {
+      width: '20%'
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '10%'
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '45%'
+    },
+  }
+}));
 
 const ResourcesTable = (props) => {
   const classes = useStyles();
@@ -210,9 +224,9 @@ const ResourcesTable = (props) => {
       <TableContainer>
         <Table>
           <TableHead>
-            <TableRow style={{ backgroundColor: "#FFF8ED" }}>
+            <TableRow className={classes.tableRow}>
               <TableCell style={{ width: "10%" }} />
-              <TableCell style={{ width: "45%" }}>Project Name</TableCell>
+              <TableCell className={classes.projectHeader}>Project Name</TableCell>
               <TableCell>Date</TableCell>
             </TableRow>
           </TableHead>
