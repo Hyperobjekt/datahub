@@ -128,11 +128,18 @@
           "link": "github.com"
         }
       ],
-      "name": "project4",
-      "readme": "github.com",
-      "date": "1/22/21",
-      "repo": "github.com",
-      "id": "projects"
+      "name": "Project 4",
+      "paper": "https://arxiv.org",
+      "readme": "https://github.com",
+      "date": "12/15/21",
+      "figures": "https://github.com",
+      "authors:": [
+        "John Appleseed",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
+      "repo": "https://github.com",
+      "id": "project4"
     }
   ]
 }

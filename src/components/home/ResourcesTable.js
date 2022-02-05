@@ -222,7 +222,7 @@ const ResourcesTable = (props) => {
                 <CollapsibleRow 
                   index={rows.indexOf(project)} 
                   project={project}
-                  key={project.name}
+                  key={project.id}
                 />
               ))
             }
