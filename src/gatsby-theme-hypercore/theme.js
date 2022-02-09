@@ -66,9 +66,7 @@ let theme = createTheme({
       root: {
         background: "#E8F5FF",
         height: "40px",
-        width: "200px",
-
-        paddingRight: "22px",
+        width: "200px"
       },
     },
     MuiOutlinedInput: {

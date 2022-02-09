@@ -28,9 +28,22 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
   },
   evenAlign: {
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      justifyContent: 'flex-start',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+    },
+    [theme.breakpoints.up('lg')]: {
+      display: 'flex',
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+    },
 
     margin: "25px 0 50px 0",
 
@@ -41,15 +54,25 @@ const useStyles = makeStyles(theme => ({
   tableRow: {
     background: "#FFF8ED"
   },
-  projectHeader: {
+  dropdown: {
+    width: '10%'
+  },
+  dateHeader: {
+    fontFamily: 'zeitung',
+
     [theme.breakpoints.down('md')]: {
-      width: '20%'
+      width: '50%'
     },
     [theme.breakpoints.up('md')]: {
-      width: '10%'
+      width: '40%'
     },
     [theme.breakpoints.up('lg')]: {
       width: '45%'
+    },
+  },
+  select: {
+    "& > :first-child": {
+      paddingRight: "22px",
     },
   }
 }));
@@ -108,6 +131,7 @@ const ResourcesTable = (props) => {
       <Typography variant="h6">ACTIVE PROJECTS</Typography>
       <div className={classes.evenAlign}>
         <Typography variant="subtitle1">Filter by:</Typography>
+        <div className={classes.select}>
         <FormControl>
           <Select
             multiple
@@ -165,6 +189,7 @@ const ResourcesTable = (props) => {
             }
             </Select>
         </FormControl>
+        </div>
       </div>
     </div>
   );
@@ -225,16 +250,16 @@ const ResourcesTable = (props) => {
         <Table>
           <TableHead>
             <TableRow className={classes.tableRow}>
-              <TableCell style={{ width: "10%" }} />
-              <TableCell className={classes.projectHeader}>Project Name</TableCell>
-              <TableCell>Date</TableCell>
+              <TableCell className={classes.dropdown}/>
+              <TableCell>Project Name</TableCell>
+              <TableCell className={classes.projectHeader}>Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows &&
               rows.map(project => (
-                <CollapsibleRow 
-                  index={rows.indexOf(project)} 
+                <CollapsibleRow
+                  index={rows.indexOf(project)}
                   project={project}
                   key={project.id}
                 />
