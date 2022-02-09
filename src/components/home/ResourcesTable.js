@@ -23,6 +23,8 @@ import allProjects from '../../../content/data/projects.json'
 
 const useStyles = makeStyles(theme => ({
   centerAlign: {
+    fontFamily: 'zeitung',
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -59,7 +61,7 @@ const useStyles = makeStyles(theme => ({
   },
   dateHeader: {
     fontFamily: 'zeitung',
-
+    
     [theme.breakpoints.down('md')]: {
       width: '50%'
     },
@@ -252,7 +254,7 @@ const ResourcesTable = (props) => {
             <TableRow className={classes.tableRow}>
               <TableCell className={classes.dropdown}/>
               <TableCell>Project Name</TableCell>
-              <TableCell className={classes.projectHeader}>Date</TableCell>
+              <TableCell className={classes.dateHeader}>Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
