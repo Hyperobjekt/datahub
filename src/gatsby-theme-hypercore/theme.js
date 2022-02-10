@@ -69,6 +69,7 @@ const Theme = () => {
       MuiTableCell: {
         root: {
           borderBottom: "none",
+          padding: '10px'
         },
       },
       MuiInputBase: {

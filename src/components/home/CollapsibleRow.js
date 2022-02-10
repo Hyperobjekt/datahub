@@ -12,39 +12,58 @@ import {
 
 import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   evenAlign: {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
 
     "& > *": {
-      paddingRight: "40px",
+      [theme.breakpoints.down('md')]: {
+        paddingRight: "20px"
+      },
+      [theme.breakpoints.up('md')]: {
+        paddingRight: "40px"
+      }
     },
   },
   info: {
     fontFamily: 'zeitung',
 
-    width: 'calc(75%)', 
+    width: '75%',
     marginTop: '2px', 
     marginBottom: '6px', 
-    marginLeft: 'calc(10.5%)'
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      marginLeft: 0
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '75%',
+      marginLeft: '6%'
+    }
   },
   links: {
     fontFamily: 'zeitung',
 
-    margin: '22px 0 22px calc(10.5%)', 
+    margin: '22px 0 22px 6%',
+    [theme.breakpoints.down('md')]: {
+      margin: '22px 0 22px 0',
+    },
+    [theme.breakpoints.up('md')]: {
+      margin: '22px 0 22px 6%',
+    },
     padding: '21px 32px', 
     background: '#FFF8ED'
   },
   bold: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    padding: 0
   },
   link: {
     color: 'inherit',
     textDecoration: 'none'
   }
-});
+}));
 
 const CollapsibleRow = (props) => {
   const classes = useStyles();
@@ -112,20 +131,31 @@ const CollapsibleRow = (props) => {
   return (
     <>
       <TableRow style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
+        {(window.innerWidth >= 900) &&
+          <TableCell className={classes.arrow}>
+            <IconButton size="small" onClick={() => setOpen(!open)}>
+              {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+            </IconButton>
+          </TableCell>
+        }
         <TableCell>
-          <IconButton size="small" onClick={() => setOpen(!open)}>
-            {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-          </IconButton>
-        </TableCell>
-        <TableCell>
-          {open ?
-            <Box className={classes.bold}>Project Name</Box> :
-            'Project Name'
-          }
+          <Box className={classes.evenAlign}>
+            {open ?
+              <Box className={classes.bold}>{project.name}</Box> :
+              project.name
+            }
+            {(window.innerWidth < 900) &&
+              <TableCell className={classes.arrow}>
+                <IconButton size="small" onClick={() => setOpen(!open)}>
+                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                </IconButton>
+              </TableCell> 
+            }
+          </Box>
         </TableCell>
         <TableCell>
           <Box className={classes.evenAlign}>
-            <a>9/2/21</a>
+            <a>{project.date}</a>
             <a className={classes.link} href={project.repo}>
               REPO
             </a>

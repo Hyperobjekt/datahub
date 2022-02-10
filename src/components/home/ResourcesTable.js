@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     background: "#FFF8ED"
   },
   dropdown: {
-    width: '10%'
+    width: '5%'
   },
   dateHeader: {
     fontFamily: 'zeitung',
@@ -76,9 +76,6 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.up('md')]: {
       width: '40%'
-    },
-    [theme.breakpoints.up('lg')]: {
-      width: '45%'
     },
   },
   select: {
@@ -260,14 +257,17 @@ const ResourcesTable = (props) => {
   const rows = (selectedProjects) ? selectedProjects : projects
 
   return (
+    console.log(window.innerWidth),
     <>
       {tableHeader}
       <TableContainer>
         <Table>
           <TableHead>
             <TableRow className={classes.tableRow}>
-              <TableCell className={classes.dropdown}/>
-              <TableCell>Project Name</TableCell>
+              {(window.innerWidth >= 900) &&
+                <TableCell className={classes.dropdown}/>
+              }
+              <TableCell className={classes.dateHeader}>Project Name</TableCell>
               <TableCell className={classes.dateHeader}>Date</TableCell>
             </TableRow>
           </TableHead>
