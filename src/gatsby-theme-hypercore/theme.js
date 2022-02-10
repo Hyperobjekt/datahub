@@ -161,6 +161,12 @@ const Theme = () => {
         link: {
           padding: 0
         }
+      },
+      HypFooter: {
+        root: {
+          textAlign: 'center',
+          alignContent: 'center'
+        }
       }
     }
   }

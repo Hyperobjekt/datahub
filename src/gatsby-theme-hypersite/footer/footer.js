@@ -26,23 +26,6 @@ const styles = (theme) => ({
     padding: theme.spacing(12, 0),
     "& .MuiTypography-root": {
       color: theme.palette.common.white,
-    },
-    HypContainer: {
-      root: {
-        textAlign: 'center',
-        alignContent: 'center'
-      }
-    }
-  },
-  MuiList: {
-    padding: {
-      paddingTop: '0'
-    }
-  },
-  HypContainer: {
-    root: {
-      textAlign: 'center',
-      alignContent: 'center'
     }
   }
 });
@@ -55,7 +38,7 @@ const Footer = ({ copyright, links, social, ...props }) => {
           <Grid item xs={12} md={3}>
             <img src={require('../../../static/images/datahub_logo.png').default} alt='logo' />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} alignItems="center">
             <Box maxWidth="32em">
               <Typography variant="body2">
                 <Box fontFamily='zeitung'>
