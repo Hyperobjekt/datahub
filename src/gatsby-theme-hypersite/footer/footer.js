@@ -27,7 +27,24 @@ const styles = (theme) => ({
     "& .MuiTypography-root": {
       color: theme.palette.common.white,
     },
+    HypContainer: {
+      root: {
+        textAlign: 'center',
+        alignContent: 'center'
+      }
+    }
   },
+  MuiList: {
+    padding: {
+      paddingTop: '0'
+    }
+  },
+  HypContainer: {
+    root: {
+      textAlign: 'center',
+      alignContent: 'center'
+    }
+  }
 });
 
 const Footer = ({ copyright, links, social, ...props }) => {
@@ -41,11 +58,13 @@ const Footer = ({ copyright, links, social, ...props }) => {
           <Grid item xs={12} md={6}>
             <Box maxWidth="32em">
               <Typography variant="body2">
+                <Box fontFamily='zeitung'>
                 Data Hub is Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolor.
+                </Box>
               </Typography>
             </Box>
           </Grid>
@@ -58,7 +77,11 @@ const Footer = ({ copyright, links, social, ...props }) => {
           </Grid>
         </Grid>
         <Box mt={6}>
-          <Typography variant="body2">{copyright}</Typography>
+          <Typography variant="body2">
+            <Box fontFamily='zeitung'>
+              {copyright}
+            </Box>
+          </Typography>
         </Box>
       </Container>
     </BaseFooter>

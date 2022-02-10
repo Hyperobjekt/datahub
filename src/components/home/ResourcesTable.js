@@ -17,6 +17,7 @@ import {
   MenuItem,
   OutlinedInput,
   useTheme,
+  Box
 } from "@material-ui/core";
 
 import allProjects from '../../../content/data/projects.json'
@@ -35,23 +36,31 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'flex-start',
       flexDirection: 'column',
       alignItems: 'center',
+
+      "& > *": {
+        padding: 'none'
+      },
     },
     [theme.breakpoints.up('md')]: {
       display: 'flex',
       justifyContent: 'flex-start',
       alignItems: 'center',
+
+      "& > *": {
+        padding: 'none'
+      },
     },
     [theme.breakpoints.up('lg')]: {
       display: 'flex',
       justifyContent: 'flex-start',
       alignItems: 'center',
+
+      "& > *": {
+        paddingRight: '22px'
+      },
     },
 
     margin: "25px 0 50px 0",
-
-    "& > *": {
-      paddingRight: "22px",
-    },
   },
   tableRow: {
     background: "#FFF8ED"
@@ -61,7 +70,7 @@ const useStyles = makeStyles(theme => ({
   },
   dateHeader: {
     fontFamily: 'zeitung',
-    
+
     [theme.breakpoints.down('md')]: {
       width: '50%'
     },
@@ -76,6 +85,9 @@ const useStyles = makeStyles(theme => ({
     "& > :first-child": {
       paddingRight: "22px",
     },
+  },
+  bold: {
+    fontWeight: 'bold'
   }
 }));
 
@@ -130,7 +142,9 @@ const ResourcesTable = (props) => {
 
   const tableHeader = (
     <div className={classes.centerAlign}>
-      <Typography variant="h6">ACTIVE PROJECTS</Typography>
+      <Typography variant="h6">
+        <Box className={classes.bold}>RESOURCES</Box>
+      </Typography>
       <div className={classes.evenAlign}>
         <Typography variant="subtitle1">Filter by:</Typography>
         <div className={classes.select}>

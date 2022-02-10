@@ -71,9 +71,18 @@ const Theme = () => {
       },
       MuiInputBase: {
         root: {
+          fontFamily: 'zeitung',
+          fontWeight: '500',
+          fontSize: '1.1em',
+
           background: "#E8F5FF",
+
           height: "40px",
           [theme.breakpoints.down('md')]: {
+            fontFamily: 'zeitung',
+            fontWeight: '500',
+            fontSize: '1em',
+
             width: '120px'
           },
           [theme.breakpoints.up('md')]: {
@@ -105,6 +114,11 @@ const Theme = () => {
             backgroundColor: "transparent",
           },
         },
+      },
+      MuiList: {
+        padding: {
+          paddingTop: 0
+        }
       },
       HorizontalNavigation: {
         listItem: {
@@ -143,6 +157,11 @@ const Theme = () => {
           display: "none",
         },
       },
+      HypNavigation: {
+        link: {
+          padding: 0
+        }
+      }
     }
   }
   
