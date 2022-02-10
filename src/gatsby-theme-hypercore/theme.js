@@ -14,12 +14,14 @@ let base = {
     },
   },
   typography: {
-    fontFamily: ["source-code-pro, sans-serif", "zeitung, sans-serif"]
-  }
-}
+    fontFamily: ["source-code-pro, sans-serif", "zeitung, sans-serif"],
+  },
+};
+
+export const ALT_FONT = "zeitung, sans-serif";
 
 const Theme = () => {
-  const theme = createTheme(base)
+  const theme = createTheme(base);
 
   const overrides = {
     overrides: {
@@ -47,12 +49,12 @@ const Theme = () => {
         },
         subtitle1: {
           fontSize: "14px",
-  
+
           margin: "10px 0 10px 0",
         },
         subtitle2: {
           fontSize: "12px",
-  
+
           margin: "10px 0 10px 0",
         },
       },
@@ -71,26 +73,26 @@ const Theme = () => {
       },
       MuiInputBase: {
         root: {
-          fontFamily: 'zeitung',
-          fontWeight: '500',
-          fontSize: '1.1em',
+          fontFamily: ALT_FONT,
+          fontWeight: "500",
+          fontSize: "1.1em",
 
           background: "#E8F5FF",
 
           height: "40px",
-          [theme.breakpoints.down('md')]: {
-            fontFamily: 'zeitung',
-            fontWeight: '500',
-            fontSize: '1em',
+          [theme.breakpoints.down("md")]: {
+            fontFamily: ALT_FONT,
+            fontWeight: "500",
+            fontSize: "1em",
 
-            width: '120px'
+            width: "120px",
           },
-          [theme.breakpoints.up('md')]: {
-            width: '200px'
+          [theme.breakpoints.up("md")]: {
+            width: "200px",
           },
-          [theme.breakpoints.up('lg')]: {
-            width: '200px'
-          }
+          [theme.breakpoints.up("lg")]: {
+            width: "200px",
+          },
         },
       },
       MuiOutlinedInput: {
@@ -117,8 +119,8 @@ const Theme = () => {
       },
       MuiList: {
         padding: {
-          paddingTop: 0
-        }
+          paddingTop: 0,
+        },
       },
       HorizontalNavigation: {
         listItem: {
@@ -159,19 +161,19 @@ const Theme = () => {
       },
       HypNavigation: {
         link: {
-          padding: 0
-        }
+          padding: 0,
+        },
       },
       HypFooter: {
         root: {
-          textAlign: 'center',
-          alignContent: 'center'
-        }
-      }
-    }
-  }
-  
-  return deepmerge(theme, overrides)
+          textAlign: "center",
+          alignContent: "center",
+        },
+      },
+    },
+  };
+
+  return deepmerge(theme, overrides);
 };
 
 export default Theme();
