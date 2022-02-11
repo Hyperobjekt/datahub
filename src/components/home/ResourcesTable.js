@@ -70,6 +70,15 @@ const useStyles = makeStyles(theme => ({
         display: "table-cell",
       },
     },
+    "& .MuiButtonBase-root.DhTable-collapseRow": {
+      [theme.breakpoints.up("md")]: {
+        display: "none"
+      },
+    },
+    "& .MuiTableCell-root.DhTable-collapseHl" : {
+      paddingBottom: 0, 
+      paddingTop: 0
+    }
   },
   tableRow: {
     background: "#FFF8ED"

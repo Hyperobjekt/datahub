@@ -70,15 +70,6 @@ const useStyles = makeStyles(theme => ({
   quickLinks: {
     fontFamily: 'source-code-pro', 
     paddingBottom: '30px'
-  },
-  arrowInline: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none'
-    },
-  },
-  dropdownHighlight: {
-    paddingBottom: 0, 
-    paddingTop: 0
   }
 }));
 
@@ -159,14 +150,14 @@ const CollapsibleRow = (props) => {
                   <Box component='span' className={classes.bold}>
                     {project.name}
                   </Box>
-                  <IconButton className={classes.arrowInline} size="small" onClick={() => setOpen(!open)}>
+                  <IconButton className="DhTable-collapseRow" size="small" onClick={() => setOpen(!open)}>
                     {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
                   </IconButton>
                 </div> 
               :
                 <div>
                   {project.name}
-                  <IconButton className={classes.arrowInline} size="small" onClick={() => setOpen(!open)}>
+                  <IconButton className="DhTable-collapseRow" size="small" onClick={() => setOpen(!open)}>
                     {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
                   </IconButton>
                 </div>
@@ -185,7 +176,7 @@ const CollapsibleRow = (props) => {
         </TableCell>
       </TableRow>
       <TableRow style={{ background: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
-        <TableCell className={classes.dropdownHighlight} colSpan={6}>
+        <TableCell className="DhTable-collapseHl" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}
             {links}
