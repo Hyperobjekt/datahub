@@ -63,12 +63,28 @@ const useStyles = makeStyles(theme => ({
     margin: "25px 0 50px 0",
   },
   table: {
+    "& .MuiTableCell-root.DhTable-projectHeader": {
+      fontFamily: 'zeitung',
+      [theme.breakpoints.between("md", "lg")]: {
+        width: "50%"
+      },
+      [theme.breakpoints.down("xs")]: {
+        width: "90%"
+      }
+    },
+    "& .MuiTableCell-root.DhTable-dateHeader": {
+      [theme.breakpoints.between("md", "lg")]: {
+        width: "50%"
+      },
+      [theme.breakpoints.down("xs")]: {
+        width: "10%"
+      }
+    },
     "& .MuiTableCell-root.DhTable-collapseCol": {
       display: "none",
-      width: "5%",
       [theme.breakpoints.up("lg")]: {
         display: "table-cell",
-      },
+      }
     },
     "& .MuiButtonBase-root.DhTable-collapseRow": {
       [theme.breakpoints.up("md")]: {
@@ -89,9 +105,9 @@ const useStyles = makeStyles(theme => ({
     },
     width: '5%'
   },
+  projectHeader: {
+  },
   dateHeader: {
-    fontFamily: 'zeitung',
-
     [theme.breakpoints.down('md')]: {
       width: '50%'
     },
@@ -285,8 +301,8 @@ const ResourcesTable = (props) => {
           <TableHead>
             <TableRow className={classes.tableRow}>
               <TableCell className="DhTable-collapseCol"/>
-              <TableCell className={classes.dateHeader}>Project Name</TableCell>
-              <TableCell className={classes.dateHeader}>Date</TableCell>
+              <TableCell className="DhTable-projectHeader">Project Name</TableCell>
+              <TableCell className="DhTable-dateHeader">Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

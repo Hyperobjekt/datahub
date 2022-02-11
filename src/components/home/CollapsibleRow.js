@@ -176,7 +176,7 @@ const CollapsibleRow = (props) => {
         </TableCell>
       </TableRow>
       <TableRow style={{ background: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
-        <TableCell className="DhTable-collapseHl" colSpan={6}>
+        <TableCell className="DhTable-collapseHlcollapseHl" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}
             {links}

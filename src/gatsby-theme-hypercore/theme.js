@@ -133,6 +133,15 @@ const Theme = () => {
           fontFamily: 'zeitung'
         }
       },
+      MuiLink: {
+        root: {
+          fontFamily: 'source-code-pro',
+          fontSize: ".5em",
+      
+          color: 'inherit',
+          textDecoration: 'none'
+        }
+      },
       HorizontalNavigation: {
         listItem: {
           background: "white",
