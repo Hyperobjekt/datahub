@@ -71,11 +71,6 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'source-code-pro', 
     paddingBottom: '30px'
   },
-  arrow: {
-    [theme.breakpoints.between('sm', 'md')]: {
-      display: 'none'
-    }
-  },
   arrowInline: {
     [theme.breakpoints.up('md')]: {
       display: 'none'
@@ -153,7 +148,7 @@ const CollapsibleRow = (props) => {
   return (
     <>
       <TableRow style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
-        <TableCell className={classes.arrow}>
+        <TableCell className="DhTable-collapseCol">
           <IconButton size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           </IconButton>

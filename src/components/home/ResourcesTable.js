@@ -62,6 +62,15 @@ const useStyles = makeStyles(theme => ({
 
     margin: "25px 0 50px 0",
   },
+  table: {
+    "& .MuiTableCell-root.DhTable-collapseCol": {
+      display: "none",
+      width: "5%",
+      [theme.breakpoints.up("lg")]: {
+        display: "table-cell",
+      },
+    },
+  },
   tableRow: {
     background: "#FFF8ED"
   },
@@ -263,10 +272,10 @@ const ResourcesTable = (props) => {
     <>
       {tableHeader}
       <TableContainer>
-        <Table>
+        <Table className={classes.table}>
           <TableHead>
             <TableRow className={classes.tableRow}>
-              <TableCell className={classes.dropdown}/>
+              <TableCell className="DhTable-collapseCol"/>
               <TableCell className={classes.dateHeader}>Project Name</TableCell>
               <TableCell className={classes.dateHeader}>Date</TableCell>
             </TableRow>
