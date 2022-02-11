@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import clsx from  'clsx';
+
 import {
   makeStyles,
   Box,
@@ -19,13 +21,13 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
 
     "& > *": {
-      [theme.breakpoints.down('md')]: {
+      [theme.breakpoints.between('sm', 'md')]: {
         paddingRight: "20px"
       },
       [theme.breakpoints.up('md')]: {
         paddingRight: "40px"
       }
-    },
+    }
   },
   info: {
     fontFamily: 'zeitung',
@@ -33,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     width: '75%',
     marginTop: '2px', 
     marginBottom: '6px', 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
       width: '100%',
       marginLeft: 0
     },
@@ -46,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'zeitung',
 
     margin: '22px 0 22px 6%',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
       margin: '22px 0 22px 0',
     },
     [theme.breakpoints.up('md')]: {
@@ -60,8 +62,26 @@ const useStyles = makeStyles(theme => ({
     padding: 0
   },
   link: {
+    fontFamily: 'source-code-pro',
+
     color: 'inherit',
     textDecoration: 'none'
+  },
+  quickLinks: {
+    fontFamily: 'source-code-pro', 
+    paddingBottom: '30px'
+  },
+  arrow: {
+    [theme.breakpoints.between('sm', 'md')]: {
+      display: 'none'
+    },
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
+    },
+  },
+  dropdownHighlight: {
+    paddingBottom: 0, 
+    paddingTop: 0
   }
 }));
 
@@ -95,10 +115,10 @@ const CollapsibleRow = (props) => {
       </Typography>
       <Typography variant="subtitle2">
         Filed under{" "}
-        <span style={{ fontWeight: "750" }}>
+        <Box component='span' className={classes.bold}>
           {" "}
           {project.topics.join(', ').toUpperCase()}{" "}
-        </span>
+        </Box>
       </Typography>
     </Box>
   );
@@ -108,7 +128,7 @@ const CollapsibleRow = (props) => {
       <Typography variant="h6" component="div">
         Quick Links
       </Typography>
-      <Box style={{ fontFamily: 'source-code-pro', paddingBottom: '30px' }} className={classes.evenAlign}>
+      <Box className={clsx(classes.evenAlign, classes.quickLinks)}>
         <a className={classes.link} href={project.readme}>
           README
         </a>
@@ -131,27 +151,29 @@ const CollapsibleRow = (props) => {
   return (
     <>
       <TableRow style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
-        {(window.innerWidth >= 900) &&
-          <TableCell className={classes.arrow}>
-            <IconButton size="small" onClick={() => setOpen(!open)}>
-              {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-            </IconButton>
-          </TableCell>
-        }
+        <TableCell className={classes.arrow}>
+          <IconButton size="small" onClick={() => setOpen(!open)}>
+            {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+          </IconButton>
+        </TableCell>
         <TableCell>
-          <Box className={classes.evenAlign}>
             {open ?
-              <Box className={classes.bold}>{project.name}</Box> :
-              project.name
+                <div>
+                  <Box component='span' className={classes.bold}>
+                    {project.name}
+                  </Box>
+                  <IconButton className={classes.arrowInline} size="small" onClick={() => setOpen(!open)}>
+                    {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  </IconButton>
+                </div> 
+              :
+                <div>
+                  {project.name}
+                  <IconButton className={classes.arrowInline} size="small" onClick={() => setOpen(!open)}>
+                    {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  </IconButton>
+                </div>
             }
-            {(window.innerWidth < 900) &&
-              <TableCell className={classes.arrow}>
-                <IconButton size="small" onClick={() => setOpen(!open)}>
-                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-                </IconButton>
-              </TableCell> 
-            }
-          </Box>
         </TableCell>
         <TableCell>
           <Box className={classes.evenAlign}>
@@ -166,7 +188,7 @@ const CollapsibleRow = (props) => {
         </TableCell>
       </TableRow>
       <TableRow style={{ background: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+        <TableCell className={classes.dropdownHighlight} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}
             {links}

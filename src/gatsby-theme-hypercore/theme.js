@@ -123,6 +123,16 @@ const Theme = () => {
           paddingTop: 0,
         },
       },
+      MuiListItem: {
+        button: {
+          fontFamily: 'zeitung'
+        }
+      },
+      MuiTablePagination: {
+        caption: {
+          fontFamily: 'zeitung'
+        }
+      },
       HorizontalNavigation: {
         listItem: {
           background: "white",

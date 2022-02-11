@@ -66,6 +66,9 @@ const useStyles = makeStyles(theme => ({
     background: "#FFF8ED"
   },
   dropdown: {
+    [theme.breakpoints.down('md')]: {
+      display: 'none'
+    },
     width: '5%'
   },
   dateHeader: {
@@ -257,16 +260,13 @@ const ResourcesTable = (props) => {
   const rows = (selectedProjects) ? selectedProjects : projects
 
   return (
-    console.log(window.innerWidth),
     <>
       {tableHeader}
       <TableContainer>
         <Table>
           <TableHead>
             <TableRow className={classes.tableRow}>
-              {(window.innerWidth >= 900) &&
-                <TableCell className={classes.dropdown}/>
-              }
+              <TableCell className={classes.dropdown}/>
               <TableCell className={classes.dateHeader}>Project Name</TableCell>
               <TableCell className={classes.dateHeader}>Date</TableCell>
             </TableRow>

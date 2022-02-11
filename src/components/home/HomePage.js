@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ResourcesTable from './ResourcesTable'
-import SplitHeader from './SplitHeader'
 
 const HomePage = () => {
 
