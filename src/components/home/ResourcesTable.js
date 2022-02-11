@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     background: "#FFF8ED"
   },
   dropdown: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
       display: 'none'
     },
     width: '5%'

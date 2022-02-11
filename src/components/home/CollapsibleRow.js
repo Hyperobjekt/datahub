@@ -74,7 +74,9 @@ const useStyles = makeStyles(theme => ({
   arrow: {
     [theme.breakpoints.between('sm', 'md')]: {
       display: 'none'
-    },
+    }
+  },
+  arrowInline: {
     [theme.breakpoints.up('md')]: {
       display: 'none'
     },
