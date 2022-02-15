@@ -60,6 +60,33 @@ const data = {
         },
       ],
     },
+    {
+      label: "News",
+      name: "news",
+      file: "content/data/news.json",
+      fields: [
+        {
+          label: "News",
+          name: "news",
+          widget: "list",
+          fields: [
+            { label: "ID", name: "id", widget: "hidden", default: "projects" },
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Lede", name: "lede", widget: "string" },
+            { label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true },
+            {
+              label: "Source",
+              name: "source",
+              widget: "list",
+              fields: [
+                { label: "Name", name: "name", widget: "string" },
+                { label: "Date", name: "date", widget: "string", hint: "enter date as it should appear" },
+              ],
+            }
+          ],
+        },
+      ],
+    },
   ],
 };
 
