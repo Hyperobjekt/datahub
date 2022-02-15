@@ -43,7 +43,13 @@
         }
       ],
       "lede": "It's another discombobulating moment in the pandemic, with conflicting signs of where the virus is heading and what people should do about it on a daily basis. If you feel that way, you're not alone.",
-      "thumbnail": "https://media.npr.org/assets/img/2022/02/15/covid-confusion-getty-1290736402_custom-8c7b8441c7c7c4c1258be702f4ea8440e1a3af52-s800-c85.webp"
+      "thumbnail": "https://media.npr.org/assets/img/2022/02/15/covid-confusion-getty-1290736402_custom-8c7b8441c7c7c4c1258be702f4ea8440e1a3af52-s800-c85.webp",
+      "source": [
+        {
+          "name": "NPR",
+          "date": "February 15, 2022"
+        }
+      ]
     }
   ]
 }
