@@ -56,6 +56,7 @@ const data = {
               hint: "enter your full name",
             },
             { label: "Bio", name: "bio", widget: "string" },
+            { label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true }
           ],
         },
       ],
