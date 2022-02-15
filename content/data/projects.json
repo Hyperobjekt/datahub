@@ -140,6 +140,69 @@
       ],
       "repo": "https://github.com",
       "id": "project4"
+    },
+    {
+      "topics": [
+        "For-profit colleges",
+        "Private equity",
+        "Student debt",
+        "Shareholder value",
+        "Degree completion"
+      ],
+      "summary": "Data on all U.S. for-profit colleges is used to show that colleges that are part of multi-brand companies invest less in instruction, have worse student outcomes, and are more likely to face legal and regulatory sanctions (relative to single-brand firms).",
+      "discussion": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/issues",
+      "authors": [
+        "Adam Goldstein",
+        "Charlie Eaton"
+      ],
+      "preprint": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/manuscripty_asymmetry_by_design_20210921.pdf",
+      "data": [
+        {
+          "set": "For-profit News Article DataHub Data",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "Private Equity and College Ownership DataHub Data",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "Borrower Defense Complaint DataHub Data",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Completions",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "College Scorecard",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Institutional Characteristics",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Fall Staff",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Graduation Rates",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Fall Enrollment by Race",
+          "link": "https://www.google.com/"
+        },
+        {
+          "set": "IPEDS Financial Aid and Net Price",
+          "link": "https://www.google.com/"
+        }
+      ],
+      "name": "Asymmetry by Design in For-Profit Higher Education?",
+      "readme": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/README.md",
+      "date": "09/21/21",
+      "repo": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education",
+      "id": "projects"
     }
   ]
 }
