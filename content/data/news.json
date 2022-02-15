@@ -1,0 +1,21 @@
+{
+  "news": [
+    {
+      "id": "news",
+      "article": [
+        {
+          "title": "Accounting Firm Cuts Ties With Trump and Retracts Financial Statements",
+          "url": "https://www.nytimes.com/2022/02/14/nyregion/mazars-trump-organization-financial-statements.html"
+        }
+      ],
+      "lede": "The firm, Mazars USA, said in a letter that it could no longer stand behind the annual statements, which are central to an investigation by the New York attorney general.",
+      "thumbnail": "https://static01.nyt.com/images/2022/02/14/nyregion/14nytrump-SWAP/14nytrump-SWAP-jumbo.jpg?quality=75&auto=webp",
+      "source": [
+        {
+          "name": "NYTimes",
+          "date": "February 14, 2022"
+        }
+      ]
+    }
+  ]
+}
