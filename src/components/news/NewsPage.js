@@ -1,22 +1,29 @@
 import React from 'react'
 
 import {
-  Typography
+  Typography,
+  Box
 } from "@material-ui/core";
 
 import { NewsPageStyles } from './styles/NewsStyles'
 import NewsItem from './NewsItem'
-import news from '../../../content/data/news.json'
+import newsObj from '../../../content/data/news.json'
 
-export default function NewsPage() {
+const NewsPage = () => {
   const classes = NewsPageStyles()
 
   return (
-    <>
-      <Typography>NEWS</Typography>
-      {news &&
-        news.map(item => <NewsItem item={item} />)
+    <Box className={classes.newsPage}>
+      <Typography>
+        <Box component='span' className={classes.pageTitle}>
+          NEWS
+        </Box>
+      </Typography>
+      {newsObj &&
+        newsObj.news.map(item => <NewsItem item={item} />)
       }
-    </>
+    </Box>
   )
 }
+
+export default NewsPage
