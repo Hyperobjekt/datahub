@@ -16,6 +16,23 @@
           "date": "February 14, 2022"
         }
       ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://ra.co/news/76832",
+          "title": "Rave in a cave: Vietnam's Equation festival goes subterranean for 2022"
+        }
+      ],
+      "lede": "Taking place from April 8th to 10th, the lineup highlights acts from China, Thailand, the Philippines and beyond.",
+      "thumbnail": "https://imgproxy.ra.co/_/quality:100/w:1200/rt:fill/plain/https://static.ra.co/images/news/2022/equation-cave-vietnam2022.jpg",
+      "source": [
+        {
+          "name": "Resident Advisor",
+          "date": "February 15, 2022"
+        }
+      ]
     }
   ]
 }
