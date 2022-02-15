@@ -70,8 +70,16 @@ const data = {
           name: "news",
           widget: "list",
           fields: [
-            { label: "ID", name: "id", widget: "hidden", default: "projects" },
-            { label: "Title", name: "title", widget: "string" },
+            { label: "ID", name: "id", widget: "hidden", default: "news" },
+            {
+              label: "Article",
+              name: "article",
+              widget: "list",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "URL", name: "url", widget: "string", hint: "enter full URL" },
+              ],
+            },
             { label: "Lede", name: "lede", widget: "string" },
             { label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true },
             {
