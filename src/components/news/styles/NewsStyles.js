@@ -42,6 +42,7 @@ export const NewsItemStyles = makeStyles({
     fontWeight: 'bold'
   },
   lede: {
+    fontFamily: 'zeitung',
     fontSize: '.95em',
   },
   source: {

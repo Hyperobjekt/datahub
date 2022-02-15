@@ -7,6 +7,7 @@ import {
 
 import { NewsPageStyles } from './styles/NewsStyles'
 import NewsItem from './NewsItem'
+
 import newsObj from '../../../content/data/news.json'
 
 const NewsPage = () => {
