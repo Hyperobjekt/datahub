@@ -167,30 +167,8 @@ const updateProjects = (topics, sources, projects) => {
   );
 };
 
-const ResourcesTable = (props) => {
-  const classes = useStyles();
+const TopicSelect = ({ classes, topics, selected, onTopicsChange }) => {
   const theme = useTheme();
-
-  const [topics, setTopics] = useState();
-  const [sources, setSources] = useState();
-  const [projects, setProjects] = useState();
-
-  const [selectedTopics, setSelectedTopics] = useState([]);
-  const [selectedSources, setSelectedSources] = useState([]);
-  const [selectedProjects, setSelectedProjects] = useState();
-
-  const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(+event.target.value);
-    setPage(0);
-  };
-
   function getStyles(name, personName, theme) {
     return {
       fontWeight:
@@ -199,24 +177,44 @@ const ResourcesTable = (props) => {
           : theme.typography.fontWeightMedium,
     };
   }
+  return (
+    <Select
+      multiple
+      displayEmpty
+      value={selected}
+      onChange={onTopicsChange}
+      input={<OutlinedInput />}
+      renderValue={(selected) => {
+        if (selected.length === 0) {
+          return <a>Topic</a>;
+        }
+        return selected.join(', ');
+      }}
+      MenuProps={{ variant: 'menu' }}
+    >
+      {topics &&
+        topics.map((name) => (
+          <MenuItem
+            key={name}
+            value={name}
+            style={getStyles(name, selected, theme)}
+          >
+            {name}
+          </MenuItem>
+        ))}
+    </Select>
+  );
+};
 
-  const handleTopicChange = (event) => {
-    setSelectedTopics(
-      typeof event.target.value === 'string'
-        ? event.target.value.split(',')
-        : event.target.value
-    );
-  };
-
-  const handleSourceChange = (event) => {
-    setSelectedSources(
-      typeof event.target.value === 'string'
-        ? event.target.value.split(',')
-        : event.target.value
-    );
-  };
-
-  const tableHeader = (
+const ResourceTableHeader = ({
+  classes,
+  topics,
+  selectedTopics,
+  onTopicsChange,
+  source,
+  onSourcesChange,
+}) => {
+  return (
     <div className={classes.centerAlign}>
       <Typography variant="h6">
         <MobileOnly>
@@ -227,32 +225,12 @@ const ResourcesTable = (props) => {
         <Typography variant="subtitle1">Filter by:</Typography>
         <div className={classes.select}>
           <FormControl>
-            <Select
-              multiple
-              displayEmpty
-              value={selectedTopics}
-              onChange={handleTopicChange}
-              input={<OutlinedInput />}
-              renderValue={(selected) => {
-                if (selected.length === 0) {
-                  return <a>Topic</a>;
-                }
-
-                return selected.join(', ');
-              }}
-              MenuProps={{ variant: 'menu' }}
-            >
-              {topics &&
-                topics.map((name) => (
-                  <MenuItem
-                    key={name}
-                    value={name}
-                    style={getStyles(name, selectedTopics, theme)}
-                  >
-                    {name}
-                  </MenuItem>
-                ))}
-            </Select>
+            <TopicSelect
+              classes={classes}
+              topics={topics}
+              selected={selectedTopics}
+              onTopicsChange={onTopicsChange}
+            />
           </FormControl>
           <FormControl>
             <Select
@@ -286,6 +264,47 @@ const ResourcesTable = (props) => {
       </div>
     </div>
   );
+};
+
+const ResourcesTable = (props) => {
+  const classes = useStyles();
+  const theme = useTheme();
+
+  const [topics, setTopics] = useState();
+  const [sources, setSources] = useState();
+  const [projects, setProjects] = useState();
+
+  const [selectedTopics, setSelectedTopics] = useState([]);
+  const [selectedSources, setSelectedSources] = useState([]);
+  const [selectedProjects, setSelectedProjects] = useState();
+
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(+event.target.value);
+    setPage(0);
+  };
+
+  const handleTopicChange = (event) => {
+    setSelectedTopics(
+      typeof event.target.value === 'string'
+        ? event.target.value.split(',')
+        : event.target.value
+    );
+  };
+
+  const handleSourceChange = (event) => {
+    setSelectedSources(
+      typeof event.target.value === 'string'
+        ? event.target.value.split(',')
+        : event.target.value
+    );
+  };
 
   // if topics or sources have changed, update the projects
   useEffect(() => {
