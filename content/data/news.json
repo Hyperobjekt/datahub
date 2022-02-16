@@ -4,16 +4,16 @@
       "id": "news",
       "article": [
         {
-          "title": "Accounting Firm Cuts Ties With Trump and Retracts Financial Statements",
-          "url": "https://www.nytimes.com/2022/02/14/nyregion/mazars-trump-organization-financial-statements.html"
+          "url": "https://www.businessinsider.com/cancel-student-loan-debt-payments-paused-two-years-economy-2022-1",
+          "title": "The US economy has been 'more than fine' without your student debt"
         }
       ],
-      "lede": "The firm, Mazars USA, said in a letter that it could no longer stand behind the annual statements, which are central to an investigation by the New York attorney general.",
-      "thumbnail": "https://static01.nyt.com/images/2022/02/14/nyregion/14nytrump-SWAP/14nytrump-SWAP-jumbo.jpg?quality=75&auto=webp",
+      "lede": "Student-loan payments have been on pause for nearly two years, with a recent extension through May 1. There's controversy over the merits of broad relief, with some arguing it's bad for the economy. But experts told Insider it gave borrowers more financial flexibility, allowing for the pursuit of better jobs.",
+      "thumbnail": "https://i.insider.com/61d5ceb857bd6c001858a7e9?width=1000&format=jpeg&auto=webp",
       "source": [
         {
-          "name": "NYTimes",
-          "date": "February 14, 2022"
+          "name": "Insider",
+          "date": "Jan 9, 2022"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "id": "news",
       "article": [
         {
-          "url": "https://ra.co/news/76832",
-          "title": "Rave in a cave: Vietnam's Equation festival goes subterranean for 2022"
+          "url": "https://www.chronicle.com/article/our-broke-public-universities",
+          "title": "Our Broke Public Universities"
         }
       ],
-      "lede": "Taking place from April 8th to 10th, the lineup highlights acts from China, Thailand, the Philippines and beyond.",
-      "thumbnail": "https://imgproxy.ra.co/_/quality:100/w:1200/rt:fill/plain/https://static.ra.co/images/news/2022/equation-cave-vietnam2022.jpg",
+      "lede": "Look beyond flagships, and you'll see that privatization has had devastating consequences for racial and social equity.",
+      "thumbnail": "/images/untitled.jpg",
       "source": [
         {
-          "name": "Resident Advisor",
-          "date": "February 15, 2022"
+          "name": "The Chronicle of Higher Education",
+          "date": "June 1, 2021"
         }
       ]
     },
@@ -38,16 +38,220 @@
       "id": "news",
       "article": [
         {
-          "url": "https://www.npr.org/sections/health-shots/2022/02/14/1080684261/confused-about-how-worried-to-be-about-the-pandemic-youre-not-alone",
-          "title": "If you're finding this stage of the pandemic especially confusing you're not alone"
+          "url": "https://www.washingtonpost.com/politics/2021/11/04/elite-private-universities-got-much-wealthier-while-most-schools-fell-behind-my-research-found-out-why/",
+          "title": "Elite private universities got much wealthier while most schools fell behind. My research found out why."
         }
       ],
-      "lede": "It's another discombobulating moment in the pandemic, with conflicting signs of where the virus is heading and what people should do about it on a daily basis. If you feel that way, you're not alone.",
-      "thumbnail": "https://media.npr.org/assets/img/2022/02/15/covid-confusion-getty-1290736402_custom-8c7b8441c7c7c4c1258be702f4ea8440e1a3af52-s800-c85.webp",
+      "lede": "Insiders helped out insiders, and the rich got richer",
+      "thumbnail": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TEPAYIRM7II6ZML5TBOBQ3PDHA.jpg&w=916",
       "source": [
         {
-          "name": "NPR",
-          "date": "February 15, 2022"
+          "name": "The Washington Post",
+          "date": "November 4, 2021"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.cbsnews.com/news/student-loan-debt-forgiveness-dilemma/",
+          "title": "Student debt \"feels like quicksand.\" Is loan forgiveness the answer?"
+        }
+      ],
+      "thumbnail": "https://cbsnews1.cbsistatic.com/hub/i/r/2021/03/24/8aeaaa36-75f6-43d9-9a69-f341d9828598/thumbnail/620x346/54a06bf1865fec356d95cdc44e6b2d03/lauren-teaching-students.jpg",
+      "source": [
+        {
+          "name": "CBS News",
+          "date": "March 25, 2021"
+        }
+      ],
+      "lede": "42.9 million Americans had federal student loans as of last year, according to the National Student Loan Data System. Meanwhile, Federal Reserve Board statistics show outstanding student loans overall have swelled to $1.7 trillion, surpassing the nation's auto loans and credit card debt."
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.latimes.com/opinion/story/2021-03-02/university-california-riverside-merced-state-funding",
+          "title": "Op-Ed: Is it possible to fix the UC’s system of haves and have-nots?"
+        }
+      ],
+      "lede": "Black and Latinx students are entering college at a far higher rate than ever before, but higher education in America remains racially divided and unequal. And California may well stand at the epicenter of that transformation.",
+      "thumbnail": "https://ca-times.brightspotcdn.com/dims4/default/cdf4743/2147483647/strip/true/crop/3000x1985+0+0/resize/840x556!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd4%2F86%2F47cb6ec3491e82eff36fadbcaea1%2F2576566-me-0309-uc-riverside-black-students-1-gmf.jpg",
+      "source": [
+        {
+          "name": "Los Angeles Times",
+          "date": "March 2, 2021"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.marketwatch.com/story/exclusive-these-for-profit-colleges-could-reap-up-to-1-billion-in-federal-bailout-money-2020-04-08",
+          "title": "Exclusive: These for-profit colleges could reap up to $1 billion in federal bailout money"
+        }
+      ],
+      "lede": "Some eligible schools have been accused of fraud and misuse of federal student aid",
+      "thumbnail": "https://ei.marketwatch.com/Multimedia/2020/04/08/Photos/ZH/MW-IE095_Devos__20200408181114_ZH.jpg?uuid=dcb83864-79e5-11ea-a8c7-9c8e992d421e",
+      "source": [
+        {
+          "name": "Market Watch",
+          "date": "April 9, 2020"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://contexts.org/articles/broke-qa-ray-hamilton-nielsen/",
+          "title": "Broke: the racial consequences of underfunding public universities"
+        }
+      ],
+      "lede": "Q&A: Victor Ray with authors Laura Hamilton and Kelly Nielsen",
+      "thumbnail": "https://contexts.org/files/2021/04/broke-cover.jpeg",
+      "source": [
+        {
+          "name": "Contexts",
+          "date": "April 26, 2021"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://studentaffairsnow.com/broke/",
+          "title": "Broke: The Racial Consequences of Underfunding Public Universities"
+        }
+      ],
+      "lede": "The two editors and two of the contributing authors to the new book Critical Praxis in Authors Laura Hamilton and Kelly Nielsen discuss their book Broke: The Racial Consequences of Underfunding Public Universities. This conversation explores new universities, racial justice, austerity administration, tolerable suboptimization, and the implications for students, faculty and staff, and democracy.",
+      "thumbnail": "https://i0.wp.com/studentaffairsnow.com/wp-content/uploads/2021/12/Dec15WP-Featured.png?resize=700%2C700&ssl=1",
+      "source": [
+        {
+          "name": "Student Affairs Now",
+          "date": "December 15, 2021"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "http://mortarboardblog.com/podcast-transcript-is-the-university-of-california-broke/",
+          "title": "Podcast Transcript: Is the University of California Broke?"
+        }
+      ],
+      "lede": "Host Daniel Barwick interviews authors Laura Hamilton and Kelly Nielsen, who argue on the podcast that California has made decisions about UC that have impoverished campuses in a number of ways, limited access, and created segregation.",
+      "source": [
+        {
+          "name": "The Mortarboard Blog",
+          "date": "August 31, 2021"
+        }
+      ],
+      "thumbnail": "https://contexts.org/files/2021/04/broke-cover.jpeg"
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://queenspodcastlab.org/podcast/financialization-of-higher-education/",
+          "title": "Financialization of Higher Education"
+        }
+      ],
+      "lede": "We discuss the financialization of higher education with Charlie Eaton (UC Merced).",
+      "source": [
+        {
+          "name": "Queens Podcast Lab",
+          "date": "January 6, 2020"
+        }
+      ],
+      "thumbnail": "https://images.pexels.com/photos/164529/pexels-photo-164529.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.bloomberg.com/news/features/2019-10-03/how-private-equity-works-and-took-over-everything",
+          "title": "Everything Is Private Equity Now"
+        }
+      ],
+      "lede": "Spurred by cheap loans and investors desperate to boost returns, buyout firms roam every corner of the corporate world.",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWObeo2._V8Y/v0/1400x-1.jpg",
+      "source": [
+        {
+          "name": "Bloomberg News",
+          "date": "October 3, 2019"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.wsj.com/articles/warren-probes-apollo-and-kkr-on-backing-for-profit-colleges-11568847668",
+          "title": "Warren Probes Apollo and KKR on Backing For-Profit Colleges"
+        }
+      ],
+      "lede": "The Massachusetts Democrat has targeted six private-equity firms amid growing congressional scrutiny of the industry",
+      "thumbnail": "https://images.wsj.net/im-106006?width=860&size=1.5",
+      "source": [
+        {
+          "name": "The Wall Street Journal",
+          "date": "Sept. 18, 2019"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.nytimes.com/2017/11/10/opinion/ivy-league-offshore-tax-stanford.html",
+          "title": "How Elite Colleges Hide THeir Cash"
+        }
+      ],
+      "lede": "It’s an increasingly bipartisan view that elite private colleges are islands of wealth. And there’s good reason for that: It’s true.",
+      "thumbnail": "https://static01.nyt.com/images/2017/11/10/opinion/10eatonWeb/10eatonWeb-superJumbo.jpg?quality=75&auto=webp",
+      "source": [
+        {
+          "name": "The New York Times",
+          "date": "Nov. 10, 2017"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.nytimes.com/2017/11/08/world/universities-offshore-investments.html",
+          "title": "Endowments Boom as Colleges Bury Earnings Overseas"
+        }
+      ],
+      "lede": "American universities are using offshore strategies to swell their coffers, skirt taxes and obscure investments that could spark campus protests.",
+      "thumbnail": "https://static01.nyt.com/images/2017/11/09/world/09colleges1/merlin_129548303_97da5562-7249-40b1-867e-de6026a1ef61-superJumbo.jpg?quality=75&auto=webp",
+      "source": [
+        {
+          "name": "The New York Times",
+          "date": "Nov. 8, 2017"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.washingtonpost.com/news/grade-point/wp/2017/03/03/some-states-give-more-to-needy-college-students-than-the-feds-most-give-far-less/",
+          "title": "These states give more grant aid to college students in need than the feds"
+        }
+      ],
+      "lede": "California, Wyoming and New Jersey provide more aid to low-income college students than the largest federal grant program does, new research shows, but most states give far less.",
+      "thumbnail": "https://www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/05/29/Business/Images/Pennsylvania_Daily_Life_-0cca7-581.jpg&w=916",
+      "source": [
+        {
+          "name": "The Washington Post",
+          "date": "March 3, 2017"
         }
       ]
     }
