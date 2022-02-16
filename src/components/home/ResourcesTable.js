@@ -294,7 +294,6 @@ const ResourcesTable = (props) => {
   const rows = (selectedProjects) ? selectedProjects : projects
 
   return (
-    console.log(page),
     <>
       {tableHeader}
       <TableContainer>
