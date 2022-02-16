@@ -3,146 +3,6 @@
   "projects": [
     {
       "topics": [
-        "topic 1",
-        "topic 2"
-      ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "discussion": "https://github.com",
-      "authors": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "preprint": "https://github.com",
-      "data": [
-        {
-          "set": "set 1",
-          "link": "https://github.com"
-        },
-        {
-          "set": "set 3",
-          "link": "https://github.com"
-        }
-      ],
-      "name": "Really extremely long project name for testing to see how it looks",
-      "paper": "https://arxiv.org",
-      "readme": "https://github.com",
-      "date": "01/18/22",
-      "figures": "https://github.com",
-      "authors:": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "repo": "https://github.com",
-      "id": "project1"
-    },
-    {
-      "topics": [
-        "topic 2",
-        "topic 3"
-      ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "discussion": "https://github.com",
-      "authors": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "preprint": "https://github.com",
-      "data": [
-        {
-          "set": "set 2",
-          "link": "https://github.com"
-        },
-        {
-          "set": "set 3",
-          "link": "https://github.com"
-        }
-      ],
-      "name": "Project 2",
-      "paper": "https://arxiv.org",
-      "readme": "https://github.com",
-      "date": "04/20/20",
-      "figures": "https://github.com",
-      "authors:": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "repo": "https://github.com",
-      "id": "project2"
-    },
-    {
-      "topics": [
-        "topic 1",
-        "topic 4"
-      ],
-      "summary": "This project is about project. We did this project over x amount of time and were able to observe this data",
-      "discussion": "https://github.com",
-      "authors": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "preprint": "https://github.com",
-      "data": [
-        {
-          "set": "set 1",
-          "link": "https://github.com"
-        },
-        {
-          "set": "set 2",
-          "link": "https://github.com"
-        }
-      ],
-      "name": "Project 3",
-      "paper": "https://arxiv.org",
-      "readme": "https://github.com",
-      "date": "12/15/21",
-      "figures": "https://github.com",
-      "authors:": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "repo": "https://github.com",
-      "id": "project3"
-    },
-    {
-      "topics": [
-        "topic 2",
-        "topic 3"
-      ],
-      "summary": "test project",
-      "discussion": "github.com",
-      "authors": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "preprint": "github.com",
-      "data": [
-        {
-          "set": "set 1",
-          "link": "github.com"
-        }
-      ],
-      "name": "Project 4",
-      "paper": "https://arxiv.org",
-      "readme": "https://github.com",
-      "date": "12/15/21",
-      "figures": "https://github.com",
-      "authors:": [
-        "John Appleseed",
-        "Charlie Eaton",
-        "Laura Hamilton"
-      ],
-      "repo": "https://github.com",
-      "id": "project4"
-    },
-    {
-      "topics": [
         "For-profit colleges",
         "Private equity",
         "Student debt",
@@ -202,6 +62,179 @@
       "readme": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/README.md",
       "date": "09/21/21",
       "repo": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Student debt",
+        "Income driven repayment",
+        "Administrative burden"
+      ],
+      "summary": "Socially stratified take-up of income-driven repayment plans is shown among federal student loan borrowers with high debt payment burdens.",
+      "discussion": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans/issues",
+      "authors": [
+        "Adam Goldstein",
+        "Charlie Eaton",
+        "Parijat Chakrabarti",
+        "and Frederick Wherry"
+      ],
+      "preprint": "https://osf.io/82wzg",
+      "data": [
+        {
+          "set": "CFPB Complaint DataHub Data",
+          "link": "google.com"
+        }
+      ],
+      "name": "Administrative Burden and Student Loans",
+      "readme": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Racial inequality",
+        "Wealth inequality",
+        "Student debt",
+        "Financial aid"
+      ],
+      "summary": "Student level survey data is analyzed to test for associations between Expected Family Contribution (EFC) financial aid formulas, race and household wealth.",
+      "discussion": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/issues",
+      "authors": [
+        "Alisha Jones",
+        "Charlie Eaton",
+        "Amber Dyan Villalobos",
+        "Laura T. Hamilton",
+        "Frederick Wherry"
+      ],
+      "preprint": "https://osf.io/48m6j",
+      "data": [
+        {
+          "set": "BPS Student File ",
+          "link": "google.com"
+        },
+        {
+          "set": "FHFA Cenus Tract Home Values",
+          "link": "google.com"
+        },
+        {
+          "set": "BPS GIS",
+          "link": "google.com"
+        },
+        {
+          "set": "BPS Federal Student Aid Supplement",
+          "link": "google.com"
+        }
+      ],
+      "name": "Financial Aid, Race, and Wealth",
+      "readme": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Online education",
+        "Degree completion",
+        "Student debt",
+        "Public universities",
+        "Private non-profit colleges"
+      ],
+      "summary": "Student level survey data is analyzed to assess predatory levels of adverse student outcomes in online degree programs.",
+      "discussion": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/issues",
+      "authors": [
+        "Amber Villalobos",
+        "Christian Smith",
+        "Charlie Eaton",
+        "Laura Hamilton"
+      ],
+      "preprint": "https://osf.io/274we",
+      "data": [
+        {
+          "set": "BPS: 12/14",
+          "link": "google.com"
+        },
+        {
+          "set": "BPS: 12/17",
+          "link": "google.com"
+        },
+        {
+          "set": "NSLDS:12",
+          "link": "google.com"
+        },
+        {
+          "set": "NSLDS:14 ",
+          "link": "google.com"
+        },
+        {
+          "set": "NSLDS:17",
+          "link": "google.com"
+        }
+      ],
+      "name": "Assessing Online Education With BPS",
+      "readme": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/blob/main/README.md",
+      "date": "02/02/2022",
+      "repo": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Private equity",
+        "Endowments",
+        "Hedge funds"
+      ],
+      "summary": "The book explains how finance has played a central role in the widening inequality in recent decades, both in American higher education and in American society at large. ",
+      "discussion": "https://github.com/HigherEdData/BankersInTheIvoryTower/issues",
+      "authors": [
+        "Charlie Eaton"
+      ],
+      "preprint": "https://www.amazon.com/Bankers-Ivory-Tower-Troubling-Financiers-dp-022672042X/dp/022672042X/",
+      "data": [
+        {
+          "set": "OMB Federal Higher Education Spending Outlays Over Time",
+          "link": "google.com"
+        },
+        {
+          "set": "Grapevine State Higher Education Spending Over Time",
+          "link": "google.com"
+        },
+        {
+          "set": "College Board Student Debt Aggregate Data Over Time",
+          "link": "google.com"
+        },
+        {
+          "set": "Borrower Defense Complaint DataHub Data",
+          "link": "google.com"
+        },
+        {
+          "set": "College Board Pell Grant Aggregate Data Over Time",
+          "link": "google.com"
+        },
+        {
+          "set": "NACUBO Endowment Study (Restricted Use)",
+          "link": "google.com"
+        },
+        {
+          "set": "Top 60 University Board Members DataHub Data",
+          "link": "google.com"
+        },
+        {
+          "set": "Private Equity and College Ownership DataHub Data",
+          "link": "google.com"
+        },
+        {
+          "set": "College Scorecard",
+          "link": "google.com"
+        },
+        {
+          "set": "IPEDS Fall Enrollment by Race",
+          "link": "google.com"
+        }
+      ],
+      "name": "Bankers in the Ivory Tower",
+      "readme": "https://github.com/HigherEdData/BankersInTheIvoryTower/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/bankersintheivorytower",
       "id": "projects"
     }
   ]
