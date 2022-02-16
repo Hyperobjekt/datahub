@@ -42,8 +42,12 @@ const data = {
       fields: [
         { label: "About Us", name: "aboutUs", widget: "string" },
         { label: "Location", name: "location", widget: "string" },
-        { label: "Position", name: "position", widget: "string" },
-        { label: "Lab Details", name: "labDetails", widget: "list" },
+        { label: "Poistion Highlight One", name: "positionHighlightOne", widget: "string" },
+        { label: "Poistion Highlight Two", name: "positionHighlightTwo", widget: "string" },
+        { label: "Belief Highlight", name: "beliefHighlight", widget: "string" },
+        { label: "Belief", name: "belief", widget: "string" },
+        { label: "Lab Details One", name: "labDetailsOne", widget: "string" },
+        { label: "Lab Details Two", name: "labDetailsTwo", widget: "string" },
         {
           label: "Team",
           name: "team",
