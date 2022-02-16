@@ -1,20 +1,43 @@
 {
-  "aboutUs": "The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities.",
-  "location": "The Higher Education Race and the Economy (HERE) Lab is located in the Department of Sociology at the University of California, Merced.",
-  "drive": "Racism and racial segregation are central to this system of educational and class inequality. The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy.",
+  "positionHighlightTwo": "The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy.",
+  "belief": "We believe that social science scholarship has a role to play in the creation of a more robust, publicly supported, and equitable higher education system and economy. ",
   "position": "We believe that social science scholarship has a role to play in the creation of a more robust, publicly supported, and equitable higher education system and economy.",
+  "drive": "Racism and racial segregation are central to this system of educational and class inequality. The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy.",
+  "aboutUs": "The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities.",
+  "labDetailsOne": "The Lab contributes systematic empirical analyses to help inform pressing social debates around postsecondary equity. At every stage of our research, we consult with valued non-profit policy advocates and policymakers. These individuals have both on-the-ground knowledge of the problems college students, workers and communities face—and a birds-eye-view of potential levers for change.",
+  "beliefHighlight": "These inequities are not inevitable or immutable.",
+  "location": "The Higher Education Race and the Economy (HERE) Lab is located in the Department of Sociology at the University of California, Merced.",
   "labDetails": [
     "The Lab contributes systematic empirical analyses to help inform pressing social debates around postsecondary equity. At every stage of our research, we consult with valued non-profit policy advocates and policymakers. These individuals have both on-the-ground knowledge of the problems college students, workers and communities face—and a birds-eye-view of potential levers for change.",
     "The Lab also values the training and support of the next generation of higher education and socio-economic researchers. Increasingly, these researchers attend or work at Minority-Serving Institutions, like UC-Merced, and personally identify as first-generation, low-income, and/or racially underrepresented. This is the future of higher education and the economy—and the HERE Lab is part of the transformation."
   ],
+  "labDetailsTwo": "The Lab also values the training and support of the next generation of higher education and socio-economic researchers. Increasingly, these researchers attend or work at Minority-Serving Institutions, like UC-Merced, and personally identify as first-generation, low-income, and/or racially underrepresented. This is the future of higher education and the economy—and the HERE Lab is part of the transformation.  ",
+  "positionHighlightOne": "In the post-industrial U.S. economy, those without college degrees are increasingly excluded from economic security and social inclusion. Yet colleges and universities often do more to sort and rank people than to equitably empower. Racism and racial segregation are central to this system of educational and class inequality.",
   "team": [
     {
       "name": "Charlie Eaton",
-      "bio": "Assistant Professor of Sociology, UC Merced Affiliated Faculty, UC Berkeley Center for Studies in Higher Education"
+      "bio": "Charlie Eaton is Assistant Professor of Sociology at the University of California, Merced, where he co - founded the HERE Lab. His book Bankers in the Ivory Tower: The Troubling Rise of Financiers in U.S. Higher Education was published by University of Chicago Press in 2022. He is broadl y interested in the role of race and organizations in struggles for power and economic resources between elites and non - elites. His recent research has particularly focused on the consolidation of power and wealth by private equity and hedge fund financier s -- and successful initiatives to reverse these inequalities",
+      "thumbnail": "/images/eaton.png"
     },
     {
       "name": "Laura Hamilton",
-      "bio": "Professor and Chair of Sociology"
+      "bio": "Laura Hamilton is Professor of Sociology at the University of California, Merced, and co - founder of the HERE Lab. Her books include: Paying for the Party: How College Maintains Inequality, Parenting to a Degree: How Family Matters for College Women’s Success, and most recently Broke: The Racial Consequences of Underfunding Public Universities. Her work examines the ways in which postsec ondary organizations and higher education funding structures, work to create and maintain racial and class inequities.",
+      "thumbnail": "/images/hamilton_laura_190503-1.jpg"
+    },
+    {
+      "name": "Heather Daniels",
+      "bio": "Heather Daniels is a doctoral student in the Higher Education Race and the Economy Lab at the University of California, Merced. She broa dly focuses on inequalities in STEM pathways. Her dissertation uses student and school - level variables to critically examine effects of math and science AP coursework during high school on majoring and earning a degree in STEM fields. Heather focuses on On line Program Managers (OPMs) and their contractual agreements with u niversities across the U.S. in the HERE lab.",
+      "thumbnail": "/images/daniels_heather_20220125-1.jpg"
+    },
+    {
+      "name": "Alisha Jones",
+      "bio": "Alisha Jones is a PhD student in the Higher Education Race and the Economy Lab at the University of California, Merced. Her broad research int erest are r ace and h ealth. Her recent research focuses on the influence of Colorism on the mental health of Black Americans. Her current work in the HERE lab explores racial disparities in financial aid awards. She examines the role of family wealth in FAF SA awards of undergraduate students.",
+      "thumbnail": "/images/jones_alisha_20220125-1.jpg"
+    },
+    {
+      "name": "Christian Smith",
+      "bio": "Christian Michael Smith is a postdoctoral fellow at the Higher Education Race and the Economy Lab at the University of California, Merced. He researches stratification in higher education: who goes to college, who graduates from college, who gets the best opportunities while in college, and the policies that might narrow inequalities in these outcomes. To these ends, his current work in the HERE Lab explores the nature, and potentially inequitable consequences, of o nline higher education",
+      "thumbnail": "/images/smith_christian_20220125-1.jpg"
     }
   ]
 }
