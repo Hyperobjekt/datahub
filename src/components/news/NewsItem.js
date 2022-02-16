@@ -8,6 +8,17 @@ import {
 
 import { NewsItemStyles } from './styles/NewsStyles'
 
+const editLede = (lede) => {
+  const maxLen = 198
+  let editedLede
+
+  lede.length > maxLen ?
+    editedLede = lede.slice(0, 197).concat('...') :
+    editedLede = lede
+
+  return editedLede
+}
+
 const NewsItem = (props) => {
   const { item } = props
 
@@ -22,9 +33,9 @@ const NewsItem = (props) => {
             {item.article[0].title}
           </Box>
         </Link>
-        <Typography>
-          <Box component='span' className={classes.lede}>
-            {item.lede}
+        <Typography variant='subtitle1'>
+          <Box component='span'>
+            {editLede(item.lede)}
           </Box>
         </Typography>
         <Typography>

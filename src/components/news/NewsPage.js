@@ -15,7 +15,7 @@ const NewsPage = () => {
 
   return (
     <Box className={classes.newsPage}>
-      <Typography>
+      <Typography variant='h5'>
         <Box component='span' className={classes.pageTitle}>
           NEWS
         </Box>

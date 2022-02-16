@@ -2,23 +2,24 @@ import { makeStyles } from "@material-ui/core"
 
 export const NewsPageStyles = makeStyles({
   newsPage: {
-    width: '786px',
+    margin: '0 auto',
 
-    margin: '0 auto'
+    '& > :first-child': {
+      margin: '0 0 20px 0'
+    },
   },
   pageTitle: {
-    fontSize: '1.2em',
     fontWeight: 'bold'
   }
 })
 
-export const NewsItemStyles = makeStyles({
+export const NewsItemStyles = makeStyles(theme => ({
   item: {
     backgroundColor: '#E8F5FF',
-    width: '786px',
-    height: '324px',
 
-    padding: '34px 65px 42px 65px',
+    maxWidth: theme.spacing(90),
+    padding: theme.spacing(3),
+
     margin: '0 0 40px 0'
   },
   thumbnail: {
@@ -52,4 +53,4 @@ export const NewsItemStyles = makeStyles({
     fontSize: '.7em',
     fontWeight: 'bold'
   }
-})
+}))

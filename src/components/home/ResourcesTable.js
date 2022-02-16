@@ -294,6 +294,7 @@ const ResourcesTable = (props) => {
   const rows = (selectedProjects) ? selectedProjects : projects
 
   return (
+    console.log(page),
     <>
       {tableHeader}
       <TableContainer>
@@ -307,13 +308,15 @@ const ResourcesTable = (props) => {
           </TableHead>
           <TableBody>
             {rows &&
-              rows.map(project => (
-                <CollapsibleRow
-                  index={rows.indexOf(project)}
-                  project={project}
-                  key={project.id}
-                />
-              ))
+              rows
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map(project => (
+                  <CollapsibleRow
+                    index={rows.indexOf(project)}
+                    project={project}
+                    key={project.id}
+                  />
+                ))
             }
           </TableBody>
         </Table>
