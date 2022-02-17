@@ -16,6 +16,7 @@ const data = {
             { label: "Name", name: "name", widget: "string" },
             { label: "Date", name: "date", widget: "string", hint: "enter date as it should appear" },
             { label: "Repo", name: "repo", widget: "string", hint: "enter full URL" },
+            { label: "Manuscript", name: "manuscript", widget: "string", hint: "enter full URL", required: false },
             { label: "Topics", name: "topics", widget: "list" },
             {
               label: "Data",
