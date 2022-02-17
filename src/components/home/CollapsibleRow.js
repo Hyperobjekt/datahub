@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import clsx from  'clsx';
+import clsx from 'clsx';
 
 import {
   makeStyles,
@@ -10,39 +10,39 @@ import {
   TableCell,
   Collapse,
   IconButton,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
+import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   evenAlign: {
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
 
-    "& > *": {
+    '& > *': {
       [theme.breakpoints.between('sm', 'md')]: {
-        paddingRight: "20px"
+        paddingRight: '20px',
       },
       [theme.breakpoints.up('md')]: {
-        paddingRight: "40px"
-      }
-    }
+        paddingRight: '40px',
+      },
+    },
   },
   info: {
     fontFamily: 'zeitung',
 
     width: '75%',
-    marginTop: '2px', 
-    marginBottom: '6px', 
+    marginTop: '2px',
+    marginBottom: '6px',
     [theme.breakpoints.between('sm', 'md')]: {
       width: '100%',
-      marginLeft: 0
+      marginLeft: 0,
     },
     [theme.breakpoints.up('md')]: {
       width: '75%',
-      marginLeft: '6%'
-    }
+      marginLeft: '6%',
+    },
   },
   links: {
     fontFamily: 'zeitung',
@@ -54,47 +54,44 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('md')]: {
       margin: '22px 0 22px 6%',
     },
-    padding: '21px 32px', 
-    background: '#FFF8ED'
+    padding: '21px 32px',
+    background: '#FFF8ED',
   },
   bold: {
     fontWeight: 'bold',
-    padding: 0
+    padding: 0,
   },
   link: {
     fontFamily: 'source-code-pro',
 
     color: 'inherit',
-    textDecoration: 'none'
+    textDecoration: 'none',
   },
   quickLinks: {
-    fontFamily: 'source-code-pro', 
-    paddingBottom: '30px'
-  }
+    fontFamily: 'source-code-pro',
+    paddingBottom: '30px',
+  },
 }));
 
 const CollapsibleRow = (props) => {
   const classes = useStyles();
 
   const [open, setOpen] = useState(false);
-  
-  const { project, index } = props
+
+  const { project, index } = props;
 
   const convertToLink = (array) => {
-    const links =
-      array.map((data, i) => [
-        !!i && ", ",
-        <a href={data.link}>{data.set}</a>
-      ])
+    const links = array.map((data, i) => [
+      !!i && ', ',
+      <a href={data.link}>{data.set}</a>,
+    ]);
 
-    return links
-  }
+    return links;
+  };
 
   const info = (
     <Box className={classes.info}>
-      <Typography variant="subtitle1">
-        {project.summary}
-      </Typography>
+      <Typography variant="subtitle1">{project.summary}</Typography>
       <Typography variant="subtitle1">
         Data sets: {convertToLink(project.data)}
       </Typography>
@@ -102,10 +99,10 @@ const CollapsibleRow = (props) => {
         Authors: {project.authors.join(', ')}
       </Typography>
       <Typography variant="subtitle2">
-        Filed under{" "}
-        <Box component='span' className={classes.bold}>
-          {" "}
-          {project.topics.join(', ').toUpperCase()}{" "}
+        Filed under{' '}
+        <Box component="span" className={classes.bold}>
+          {' '}
+          {project.topics.join(', ').toUpperCase()}{' '}
         </Box>
       </Typography>
     </Box>
@@ -138,30 +135,38 @@ const CollapsibleRow = (props) => {
 
   return (
     <>
-      <TableRow style={{ backgroundColor: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
+      <TableRow style={{ backgroundColor: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
         <TableCell className="DhTable-collapseCol">
           <IconButton size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           </IconButton>
         </TableCell>
         <TableCell>
-            {open ?
-                <div>
-                  <Box component='span' className={classes.bold}>
-                    {project.name}
-                  </Box>
-                  <IconButton className="DhTable-collapseRow" size="small" onClick={() => setOpen(!open)}>
-                    {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-                  </IconButton>
-                </div> 
-              :
-                <div>
-                  {project.name}
-                  <IconButton className="DhTable-collapseRow" size="small" onClick={() => setOpen(!open)}>
-                    {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-                  </IconButton>
-                </div>
-            }
+          {open ? (
+            <div>
+              <Typography variant="body2" className="bold">
+                {project.name}
+              </Typography>
+              <IconButton
+                className="DhTable-collapseRow"
+                size="small"
+                onClick={() => setOpen(!open)}
+              >
+                {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+              </IconButton>
+            </div>
+          ) : (
+            <div>
+              <Typography variant="body2">{project.name}</Typography>
+              <IconButton
+                className="DhTable-collapseRow"
+                size="small"
+                onClick={() => setOpen(!open)}
+              >
+                {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+              </IconButton>
+            </div>
+          )}
         </TableCell>
         <TableCell>
           <Box className={classes.evenAlign}>
@@ -175,7 +180,7 @@ const CollapsibleRow = (props) => {
           </Box>
         </TableCell>
       </TableRow>
-      <TableRow style={{ background: index % 2 ? "#E8F5FF" : "#FFFFFF" }}>
+      <TableRow style={{ background: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
         <TableCell className="DhTable-collapseHlcollapseHl" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}

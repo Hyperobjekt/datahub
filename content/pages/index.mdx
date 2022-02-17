@@ -6,24 +6,8 @@ path: /
 name: Home
 ---
 
-import HomePage from "components/home/HomePage";
-import SplitHeader from "components/home/SplitHeader";
-import ScrollButton from "components/home/ScrollButton";
+import HomePage from 'components/home/HomePage';
 
-<Hero
-  ContainerProps={{
-    justifyContent: "flex-start",
-  }}
-  alignItems="flex-end"
-  bgcolor="#475865"
-  color="grey.900"
-  variant="overlay"
->
-  <ScrollButton />
-</Hero>
-
-<SplitHeader />
-
-<Block>
-  <HomePage />
-</Block>
+<HomePage lang={{
+  "HERO_TEXT": "We seek to explain and reverse inequalities in higher education systems and economies."
+}} />
