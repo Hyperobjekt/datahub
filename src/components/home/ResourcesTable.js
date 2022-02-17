@@ -136,15 +136,12 @@ const hasProjectOverlap = (projectList, list) => {
 };
 
 /**
- * Filters the projects to include selected topics and sources
- * @param {*} topics - array of topics to include projects for
- * @param {*} sources - array of source to include project for
- * @param {Array<Project>} projects - entire list of projects
- * @returns {Array<Projects>}
- */
-const updateProjects = (topics, sources, projects) => {
-  // if no topics or sources, no filtering needed, return all projects
-  if (topics.length === 0 && sources.length === 0) return projects;
+* Filters the projects to include selected topics and sources
+* @param {*} topics - array of topics to include projects for
+* @param {*} sources - array of source to include project for
+* @returns {Array<Projects>}
+*/
+  const updateProjects = (topics, sources, projects) => {
   // if filtering topics and sources, filter the projects by topic + sources
   if (topics.length > 0 && sources.length > 0)
     return projects.filter(
@@ -159,15 +156,18 @@ const updateProjects = (topics, sources, projects) => {
   if (topics.length > 0)
     return projects.filter((p) => hasProjectOverlap(p.topics, topics));
   // if sources but no topics, filter by source
-  return projects.filter((p) =>
-    hasProjectOverlap(
-      p.data.map((d) => d['set']),
-      sources
-    )
-  );
+  if (sources.length > 0)
+    return projects.filter((p) =>
+      hasProjectOverlap(
+        p.data.map((d) => d['set']),
+        sources
+      )
+    );
+  //default return
+  return projects;
 };
 
-const ResourcesTable = (props) => {
+const ResourcesTable = () => {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -289,13 +289,11 @@ const ResourcesTable = (props) => {
 
   // if topics or sources have changed, update the projects
   useEffect(() => {
-    const updatedProjects = updateProjects(
-      selectedTopics,
-      selectedSources,
-      projects
-    );
-    setSelectedProjects(updatedProjects);
-  }, [selectedTopics, selectedSources, projects, selectedProjects]);
+    const updatedProjects = updateProjects(selectedTopics, selectedSources, projects)
+
+    updatedProjects ? setSelectedProjects(updatedProjects) : setSelectedProjects()
+
+  }, [selectedTopics, selectedSources, projects]);
 
   // on component mount, set the available projects, topics, and sources
   useEffect(() => {
@@ -337,7 +335,7 @@ const ResourcesTable = (props) => {
                   <CollapsibleRow
                     index={rows.indexOf(project)}
                     project={project}
-                    key={project.id}
+                    key={rows.indexOf(project)}
                   />
                 ))}
           </TableBody>
