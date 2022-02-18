@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+import { ResourcesTablesStyles } from './styles/HomeStyles';
 import CollapsibleRow from './CollapsibleRow';
 
 import {
-  makeStyles,
   Typography,
   Table,
   TableBody,
@@ -22,108 +22,6 @@ import {
 
 import allProjects from '../../../content/data/projects.json';
 import MobileOnly from '../MobileOnly';
-
-const useStyles = makeStyles((theme) => ({
-  centerAlign: {
-    fontFamily: 'zeitung',
-
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  evenAlign: {
-    [theme.breakpoints.down('md')]: {
-      display: 'flex',
-      justifyContent: 'flex-start',
-      flexDirection: 'column',
-      alignItems: 'center',
-
-      '& > *': {
-        padding: 'none',
-      },
-    },
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
-
-      '& > *': {
-        padding: 'none',
-      },
-    },
-    [theme.breakpoints.up('lg')]: {
-      display: 'flex',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
-
-      '& > *': {
-        paddingRight: '22px',
-      },
-    },
-
-    margin: '25px 0 50px 0',
-  },
-  table: {
-    '& .MuiTableCell-root.DhTable-projectHeader': {
-      fontFamily: 'zeitung',
-      [theme.breakpoints.between('md', 'lg')]: {
-        width: '50%',
-      },
-      [theme.breakpoints.down('xs')]: {
-        width: '90%',
-      },
-    },
-    '& .MuiTableCell-root.DhTable-dateHeader': {
-      [theme.breakpoints.between('md', 'lg')]: {
-        width: '50%',
-      },
-      [theme.breakpoints.down('xs')]: {
-        width: '10%',
-      },
-    },
-    '& .MuiTableCell-root.DhTable-collapseCol': {
-      display: 'none',
-      [theme.breakpoints.up('lg')]: {
-        display: 'table-cell',
-      },
-    },
-    '& .MuiButtonBase-root.DhTable-collapseRow': {
-      [theme.breakpoints.up('md')]: {
-        display: 'none',
-      },
-    },
-    '& .MuiTableCell-root.DhTable-collapseHl': {
-      paddingBottom: 0,
-      paddingTop: 0,
-    },
-  },
-  tableRow: {
-    background: '#FFF8ED',
-  },
-  dropdown: {
-    [theme.breakpoints.between('sm', 'md')]: {
-      display: 'none',
-    },
-    width: '5%',
-  },
-  projectHeader: {},
-  dateHeader: {
-    [theme.breakpoints.down('md')]: {
-      width: '50%',
-    },
-    [theme.breakpoints.up('md')]: {
-      width: '40%',
-    },
-  },
-  select: {
-    '& > :first-child': {
-      paddingRight: '22px',
-    },
-  },
-  bold: {
-    fontWeight: 'bold',
-  },
-}));
 
 /**
  * Returns true if there is an intersection between two projects
@@ -168,7 +66,7 @@ const hasProjectOverlap = (projectList, list) => {
 };
 
 const ResourcesTable = () => {
-  const classes = useStyles();
+  const classes = ResourcesTablesStyles();
   const theme = useTheme();
 
   const [topics, setTopics] = useState();
@@ -216,26 +114,22 @@ const ResourcesTable = () => {
     );
   };
 
-  const tableHeader = (
-    <div className={classes.centerAlign}>
-      <Typography variant="h6">
-        <MobileOnly>
-          <Box className={classes.bold}>RESOURCES</Box>
-        </MobileOnly>
-      </Typography>
-      <div className={classes.evenAlign}>
+  const tableHeader =
+    <Box className={classes.centerAlign}>
+      <Typography variant="h6" className="bold">RESOURCES</Typography>
+      <Box className={classes.filterGroup}>
         <Typography variant="subtitle1">Filter by:</Typography>
-        <div className={classes.select}>
+        <Box className={classes.evenAlign}>
           <FormControl>
             <Select
               multiple
               displayEmpty
               value={selectedTopics}
               onChange={handleTopicChange}
-              input={<OutlinedInput />}
+              input={<OutlinedInput className="Dh-inputFilterField" />}
               renderValue={(selected) => {
                 if (selected.length === 0) {
-                  return <a>Topic</a>;
+                  return <Typography variant="body2">Topic</Typography>;
                 }
 
                 return selected.join(', ');
@@ -260,10 +154,10 @@ const ResourcesTable = () => {
               displayEmpty
               value={selectedSources}
               onChange={handleSourceChange}
-              input={<OutlinedInput />}
+              input={<OutlinedInput className="Dh-inputFilterField" />}
               renderValue={(selected) => {
                 if (selected.length === 0) {
-                  return <a>Data Source</a>;
+                  return <Typography variant="body2">Data Source</Typography>;
                 }
 
                 return selected.join(', ');
@@ -277,15 +171,14 @@ const ResourcesTable = () => {
                     value={name}
                     style={getStyles(name, selectedSources, theme)}
                   >
-                    {name}
+                    <Typography variant="body2">{name}</Typography>
                   </MenuItem>
                 ))}
             </Select>
           </FormControl>
-        </div>
-      </div>
-    </div>
-  );
+        </Box>
+      </Box>
+    </Box>
 
   // if topics or sources have changed, update the projects
   useEffect(() => {
@@ -321,10 +214,10 @@ const ResourcesTable = () => {
           <TableHead>
             <TableRow className={classes.tableRow}>
               <TableCell className="DhTable-collapseCol" />
-              <TableCell className="DhTable-projectHeader">
-                Project Name
-              </TableCell>
+              <TableCell className="DhTable-projectHeader">Project Name</TableCell>
               <TableCell className="DhTable-dateHeader">Date</TableCell>
+              <TableCell className="DhTable-dateHeader"></TableCell>
+              <TableCell className="DhTable-dateHeader"></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -342,6 +235,7 @@ const ResourcesTable = () => {
         </Table>
       </TableContainer>
       <TablePagination
+        className="Dh-inputFieldPagination"
         rowsPerPageOptions={[10, 25, 100]}
         component="div"
         count={rows ? rows.length : 0}

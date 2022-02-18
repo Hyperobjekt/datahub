@@ -1,80 +1,23 @@
 import React, { useState } from 'react';
 
-import clsx from 'clsx';
+import { CollapsibleRowStyles } from './styles/HomeStyles';
+import LinkIcon from '../../../static/icons/link.svg'
+import Chat from '../../../static/icons/chat.svg'
 
 import {
-  makeStyles,
   Box,
   Typography,
   TableRow,
   TableCell,
   Collapse,
   IconButton,
+  Link
 } from '@material-ui/core';
 
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({
-  evenAlign: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-
-    '& > *': {
-      [theme.breakpoints.between('sm', 'md')]: {
-        paddingRight: '20px',
-      },
-      [theme.breakpoints.up('md')]: {
-        paddingRight: '40px',
-      },
-    },
-  },
-  info: {
-    fontFamily: 'zeitung',
-
-    width: '75%',
-    marginTop: '2px',
-    marginBottom: '6px',
-    [theme.breakpoints.between('sm', 'md')]: {
-      width: '100%',
-      marginLeft: 0,
-    },
-    [theme.breakpoints.up('md')]: {
-      width: '75%',
-      marginLeft: '6%',
-    },
-  },
-  links: {
-    fontFamily: 'zeitung',
-
-    margin: '22px 0 22px 6%',
-    [theme.breakpoints.between('sm', 'md')]: {
-      margin: '22px 0 22px 0',
-    },
-    [theme.breakpoints.up('md')]: {
-      margin: '22px 0 22px 6%',
-    },
-    padding: '21px 32px',
-    background: '#FFF8ED',
-  },
-  bold: {
-    fontWeight: 'bold',
-    padding: 0,
-  },
-  link: {
-    fontFamily: 'source-code-pro',
-
-    color: 'inherit',
-    textDecoration: 'none',
-  },
-  quickLinks: {
-    fontFamily: 'source-code-pro',
-    paddingBottom: '30px',
-  },
-}));
-
 const CollapsibleRow = (props) => {
-  const classes = useStyles();
+  const classes = CollapsibleRowStyles();
 
   const [open, setOpen] = useState(false);
 
@@ -83,7 +26,11 @@ const CollapsibleRow = (props) => {
   const convertToLink = (array) => {
     const links = array.map((data, i) => [
       !!i && ', ',
-      <a href={data.link}>{data.set}</a>,
+      <Link href={data.link}>
+        <Typography variant="subtitle2">
+          {data.set}
+        </Typography>
+      </Link>
     ]);
 
     return links;
@@ -100,10 +47,9 @@ const CollapsibleRow = (props) => {
       </Typography>
       <Typography variant="subtitle2">
         Filed under{' '}
-        <Box component="span" className={classes.bold}>
-          {' '}
+        <Typography variant="subtitle2" className="bold">
           {project.topics.join(', ').toUpperCase()}{' '}
-        </Box>
+        </Typography>
       </Typography>
     </Box>
   );
@@ -111,25 +57,14 @@ const CollapsibleRow = (props) => {
   const links = (
     <Box className={classes.links}>
       <Typography variant="h6" component="div">
-        Quick Links
+        Get Help with the Data
       </Typography>
-      <Box className={clsx(classes.evenAlign, classes.quickLinks)}>
-        <a className={classes.link} href={project.readme}>
-          README
-        </a>
-        <a className={classes.link} href={project.preprint}>
-          PREPRINT
-        </a>
-        <a className={classes.link} href={project.figures}>
-          FIGURES
-        </a>
+      <Box className={classes.evenAlign}>
+        <img src={Chat} alt="chatIcon" />
+        <Link href={project.discussion}>
+          <Typography>ASK A QUESTION ON GITHUB</Typography>
+        </Link>
       </Box>
-      <Typography variant="h6" component="div">
-        Join the Discussion
-      </Typography>
-      <a className={classes.link} href={project.discussion}>
-        DISCUSS ON GITHUB
-      </a>
     </Box>
   );
 
@@ -169,19 +104,34 @@ const CollapsibleRow = (props) => {
           )}
         </TableCell>
         <TableCell>
+          <Typography variant="body2">
+            {project.date}
+          </Typography>
+        </TableCell>
+        <TableCell>
+        <Typography variant="body2">
           <Box className={classes.evenAlign}>
-            <a>{project.date}</a>
-            <a className={classes.link} href={project.repo}>
-              REPO
-            </a>
-            <a className={classes.link} href={project.paper}>
-              PUBLISHED PAPER
-            </a>
+            <img src={LinkIcon} alt="chatIcon" />
+            <Link href={project.repo}>
+              <Typography variant="body2" className='sourceCode'>REPO</Typography>
+            </Link> 
+          </Box>
+        </Typography>
+        </TableCell>
+        <TableCell>
+          <Box className={classes.evenAlign}>
+            <img src={LinkIcon} alt="chatIcon" />
+            {project.manuscript ?
+              <Link href={project.manuscript}>
+                <Typography variant="body2" className='sourceCode'>MANUSCRIPT</Typography>
+              </Link> :
+              <Typography variant="body2" className="sourceCode">MANUSCRIPT</Typography>
+            }           
           </Box>
         </TableCell>
       </TableRow>
-      <TableRow style={{ background: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
-        <TableCell className="DhTable-collapseHlcollapseHl" colSpan={6}>
+      <TableRow style={{ padding: '0', background: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
+        <TableCell className="DhTable-collapseHl" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             {info}
             {links}

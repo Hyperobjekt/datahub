@@ -51,7 +51,7 @@ let base = {
     body2: {
       fontFamily: ALT_FONT,
       fontStyle: 'normal',
-      fontWeight: 150,
+      fontWeight: 'normal',
       fontSize: 16,
       lineHeight: 23 / 16,
       letterSpacing: '-0.01em',
@@ -98,6 +98,12 @@ const Theme = () => {
       },
       MuiTypography: {
         root: {
+          '&.sourceCode': {
+            fontFamily: FONT
+          },
+          '&.zeitung': {
+            fontFamily: ALT_FONT
+          },
           '&.bold': {
             fontWeight: 'bold',
           },
@@ -112,13 +118,17 @@ const Theme = () => {
           margin: '1rem 0',
         },
         subtitle1: {
+          fontFamily: ALT_FONT,
           fontSize: '14px',
 
           margin: '10px 0 10px 0',
         },
         subtitle2: {
+          fontFamily: ALT_FONT,
           fontSize: '12px',
+
           margin: '10px 0 10px 0',
+          display: 'inline-block'
         },
       },
       MuiDivider: {
@@ -142,27 +152,16 @@ const Theme = () => {
       },
       MuiInputBase: {
         root: {
-          fontFamily: ALT_FONT,
-          fontWeight: '500',
-          fontSize: '1.1em',
-
           background: '#E8F5FF',
-
           height: '40px',
           [theme.breakpoints.down('md')]: {
-            fontFamily: ALT_FONT,
-            fontWeight: '500',
-            fontSize: '1em',
-
-            width: '120px',
+            width: '60px',
+            marginRight: '10px',
           },
           [theme.breakpoints.up('md')]: {
             width: '200px',
-          },
-          [theme.breakpoints.up('lg')]: {
-            width: '200px',
-          },
-        },
+          }
+        }
       },
       MuiOutlinedInput: {
         root: {
