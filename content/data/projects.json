@@ -3,69 +3,6 @@
   "projects": [
     {
       "topics": [
-        "For-profit colleges",
-        "Private equity",
-        "Student debt",
-        "Shareholder value",
-        "Degree completion"
-      ],
-      "summary": "Data on all U.S. for-profit colleges is used to show that colleges that are part of multi-brand companies invest less in instruction, have worse student outcomes, and are more likely to face legal and regulatory sanctions (relative to single-brand firms).",
-      "discussion": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/issues",
-      "authors": [
-        "Adam Goldstein",
-        "Charlie Eaton"
-      ],
-      "preprint": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/manuscripty_asymmetry_by_design_20210921.pdf",
-      "data": [
-        {
-          "set": "For-profit News Article DataHub Data",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "Private Equity and College Ownership DataHub Data",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "Borrower Defense Complaint DataHub Data",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Completions",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "College Scorecard",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Institutional Characteristics",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Fall Staff",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Graduation Rates",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Fall Enrollment by Race",
-          "link": "https://www.google.com/"
-        },
-        {
-          "set": "IPEDS Financial Aid and Net Price",
-          "link": "https://www.google.com/"
-        }
-      ],
-      "name": "Asymmetry by Design in For-Profit Higher Education?",
-      "readme": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/README.md",
-      "date": "09/21/21",
-      "repo": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education",
-      "id": "projects"
-    },
-    {
-      "topics": [
         "Student debt",
         "Income driven repayment",
         "Administrative burden"
@@ -82,54 +19,13 @@
       "data": [
         {
           "set": "CFPB Complaint DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans/tree/main/data"
         }
       ],
       "name": "Administrative Burden and Student Loans",
       "readme": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans/blob/main/README.md",
       "date": "02/07/2022",
       "repo": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "Racial inequality",
-        "Wealth inequality",
-        "Student debt",
-        "Financial aid"
-      ],
-      "summary": "Student level survey data is analyzed to test for associations between Expected Family Contribution (EFC) financial aid formulas, race and household wealth.",
-      "discussion": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/issues",
-      "authors": [
-        "Alisha Jones",
-        "Charlie Eaton",
-        "Amber Dyan Villalobos",
-        "Laura T. Hamilton",
-        "Frederick Wherry"
-      ],
-      "preprint": "https://osf.io/48m6j",
-      "data": [
-        {
-          "set": "BPS Student File ",
-          "link": "google.com"
-        },
-        {
-          "set": "FHFA Cenus Tract Home Values",
-          "link": "google.com"
-        },
-        {
-          "set": "BPS GIS",
-          "link": "google.com"
-        },
-        {
-          "set": "BPS Federal Student Aid Supplement",
-          "link": "google.com"
-        }
-      ],
-      "name": "Financial Aid, Race, and Wealth",
-      "readme": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/blob/main/README.md",
-      "date": "02/07/2022",
-      "repo": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth",
       "id": "projects"
     },
     {
@@ -152,29 +48,67 @@
       "data": [
         {
           "set": "BPS: 12/14",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/tree/main/data"
         },
         {
           "set": "BPS: 12/17",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/tree/main/data"
         },
         {
           "set": "NSLDS:12",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/tree/main/data"
         },
         {
           "set": "NSLDS:14 ",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/tree/main/data"
         },
         {
           "set": "NSLDS:17",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/tree/main/data"
         }
       ],
       "name": "Assessing Online Education With BPS",
       "readme": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/blob/main/README.md",
       "date": "02/02/2022",
       "repo": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Online education",
+        "Student debt"
+      ],
+      "summary": "IPEDS data are used to assess racial disparities in enrollments and educational outcomes in exclusively online higher education degree programs.",
+      "discussion": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/issues",
+      "authors": [
+        "Christian Michael Smith",
+        "Amber Dyan Villalobos",
+        "Charlie Eaton",
+        "Laura T. Hamilton"
+      ],
+      "preprint": "https://osf.io/524va",
+      "data": [
+        {
+          "set": "IPEDS Online Enrollment",
+          "link": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/tree/main/data"
+        },
+        {
+          "set": "IPEDS Fall Enrollment by Race",
+          "link": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/tree/main/data"
+        },
+        {
+          "set": "IPEDS Financial Aid and Net Price",
+          "link": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/tree/main/data"
+        },
+        {
+          "set": "IPEDS Graduation",
+          "link": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/tree/main/data"
+        }
+      ],
+      "name": "Assessing Online Education with IPEDS",
+      "readme": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS",
       "id": "projects"
     },
     {
@@ -192,49 +126,336 @@
       "data": [
         {
           "set": "OMB Federal Higher Education Spending Outlays Over Time",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "Grapevine State Higher Education Spending Over Time",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "College Board Student Debt Aggregate Data Over Time",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "Borrower Defense Complaint DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "College Board Pell Grant Aggregate Data Over Time",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "NACUBO Endowment Study (Restricted Use)",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "Top 60 University Board Members DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "Private Equity and College Ownership DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "College Scorecard",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         },
         {
           "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/tree/main/data"
         }
       ],
       "name": "Bankers in the Ivory Tower",
       "readme": "https://github.com/HigherEdData/BankersInTheIvoryTower/blob/main/README.md",
       "date": "02/07/2022",
       "repo": "https://github.com/HigherEdData/bankersintheivorytower",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Student debt",
+        "Debt collection",
+        "Racial inequality",
+        "Income inequality",
+        "Administrative burden"
+      ],
+      "summary": "Institutional student debt and debt collection is analyzed for California colleges and universities.",
+      "discussion": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/issues",
+      "authors": [
+        "Charlie Eaton",
+        "Jonathan Glater",
+        "Laura Hamilton",
+        "Dalié Jiménez"
+      ],
+      "preprint": "google.com",
+      "data": [
+        {
+          "set": "IPEDS Institutional Characteristics",
+          "link": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/tree/main/data"
+        },
+        {
+          "set": "IPEDS Financial Aid and Net Price",
+          "link": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/tree/main/data"
+        },
+        {
+          "set": "Institutional Student Debt DataHub Data",
+          "link": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/tree/main/data"
+        }
+      ],
+      "name": "Debt Collection, Institutional Debts, and Federal Student Aid Rules in California",
+      "readme": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Racial inequality",
+        "Wealth inequality",
+        "Student debt",
+        "Financial aid"
+      ],
+      "summary": "Student level survey data is analyzed to test for associations between Expected Family Contribution (EFC) financial aid formulas, race and household wealth.",
+      "discussion": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/issues",
+      "authors": [
+        "Alisha Jones",
+        "Charlie Eaton",
+        "Amber Dyan Villalobos",
+        "Laura T. Hamilton",
+        "Frederick Wherry"
+      ],
+      "preprint": "https://osf.io/48m6j",
+      "data": [
+        {
+          "set": "BPS Student File ",
+          "link": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/tree/main/data"
+        },
+        {
+          "set": "FHFA Cenus Tract Home Values",
+          "link": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/tree/main/data"
+        },
+        {
+          "set": "BPS GIS",
+          "link": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/tree/main/data"
+        },
+        {
+          "set": "BPS Federal Student Aid Supplement",
+          "link": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/tree/main/data"
+        }
+      ],
+      "name": "Financial Aid, Race, and Wealth",
+      "readme": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Online education",
+        "Private equity"
+      ],
+      "summary": "A dataset of 239 public university contracts that outsource online education to for-profit Online Program Managers (OPMs) are used to code structural features of the contracts that are potentially predatory.",
+      "discussion": "https://github.com/HigherEdData/Outsourcing-Online-Education/issues",
+      "authors": [
+        "Heather Daniels",
+        "Christian Smith",
+        "Laura T. Hamilton",
+        "and Charlie Eaton"
+      ],
+      "preprint": "https://osf.io/524va",
+      "data": [
+        {
+          "set": "Online Program Manager Contracts DataHub Data",
+          "link": "https://github.com/HigherEdData/Outsourcing-Online-Education/tree/main/data"
+        },
+        {
+          "set": "Online Program Manager Ownership DataHub Data",
+          "link": "https://github.com/HigherEdData/Outsourcing-Online-Education/tree/main/data"
+        }
+      ],
+      "name": "Outsourcing Online Education: Predation and Obfuscation in Public University-OPM Contracts",
+      "readme": "https://github.com/HigherEdData/Outsourcing-Online-Education/blob/main/README.md",
+      "date": "02/07/2022",
+      "repo": "https://github.com/HigherEdData/Outsourcing-Online-Education",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "For-profit colleges",
+        "Private equity",
+        "Student debt",
+        "Shareholder value",
+        "Degree completion"
+      ],
+      "summary": "Data on all U.S. for-profit colleges is used to show that colleges that are part of multi-brand companies invest less in instruction, have worse student outcomes, and are more likely to face legal and regulatory sanctions (relative to single-brand firms).",
+      "discussion": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/issues",
+      "authors": [
+        "Adam Goldstein",
+        "Charlie Eaton"
+      ],
+      "preprint": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/manuscripty_asymmetry_by_design_20210921.pdf",
+      "data": [
+        {
+          "set": "For-profit News Article DataHub Data",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "Private Equity and College Ownership DataHub Data",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "Borrower Defense Complaint DataHub Data",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Completions",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "College Scorecard",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Institutional Characteristics",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Fall Staff",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Graduation Rates",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Fall Enrollment by Race",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        },
+        {
+          "set": "IPEDS Financial Aid and Net Price",
+          "link": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/tree/master/data"
+        }
+      ],
+      "name": "Asymmetry by Design in For-Profit Higher Education?",
+      "readme": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/README.md",
+      "date": "09/21/2021",
+      "repo": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Student debt",
+        "Wealth inequality",
+        "Racial inequality",
+        "Debt cancellation"
+      ],
+      "summary": "An analysis of household wealth data shows that student debt cancellation—at all proposed levels—is progressive.",
+      "discussion": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/issues",
+      "authors": [
+        "Charlie Eaton",
+        "Adam Goldstein",
+        "Laura Hamilton",
+        "Frederick Wherry"
+      ],
+      "preprint": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/blob/main/manuscript_RI_StudentDebtCancellation_202106.pdf",
+      "data": [
+        {
+          "set": "Survey of Consumer Finances",
+          "link": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/tree/main/data"
+        }
+      ],
+      "name": "Student Debt Cancellation IS Progressive",
+      "readme": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/blob/main/README.md",
+      "date": "04/28/2021",
+      "repo": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "Racial inequality",
+        "Hispanic Serving Institutions",
+        "Admissions"
+      ],
+      "summary": "Thirty years of annual college-level IPEDS surveys are used for event studies and trend break analyses testing for statistically significant changes in race-specific first- year enrollment after Hispanic-Serving (HSI) designation at four-year universities.",
+      "discussion": "https://github.com/HigherEdData/White-Flight/issues",
+      "authors": [
+        "Laura Hamilton",
+        "Charlie Eaton",
+        "Simon Cheng"
+      ],
+      "preprint": "https://github.com/HigherEdData/White-Flight/blob/main/manuscript_white_flight_20210521.pdf",
+      "data": [
+        {
+          "set": "Admissions and Race, California State University DataHub Data",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        },
+        {
+          "set": "Admissions and Race, University of California DataHub Data",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        },
+        {
+          "set": "IPEDS Fall Enrollment by Race",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        },
+        {
+          "set": "IPEDS Admissions and Test Scores",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        },
+        {
+          "set": "Admissions and Race, Texas DataHub Data",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        },
+        {
+          "set": "IPEDS Institutional Characteristics",
+          "link": "https://github.com/HigherEdData/White-Flight/tree/main/data"
+        }
+      ],
+      "name": "White Flight in Higher Education",
+      "readme": "https://github.com/HigherEdData/White-Flight/blob/main/README.md",
+      "date": "02/01/2021",
+      "repo": "https://github.com/HigherEdData/White-Flight",
+      "id": "projects"
+    },
+    {
+      "topics": [
+        "University boards",
+        "Private equity",
+        "Hedge funds",
+        "Elites"
+      ],
+      "summary": "Universities are show to be social organizations parallel to the economy that provide a circuitry connecting financiers to other elites, despite growing complexity and fragmentation in finance.",
+      "discussion": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/issues",
+      "authors": [
+        "Charlie Eaton",
+        "Albina Gibadullina"
+      ],
+      "preprint": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/blob/master/manuscript_elite_embeddedness_20200901.pdf",
+      "data": [
+        {
+          "set": "University Board Member DataHub Data",
+          "link": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/tree/master/data"
+        },
+        {
+          "set": "Forbes 400 (Restricted Use)",
+          "link": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/tree/master/data"
+        },
+        {
+          "set": "Prequin Private Equity Returns (Restricted Use)",
+          "link": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/tree/master/data"
+        },
+        {
+          "set": "IPEDS Admissions and Test Scores",
+          "link": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/tree/master/data"
+        },
+        {
+          "set": "IPEDS Institutional Characteristics",
+          "link": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/tree/master/data"
+        }
+      ],
+      "name": "Elite Embeddedness: Universities and the Value of Social Ties  in High Finance",
+      "readme": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/blob/master/README.md",
+      "date": "09/11/2020",
+      "repo": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties",
       "id": "projects"
     },
     {
@@ -253,23 +474,23 @@
       "data": [
         {
           "set": "Private Equity and College Ownership DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/tree/master/data"
         },
         {
           "set": "IPEDS Financial Aid and Net Price",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/tree/master/data"
         },
         {
           "set": "IPEDS Graduation",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/tree/master/data"
         },
         {
           "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/tree/master/data"
         },
         {
           "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/tree/master/data"
         }
       ],
       "name": "Private Equity and For-Profit Colleges as Agile Predators",
@@ -297,23 +518,23 @@
       "data": [
         {
           "set": "NASSGAP State Grant Aid Survey",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/tree/main/data"
         },
         {
           "set": "College Scorecard",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/tree/main/data"
         },
         {
           "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/tree/main/data"
         },
         {
           "set": "IPEDS Financial Aid and Net Price",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/tree/main/data"
         },
         {
           "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/tree/main/data"
         }
       ],
       "name": "State Grant Aid and the Organizational Ecology of College Affordability",
@@ -324,116 +545,48 @@
     },
     {
       "topics": [
-        "Online education",
-        "Student debt"
-      ],
-      "summary": "IPEDS data are used to assess racial disparities in enrollments and educational outcomes in exclusively online higher education degree programs.",
-      "discussion": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/issues",
-      "authors": [
-        "Christian Michael Smith",
-        "Amber Dyan Villalobos",
-        "Charlie Eaton",
-        "Laura T. Hamilton"
-      ],
-      "preprint": "https://osf.io/524va",
-      "data": [
-        {
-          "set": "IPEDS Online Enrollment",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Financial Aid and Net Price",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Graduation",
-          "link": "google.com"
-        }
-      ],
-      "name": "Assessing Online Education with IPEDS",
-      "readme": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/blob/main/README.md",
-      "date": "02/07/2022",
-      "repo": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "Online education",
-        "Private equity"
-      ],
-      "summary": "A dataset of 239 public university contracts that outsource online education to for-profit Online Program Managers (OPMs) are used to code structural features of the contracts that are potentially predatory.",
-      "discussion": "https://github.com/HigherEdData/Outsourcing-Online-Education/issues",
-      "authors": [
-        "Heather Daniels",
-        "Christian Smith",
-        "Laura T. Hamilton",
-        "and Charlie Eaton"
-      ],
-      "preprint": "https://osf.io/524va",
-      "data": [
-        {
-          "set": "Online Program Manager Contracts DataHub Data",
-          "link": "google.com"
-        },
-        {
-          "set": "Online Program Manager Ownership DataHub Data",
-          "link": "google.com"
-        }
-      ],
-      "name": "Outsourcing Online Education: Predation and Obfuscation in Public University-OPM Contracts",
-      "readme": "https://github.com/HigherEdData/Outsourcing-Online-Education/blob/main/README.md",
-      "date": "02/07/2022",
-      "repo": "https://github.com/HigherEdData/Outsourcing-Online-Education",
-      "id": "projects"
-    },
-    {
-      "topics": [
+        "Greek life",
+        "Residential life",
         "Racial inequality",
-        "Hispanic Serving Institutions",
-        "Admissions"
+        "Class inequality"
       ],
-      "summary": "Thirty years of annual college-level IPEDS surveys are used for event studies and trend break analyses testing for statistically significant changes in race-specific first- year enrollment after Hispanic-Serving (HSI) designation at four-year universities.",
-      "discussion": "https://github.com/HigherEdData/White-Flight/issues",
+      "summary": "At selective four-year schools, the presence of Greek letter societies is shown to be associated with greater class-based graduation gaps.",
+      "discussion": "https://github.com/HigherEdData/Going-Greek/issues",
       "authors": [
         "Laura Hamilton",
-        "Charlie Eaton",
         "Simon Cheng"
       ],
-      "preprint": "https://github.com/HigherEdData/White-Flight/blob/main/manuscript_white_flight_20210521.pdf",
+      "preprint": "https://github.com/HigherEdData/going_greek/blob/main/manuscript_going_greek.pdf",
       "data": [
         {
-          "set": "Admissions and Race, California State University DataHub Data",
-          "link": "google.com"
+          "set": "U.S. News and World Report Greek Life Data",
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
         },
         {
-          "set": "Admissions and Race, University of California DataHub Data",
-          "link": "google.com"
+          "set": "U.S. News and World Report Graduation by Student Aid Data",
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
+        },
+        {
+          "set": "Education Trust Pell Recipient Graduation Data",
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
         },
         {
           "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Admissions and Test Scores",
-          "link": "google.com"
-        },
-        {
-          "set": "Admissions and Race, Texas DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
         },
         {
           "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
+        },
+        {
+          "set": "IPEDS Financial Aid and Net Price",
+          "link": "https://github.com/HigherEdData/Going-Greek/tree/main/data"
         }
       ],
-      "name": "White Flight in Higher Education",
-      "readme": "https://github.com/HigherEdData/White-Flight/blob/main/README.md",
-      "date": "02/01/2021",
-      "repo": "https://github.com/HigherEdData/White-Flight",
+      "name": "Going Greek",
+      "readme": "https://github.com/HigherEdData/Going-Greek/blob/main/README.md",
+      "date": "10/01/2018",
+      "repo": "https://github.com/HigherEdData/Going-Greek",
       "id": "projects"
     },
     {
@@ -457,182 +610,29 @@
       "data": [
         {
           "set": "IPEDS Financial",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Financialization-of-Higher-Education/tree/main/data"
         },
         {
           "set": "Student Loan Origination and Interest DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Financialization-of-Higher-Education/tree/main/data"
         },
         {
           "set": "Private Equity and College Ownership DataHub Data",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Financialization-of-Higher-Education/tree/main/data"
         },
         {
           "set": "NACUBO Endowment Study (Restricted Use)",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Financialization-of-Higher-Education/tree/main/data"
         },
         {
           "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
+          "link": "https://github.com/HigherEdData/Financialization-of-Higher-Education/tree/main/data"
         }
       ],
       "name": "The financialization of US higher education",
       "readme": "https://github.com/HigherEdData/Financialization-of-Higher-Education/blob/main/README.md",
       "date": "10/01/2016",
       "repo": "https://github.com/HigherEdData/Financialization-of-Higher-Education",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "University boards",
-        "Private equity",
-        "Hedge funds",
-        "Elites"
-      ],
-      "summary": "Universities are show to be social organizations parallel to the economy that provide a circuitry connecting financiers to other elites, despite growing complexity and fragmentation in finance.",
-      "discussion": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/issues",
-      "authors": [
-        "Charlie Eaton",
-        "Albina Gibadullina"
-      ],
-      "preprint": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/blob/master/manuscript_elite_embeddedness_20200901.pdf",
-      "data": [
-        {
-          "set": "University Board Member DataHub Data",
-          "link": "google.com"
-        },
-        {
-          "set": "Forbes 400 (Restricted Use)",
-          "link": "google.com"
-        },
-        {
-          "set": "Prequin Private Equity Returns (Restricted Use)",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Admissions and Test Scores",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
-        }
-      ],
-      "name": "Elite Embeddedness: Universities and the Value of Social Ties  in High Finance",
-      "readme": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/blob/master/README.md",
-      "date": "09/11/2020",
-      "repo": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "Student debt",
-        "Debt collection",
-        "Racial inequality",
-        "Income inequality",
-        "Administrative burden"
-      ],
-      "summary": "Institutional student debt and debt collection is analyzed for California colleges and universities.",
-      "discussion": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/issues",
-      "authors": [
-        "Charlie Eaton",
-        "Jonathan Glater",
-        "Laura Hamilton",
-        "Dalié Jiménez"
-      ],
-      "preprint": "google.com",
-      "data": [
-        {
-          "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Financial Aid and Net Price",
-          "link": "google.com"
-        },
-        {
-          "set": "Institutional Student Debt DataHub Data",
-          "link": "google.com"
-        }
-      ],
-      "name": "Debt Collection, Institutional Debts, and Federal Student Aid Rules in California",
-      "readme": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections/blob/main/README.md",
-      "date": "02/07/2022",
-      "repo": "https://github.com/HigherEdData/Institutional-Student-Debt-and-Debt-Collections",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "Greek life",
-        "Residential life",
-        "Racial inequality",
-        "Class inequality"
-      ],
-      "summary": "At selective four-year schools, the presence of Greek letter societies is shown to be associated with greater class-based graduation gaps.",
-      "discussion": "https://github.com/HigherEdData/Going-Greek/issues",
-      "authors": [
-        "Laura Hamilton",
-        "Simon Cheng"
-      ],
-      "preprint": "https://github.com/HigherEdData/going_greek/blob/main/manuscript_going_greek.pdf",
-      "data": [
-        {
-          "set": "U.S. News and World Report Greek Life Data",
-          "link": "google.com"
-        },
-        {
-          "set": "U.S. News and World Report Graduation by Student Aid Data",
-          "link": "google.com"
-        },
-        {
-          "set": "Education Trust Pell Recipient Graduation Data",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Fall Enrollment by Race",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Institutional Characteristics",
-          "link": "google.com"
-        },
-        {
-          "set": "IPEDS Financial Aid and Net Price",
-          "link": "google.com"
-        }
-      ],
-      "name": "Going Greek",
-      "readme": "https://github.com/HigherEdData/Going-Greek/blob/main/README.md",
-      "date": "10/01/2018",
-      "repo": "https://github.com/HigherEdData/Going-Greek",
-      "id": "projects"
-    },
-    {
-      "topics": [
-        "Student debt",
-        "Wealth inequality",
-        "Racial inequality",
-        "Debt cancellation"
-      ],
-      "summary": "An analysis of household wealth data shows that student debt cancellation—at all proposed levels—is progressive.",
-      "discussion": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/issues",
-      "authors": [
-        "Charlie Eaton",
-        "Adam Goldstein",
-        "Laura Hamilton",
-        "Frederick Wherry"
-      ],
-      "preprint": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/blob/main/manuscript_RI_StudentDebtCancellation_202106.pdf",
-      "data": [
-        {
-          "set": "Survey of Consumer Finances",
-          "link": "google.com"
-        }
-      ],
-      "name": "Student Debt Cancellation IS Progressive",
-      "readme": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/blob/main/README.md",
-      "date": "04/28/2021",
-      "repo": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive",
       "id": "projects"
     }
   ]
