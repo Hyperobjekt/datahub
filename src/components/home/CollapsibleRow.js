@@ -18,19 +18,26 @@ import {
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
 /**
-* Converts data set object to link elements
+* Converts array to link or typography elements
 * @param {*} array - array of topics to include projects for
+* @param {*} type - data or topic
 * @returns {Array<Links>}
 */
-const convertToLink = (array) => {
-  return array.map((data, i) => [
-    !!i && ', ',
-    <Link href={data.link}>
-      <Typography variant="subtitle2" className="bold">
-        {data.set.toUpperCase()}
-      </Typography>
-    </Link>
-  ]);
+const convertToCommaSeparated = (array, type) => {
+  if (type === 'data') {
+    return array.map((data, i) => [
+        !!i && ', ',
+        <Link href={data.link} className="dhTopicsDataSets">
+            {data.set.toUpperCase()}
+        </Link>
+      ]);
+  }
+
+  return (
+    <Typography display="inline" className="dhTopicsDataSets">
+      {array.join(", ").toUpperCase()}
+    </Typography>
+  );
 };
 
 const CollapsibleRow = (props) => {
@@ -49,13 +56,10 @@ const CollapsibleRow = (props) => {
         Authors: {project.authors.join(', ')}
       </Typography>
       <Typography variant="subtitle1">
-        Data sets: {convertToLink(project.data)}
+        Data sets: {convertToCommaSeparated(project.data, 'data')}
       </Typography>
       <Typography variant="subtitle1">
-        Filed under{' '}
-        <Typography variant="subtitle2" className="bold">
-          {project.topics.join(', ').toUpperCase()}{' '}
-        </Typography>
+        Filed under: {convertToCommaSeparated(project.topics, 'topic')}
       </Typography>
     </>
   );

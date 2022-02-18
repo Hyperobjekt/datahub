@@ -113,6 +113,14 @@ const Theme = () => {
           '&.mono': {
             fontFamily: FONT,
           },
+          '&.dhTopicsDataSets': {
+            fontFamily: ALT_FONT,
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "12px",
+
+            margin: 0
+          },
           '&.dhTableRow': {
             fontFamily: FONT,
             fontStyle: "normal",
@@ -122,6 +130,17 @@ const Theme = () => {
 
             [theme.breakpoints.down('sm')]: {
               fontSize: '12px',
+            },
+          },
+          '&.dhNewsHeader': {
+            fontFamily: FONT,
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "24px",
+            marginTop: 0,
+
+            [theme.breakpoints.down('sm')]: {
+              fontSize: '15px',
             },
           }
         },

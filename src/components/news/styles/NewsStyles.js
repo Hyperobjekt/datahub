@@ -1,8 +1,11 @@
 import { makeStyles } from "@material-ui/core"
 
-export const NewsPageStyles = makeStyles({
+export const NewsPageStyles = makeStyles(theme => ({
   newsPage: {
     margin: '0 auto',
+    [theme.breakpoints.down('sm')]: {
+      margin: '0',
+    },
 
     '& > :first-child': {
       margin: '0 0 20px 0'
@@ -11,15 +14,15 @@ export const NewsPageStyles = makeStyles({
   pageTitle: {
     fontWeight: 'bold'
   }
-})
+}))
 
 export const NewsItemStyles = makeStyles(theme => ({
   item: {
     backgroundColor: '#E8F5FF',
 
-    maxWidth: theme.spacing(90),
+    maxWidth: theme.spacing(70),
     padding: theme.spacing(3),
-
+    maxWidth: '740px',
     margin: '0 0 40px 0'
   },
   thumbnail: {
@@ -27,6 +30,10 @@ export const NewsItemStyles = makeStyles(theme => ({
 
     width: '248px',
     height: '248px',
+    [theme.breakpoints.down('sm')]: {
+      width: '100px',
+      height: '100px',
+    },
     objectFit: 'cover',
 
     margin: '0 20px 0 0'
@@ -34,23 +41,11 @@ export const NewsItemStyles = makeStyles(theme => ({
   copy: {
     fontSize: '1em',
     width: '380px',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
     display: 'inline-block',
 
     verticalAlign: 'top'
-  },
-  title: {
-    fontSize: '3em',
-    fontWeight: 'bold'
-  },
-  lede: {
-    fontFamily: 'zeitung',
-    fontSize: '.95em',
-  },
-  source: {
-    color: '#505050',
-
-    fontFamily: 'zeitung',
-    fontSize: '.7em',
-    fontWeight: 'bold'
   }
 }))

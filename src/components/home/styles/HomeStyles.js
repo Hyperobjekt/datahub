@@ -48,7 +48,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
   },
   table: {
     '& .MuiTableCell-root.DhTable-projectHeader': {
-      [theme.breakpoints.between('md', 'lg')]: {
+      [theme.breakpoints.up('sm')]: {
         width: '50%',
       },
       [theme.breakpoints.down('sm')]: {
@@ -56,7 +56,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
       },
     },
     '& .MuiTableCell-root.DhTable-dateHeader': {
-      [theme.breakpoints.between('md', 'lg')]: {
+      [theme.breakpoints.up('sm')]: {
         width: '10%',
       },
       [theme.breakpoints.down('sm')]: {
@@ -64,7 +64,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
       },
     },
     '& .MuiTableCell-root.DhTable-infoHeaders': {
-      [theme.breakpoints.between('md', 'lg')]: {
+      [theme.breakpoints.up('sm')]: {
         width: '10%',
       },
       [theme.breakpoints.down('sm')]: {
@@ -105,7 +105,7 @@ export const CollapsibleRowStyles = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       margin: 0
     },
-    margin: '0 50px'
+    margin: '0 60px'
   },
   links: {
     margin: '12px 0 22px 0',

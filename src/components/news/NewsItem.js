@@ -29,19 +29,15 @@ const NewsItem = (props) => {
       <img className={classes.thumbnail} src={item.thumbnail} />
       <Box className={classes.copy}>
         <Link href={item.article[0].url}>
-          <Box component='span' className={classes.title}>
+          <Typography className="dhNewsHeader">
             {item.article[0].title}
-          </Box>
+          </Typography>
         </Link>
-        <Typography variant='subtitle1'>
-          <Box component='span'>
+        <Typography variant="subtitle1">
             {editLede(item.lede)}
-          </Box>
         </Typography>
-        <Typography>
-          <Box component='span' className={classes.source}>
+        <Typography variant="caption">
             {item.source[0].name} | {item.source[0].date}
-          </Box>
         </Typography>
       </Box>
     </Box>
