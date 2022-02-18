@@ -21,7 +21,6 @@ import {
 } from '@material-ui/core';
 
 import allProjects from '../../../content/data/projects.json';
-import MobileOnly from '../MobileOnly';
 
 /**
  * Returns true if there is an intersection between two projects
@@ -39,7 +38,7 @@ const hasProjectOverlap = (projectList, list) => {
 * @param {*} sources - array of source to include project for
 * @returns {Array<Projects>}
 */
-  const updateProjects = (topics, sources, projects) => {
+const updateProjects = (topics, sources, projects) => {
   // if filtering topics and sources, filter the projects by topic + sources
   if (topics.length > 0 && sources.length > 0)
     return projects.filter(
@@ -214,10 +213,17 @@ const ResourcesTable = () => {
           <TableHead>
             <TableRow className={classes.tableRow}>
               <TableCell className="DhTable-collapseCol" />
-              <TableCell className="DhTable-projectHeader">Project Name</TableCell>
-              <TableCell className="DhTable-dateHeader">Date</TableCell>
-              <TableCell className="DhTable-dateHeader"></TableCell>
-              <TableCell className="DhTable-dateHeader"></TableCell>
+              <TableCell className="DhTable-projectHeader">          
+                <Typography variant="body2" className="bold">
+                  Project Name
+                </Typography>
+              </TableCell>
+              <TableCell className="DhTable-dateHeader">          
+                <Typography variant="body2" className="bold">
+                  Date
+                </Typography>
+              </TableCell>
+              <TableCell className="DhTable-infoHeaders"></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

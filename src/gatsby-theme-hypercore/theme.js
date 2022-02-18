@@ -61,14 +61,14 @@ let base = {
       fontWeight: 'bold',
       fontSize: 15,
       lineHeight: 19 / 15,
-      letterSpacing: '0.03em',
+      letterSpacing: '0.03em'
     },
     caption: {
       fontFamily: ALT_FONT,
       fontWeight: 150,
       fontSize: 13,
       lineHeight: 18 / 13,
-      letterSpacing: '-0.02em',
+      letterSpacing: '-0.02em'
     },
   },
 };
@@ -105,17 +105,38 @@ const Theme = () => {
             fontFamily: ALT_FONT
           },
           '&.bold': {
-            fontWeight: 'bold',
+            fontWeight: '600',
           },
-          '&.uppercase': {
-            textTransform: 'uppercase',
+          '&.margin': {
+            margin: '10px 0 10px 0'
           },
           '&.mono': {
             fontFamily: FONT,
           },
+          '&.dhTableRow': {
+            fontFamily: FONT,
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "15px",
+            color: "#064493",
+
+            [theme.breakpoints.down('sm')]: {
+              fontSize: '12px',
+            },
+          }
         },
         body1: {
           margin: '1rem 0',
+        },
+        body2: {
+          [theme.breakpoints.down('sm')]: {
+            fontFamily: ALT_FONT,
+            fontStyle: 'normal',
+            fontWeight: 'normal',
+            fontSize: 13,
+            lineHeight: 23 / 16,
+            letterSpacing: '-0.02em',
+          },
         },
         subtitle1: {
           fontFamily: ALT_FONT,
@@ -126,10 +147,18 @@ const Theme = () => {
         subtitle2: {
           fontFamily: ALT_FONT,
           fontSize: '12px',
+          
+          display: 'inline-block',
 
-          margin: '10px 0 10px 0',
-          display: 'inline-block'
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '9.5px',
+          },
         },
+        h6: {
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '18px',
+          },
+        }
       },
       MuiDivider: {
         root: { margin: '1rem 0' },
@@ -202,7 +231,7 @@ const Theme = () => {
       },
       MuiLink: {
         root: {
-          fontFamily: 'source-code-pro',
+          fontFamily: FONT,
           fontSize: '.5em',
 
           color: 'inherit',

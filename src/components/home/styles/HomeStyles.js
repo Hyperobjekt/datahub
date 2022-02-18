@@ -17,7 +17,9 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
     justifyContent: 'flex-start',
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
-      alignItems: 'center'
+      alignItems: 'center',
+
+      margin: '25px 0 10px 0',
     },
     [theme.breakpoints.up('md')]: {
       alignItems: 'baseline',
@@ -46,26 +48,33 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
   },
   table: {
     '& .MuiTableCell-root.DhTable-projectHeader': {
-      fontFamily: 'zeitung',
       [theme.breakpoints.between('md', 'lg')]: {
         width: '50%',
       },
-      [theme.breakpoints.down('xs')]: {
-        width: '90%',
+      [theme.breakpoints.down('sm')]: {
+        width: '80%',
       },
     },
     '& .MuiTableCell-root.DhTable-dateHeader': {
       [theme.breakpoints.between('md', 'lg')]: {
-        width: '50%',
-      },
-      [theme.breakpoints.down('xs')]: {
         width: '10%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: '5%',
+      },
+    },
+    '& .MuiTableCell-root.DhTable-infoHeaders': {
+      [theme.breakpoints.between('md', 'lg')]: {
+        width: '10%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        display: 'none'
       },
     },
     '& .MuiTableCell-root.DhTable-collapseCol': {
-      display: 'none',
-      [theme.breakpoints.up('lg')]: {
-        display: 'table-cell',
+      width: '3%',
+      [theme.breakpoints.down('md')]: {
+        display: 'none',
       },
     },
     '& .MuiButtonBase-root.DhTable-collapseRow': {
@@ -80,14 +89,6 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
   },
   tableRow: {
     background: '#FFF8ED',
-  },
-  dateHeader: {
-    [theme.breakpoints.down('md')]: {
-      width: '50%',
-    },
-    [theme.breakpoints.up('md')]: {
-      width: '40%',
-    },
   }
 }))
 
@@ -100,29 +101,14 @@ export const CollapsibleRowStyles = makeStyles(theme => ({
       paddingRight: '10px'
     },
   },
-  info: {
-    fontFamily: 'zeitung',
-
-    width: '75%',
-    marginTop: '2px',
-    marginBottom: '6px',
-    [theme.breakpoints.between('sm', 'md')]: {
-      width: '100%',
-      marginLeft: 0,
+  collapseContainer: {
+    [theme.breakpoints.down('md')]: {
+      margin: 0
     },
-    [theme.breakpoints.up('md')]: {
-      width: '75%',
-      marginLeft: '6%',
-    },
+    margin: '0 50px'
   },
   links: {
-    margin: '22px 0 22px 6%',
-    [theme.breakpoints.between('sm', 'md')]: {
-      margin: '22px 0 22px 0',
-    },
-    [theme.breakpoints.up('md')]: {
-      margin: '22px 0 22px 6%',
-    },
+    margin: '12px 0 22px 0',
     padding: '21px 32px',
     background: '#FFF8ED',
   }

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { CollapsibleRowStyles } from './styles/HomeStyles';
 import LinkIcon from '../../../static/icons/link.svg'
 import Chat from '../../../static/icons/chat.svg'
+import { MobileOnly, MobileNot } from '../MobileStyles';
 
 import {
   Box,
@@ -16,6 +17,22 @@ import {
 
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
+/**
+* Converts data set object to link elements
+* @param {*} array - array of topics to include projects for
+* @returns {Array<Links>}
+*/
+const convertToLink = (array) => {
+  return array.map((data, i) => [
+    !!i && ', ',
+    <Link href={data.link}>
+      <Typography variant="subtitle2" className="bold">
+        {data.set.toUpperCase()}
+      </Typography>
+    </Link>
+  ]);
+};
+
 const CollapsibleRow = (props) => {
   const classes = CollapsibleRowStyles();
 
@@ -23,46 +40,54 @@ const CollapsibleRow = (props) => {
 
   const { project, index } = props;
 
-  const convertToLink = (array) => {
-    const links = array.map((data, i) => [
-      !!i && ', ',
-      <Link href={data.link}>
-        <Typography variant="subtitle2">
-          {data.set}
-        </Typography>
-      </Link>
-    ]);
-
-    return links;
-  };
-
   const info = (
-    <Box className={classes.info}>
-      <Typography variant="subtitle1">{project.summary}</Typography>
+    <>
+      <Typography variant="body2" className="margin">
+        {project.summary}
+      </Typography>
+      <Typography variant="body2" className="margin">
+        Authors: {project.authors.join(', ')}
+      </Typography>
       <Typography variant="subtitle1">
         Data sets: {convertToLink(project.data)}
       </Typography>
       <Typography variant="subtitle1">
-        Authors: {project.authors.join(', ')}
-      </Typography>
-      <Typography variant="subtitle2">
         Filed under{' '}
         <Typography variant="subtitle2" className="bold">
           {project.topics.join(', ').toUpperCase()}{' '}
         </Typography>
       </Typography>
-    </Box>
+    </>
   );
 
   const links = (
     <Box className={classes.links}>
-      <Typography variant="h6" component="div">
+      <Typography variant="h6" className="bold">
         Get Help with the Data
       </Typography>
+      <MobileOnly>
+        <Box className={classes.evenAlign}>
+          <Box className={classes.evenAlign}>
+            <img src={LinkIcon} alt="chatIcon" />
+            <Link href={project.repo}>
+              <Typography className="dhTableRow">REPO</Typography>
+            </Link> 
+          </Box>
+          <Box className={classes.evenAlign}>
+            <img src={LinkIcon} alt="chatIcon" />
+            {project.manuscript ?
+              <Link href={project.manuscript}>
+                <Typography className="dhTableRow">MANUSCRIPT</Typography>
+              </Link> :
+              <Typography className="dhTableRow">MANUSCRIPT</Typography>
+            }           
+          </Box>
+        </Box>
+      </MobileOnly>
       <Box className={classes.evenAlign}>
         <img src={Chat} alt="chatIcon" />
         <Link href={project.discussion}>
-          <Typography>ASK A QUESTION ON GITHUB</Typography>
+          <Typography className="dhTableRow">ASK A QUESTION ON GITHUB</Typography>
         </Link>
       </Box>
     </Box>
@@ -78,29 +103,31 @@ const CollapsibleRow = (props) => {
         </TableCell>
         <TableCell>
           {open ? (
-            <div>
-              <Typography variant="body2" className="bold">
+            <Box className={classes.evenAlign}>
+              <Typography onClick={() => setOpen(!open)} variant="body2" className="bold">
                 {project.name}
+                <IconButton
+                  className="DhTable-collapseRow"
+                  size="small"
+                  onClick={() => setOpen(!open)}
+                >
+                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                </IconButton>
               </Typography>
-              <IconButton
-                className="DhTable-collapseRow"
-                size="small"
-                onClick={() => setOpen(!open)}
-              >
-                {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-              </IconButton>
-            </div>
+            </Box>
           ) : (
-            <div>
-              <Typography variant="body2">{project.name}</Typography>
-              <IconButton
-                className="DhTable-collapseRow"
-                size="small"
-                onClick={() => setOpen(!open)}
-              >
-                {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-              </IconButton>
-            </div>
+            <Box className={classes.evenAlign}>
+              <Typography onClick={() => setOpen(!open)} variant="body2">
+                {project.name}
+                <IconButton
+                  className="DhTable-collapseRow"
+                  size="small"
+                  onClick={() => setOpen(!open)}
+                >
+                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                </IconButton>
+              </Typography>
+            </Box>
           )}
         </TableCell>
         <TableCell>
@@ -108,33 +135,37 @@ const CollapsibleRow = (props) => {
             {project.date}
           </Typography>
         </TableCell>
+        <MobileNot>
         <TableCell>
         <Typography variant="body2">
           <Box className={classes.evenAlign}>
-            <img src={LinkIcon} alt="chatIcon" />
-            <Link href={project.repo}>
-              <Typography variant="body2" className='sourceCode'>REPO</Typography>
-            </Link> 
+            <Box className={classes.evenAlign}>
+              <img src={LinkIcon} alt="chatIcon" />
+              <Link href={project.repo}>
+                <Typography className="dhTableRow">REPO</Typography>
+              </Link> 
+            </Box>
+            <Box className={classes.evenAlign}>
+              <img src={LinkIcon} alt="chatIcon" />
+              {project.manuscript ?
+                <Link href={project.manuscript}>
+                  <Typography className="dhTableRow">MANUSCRIPT</Typography>
+                </Link> :
+                <Typography className="dhTableRow">MANUSCRIPT</Typography>
+              }           
+            </Box>
           </Box>
         </Typography>
         </TableCell>
-        <TableCell>
-          <Box className={classes.evenAlign}>
-            <img src={LinkIcon} alt="chatIcon" />
-            {project.manuscript ?
-              <Link href={project.manuscript}>
-                <Typography variant="body2" className='sourceCode'>MANUSCRIPT</Typography>
-              </Link> :
-              <Typography variant="body2" className="sourceCode">MANUSCRIPT</Typography>
-            }           
-          </Box>
-        </TableCell>
+        </MobileNot>
       </TableRow>
       <TableRow style={{ padding: '0', background: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
         <TableCell className="DhTable-collapseHl" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            {info}
-            {links}
+            <Box className={classes.collapseContainer}>
+              {info}
+              {links}
+            </Box>
           </Collapse>
         </TableCell>
       </TableRow>
