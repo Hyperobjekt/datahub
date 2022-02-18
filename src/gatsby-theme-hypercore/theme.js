@@ -269,6 +269,13 @@ const Theme = () => {
           fontWeight: 'none',
         },
       },
+      MuiTablePagination: {
+        actions: {
+          [theme.breakpoints.down('md')]: {
+            marginLeft: '5px',
+          },
+        }
+      },
       // make the page fill the viewport
       HypPage: {
         root: {
