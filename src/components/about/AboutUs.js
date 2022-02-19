@@ -9,12 +9,20 @@ import { Block, Hero } from '@hyperobjekt/material-ui-website'
 import { AboutUsPage } from './styles/AboutStyles'
 import OurTeam from './OurTeam'
 
-import aboutUs from '../../../content/data/about.json'
+import aboutUsObj from '../../../content/data/about.json'
 
 const HighlightedText = (highlight, lede) => {
   
   return (
     <>
+      <Box>
+        <Typography>
+          {highlight}
+        </Typography>
+      </Box>
+      <Typography>
+        {lede}
+      </Typography>
     </>
   )
 }
@@ -23,6 +31,7 @@ const AboutUs = () => {
   const classes = AboutUsPage()
 
   return (
+    console.log(aboutUsObj),
     <>
       <Hero
         ContainerProps={{

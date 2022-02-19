@@ -69,8 +69,15 @@ const data = {
             { label: "Approach", name: "approach", widget: "string" },
           ],
         },
-        { label: "Position One", name: "positionOne", widget: "string" },
-        { label: "Position Two", name: "positionTwo", widget: "string" },
+        {
+          label: "Fourth Block",
+          name: "fourthBlock",
+          widget: "list",
+          fields: [
+            { label: "Position One", name: "positionOne", widget: "string" },
+            { label: "Position Two", name: "positionTwo", widget: "string" },
+          ],
+        },
         {
           label: "Team",
           name: "team",

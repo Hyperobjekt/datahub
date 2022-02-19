@@ -11,7 +11,6 @@ const useStyles = makeStyles(theme => ({
 
     maxWidth: theme.spacing(70),
     padding: theme.spacing(3),
-    maxWidth: '740px',
     margin: '0 0 40px 0'
   },
   copy: {
