@@ -6,6 +6,7 @@ import {
   Box
 } from "@material-ui/core"
 
+import BlueBox from '../general/BlueBox.js'
 import { NewsItemStyles } from './styles/NewsStyles'
 
 const editLede = (lede) => {
@@ -24,25 +25,32 @@ const NewsItem = (props) => {
 
   const classes = NewsItemStyles()
 
-  const newsItem =
-    <Box className={classes.item}>
-      <img className={classes.thumbnail} src={item.thumbnail} />
-      <Box className={classes.copy}>
-        <Link href={item.article[0].url}>
-          <Typography className="dhNewsHeader">
-            {item.article[0].title}
-          </Typography>
-        </Link>
-        <Typography variant="subtitle1">
-            {editLede(item.lede)}
-        </Typography>
-        <Typography variant="caption">
-            {item.source[0].name} | {item.source[0].date}
-        </Typography>
-      </Box>
-    </Box>
+  const title =
+    <Link href={item.article[0].url}>
+      <Typography className="dhNewsHeader">
+        {item.article[0].title}
+      </Typography>
+    </Link>
 
-  return newsItem
+  const lede = 
+    <Typography variant="subtitle1">
+        {editLede(item.lede)}
+    </Typography>
+
+  const source =
+    <Typography variant="caption">
+        {item.source[0].name} | {item.source[0].date}
+    </Typography>
+
+
+  return (
+    <BlueBox 
+      thumbnail={<img className={classes.thumbnail} src={item.thumbnail} />}
+      title={title}
+      copy1={lede}
+      copy2={source}
+    />
+  )
 }
 
 export default NewsItem

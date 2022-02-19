@@ -42,13 +42,35 @@ const data = {
       file: "content/data/about.json",
       fields: [
         { label: "About Us", name: "aboutUs", widget: "string" },
-        { label: "Location", name: "location", widget: "string" },
-        { label: "Position Highlight One", name: "positionHighlightOne", widget: "string" },
-        { label: "Position Highlight Two", name: "positionHighlightTwo", widget: "string" },
-        { label: "Belief Highlight", name: "beliefHighlight", widget: "string" },
-        { label: "Belief", name: "belief", widget: "string" },
-        { label: "Lab Details One", name: "labDetailsOne", widget: "string" },
-        { label: "Lab Details Two", name: "labDetailsTwo", widget: "string" },
+        {
+          label: "First Block",
+          name: "firstBlock",
+          widget: "list",
+          fields: [
+            { label: "Motive", name: "motive", widget: "string" },
+            { label: "Location", name: "location", widget: "string" },
+          ],
+        },
+        {
+          label: "Second Block",
+          name: "secondBlock",
+          widget: "list",
+          fields: [
+            { label: "Drive", name: "drive", widget: "string" },
+            { label: "Approach", name: "approach", widget: "string" },
+          ],
+        },
+        {
+          label: "Third Block",
+          name: "thirdBlock",
+          widget: "list",
+          fields: [
+            { label: "Motive", name: "motive", widget: "string" },
+            { label: "Approach", name: "approach", widget: "string" },
+          ],
+        },
+        { label: "Position One", name: "positionOne", widget: "string" },
+        { label: "Position Two", name: "positionTwo", widget: "string" },
         {
           label: "Team",
           name: "team",

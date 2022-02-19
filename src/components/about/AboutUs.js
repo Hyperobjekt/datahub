@@ -5,34 +5,43 @@ import {
   Box
 } from "@material-ui/core";
 
+import { Block, Hero } from '@hyperobjekt/material-ui-website'
+import { AboutUsPage } from './styles/AboutStyles'
 import OurTeam from './OurTeam'
+
+import aboutUs from '../../../content/data/about.json'
 
 const HighlightedText = (highlight, lede) => {
   
   return (
     <>
-      <Typography variant='h4'>
-        <Box component='span'>
-          ABOUT US
-        </Box>
-      </Typography>
-      <Typography variant='body1'>
-        <Box component='span'>
-          ABOUT US
-        </Box>
-      </Typography>
     </>
   )
 }
 
 const AboutUs = () => {
+  const classes = AboutUsPage()
+
   return (
     <>
-      <Typography variant='h5'>
-        <Box component='span'>
-          ABOUT US
+      <Hero
+        ContainerProps={{
+          justifyContent: "flex-start",
+        }}
+        alignItems="flex-end"
+        bgcolor="#475865"
+        color="grey.900"
+        variant="overlay"
+      >
+      </Hero>
+
+      <Block>
+        <Box className={classes.aboutUs}>
+          <Typography variant='h5'>
+              ABOUT US
+          </Typography>
         </Box>
-      </Typography>
+      </Block>
     </>
   )
 }

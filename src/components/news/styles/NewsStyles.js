@@ -10,21 +10,10 @@ export const NewsPageStyles = makeStyles(theme => ({
     '& > :first-child': {
       margin: '0 0 20px 0'
     },
-  },
-  pageTitle: {
-    fontWeight: 'bold'
   }
 }))
 
 export const NewsItemStyles = makeStyles(theme => ({
-  item: {
-    backgroundColor: '#E8F5FF',
-
-    maxWidth: theme.spacing(70),
-    padding: theme.spacing(3),
-    maxWidth: '740px',
-    margin: '0 0 40px 0'
-  },
   thumbnail: {
     display: 'inline-block',
 

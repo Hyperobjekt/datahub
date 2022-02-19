@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CollapsibleRowStyles } from './styles/HomeStyles';
 import LinkIcon from '../../../static/icons/link.svg'
 import Chat from '../../../static/icons/chat.svg'
-import { MobileOnly, MobileNot } from '../MobileStyles';
+import { MobileOnly, MobileNot } from '../general/MobileStyles';
 
 import {
   Box,

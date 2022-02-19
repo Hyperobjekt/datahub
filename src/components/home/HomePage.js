@@ -1,9 +1,10 @@
-import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import React from 'react';
 
+import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import ResourcesTable from './ResourcesTable';
 import SplitHeader from './SplitHeader';
 import ScrollButton from './ScrollButton';
+
 const HomePage = () => {
   return (
     <>
