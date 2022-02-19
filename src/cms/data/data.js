@@ -41,7 +41,6 @@ const data = {
       name: "about",
       file: "content/data/about.json",
       fields: [
-        { label: "About Us", name: "aboutUs", widget: "string" },
         {
           label: "First Block",
           name: "firstBlock",
