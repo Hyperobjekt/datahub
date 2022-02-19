@@ -1,17 +1,35 @@
 {
   "positionHighlightTwo": "The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy.",
   "belief": "We believe that social science scholarship has a role to play in the creation of a more robust, publicly supported, and equitable higher education system and economy. ",
+  "thirdBlock": [
+    {
+      "motive": "These inequities are not inevitable or immutable.",
+      "approach": "We believe that social science scholarship has a role to play in the creation of a more robust, publicly supported, and equitable higher education system and economy. "
+    }
+  ],
   "position": "We believe that social science scholarship has a role to play in the creation of a more robust, publicly supported, and equitable higher education system and economy.",
   "drive": "Racism and racial segregation are central to this system of educational and class inequality. The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy.",
   "aboutUs": "The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities.",
   "labDetailsOne": "The Lab contributes systematic empirical analyses to help inform pressing social debates around postsecondary equity. At every stage of our research, we consult with valued non-profit policy advocates and policymakers. These individuals have both on-the-ground knowledge of the problems college students, workers and communities face—and a birds-eye-view of potential levers for change.",
   "beliefHighlight": "These inequities are not inevitable or immutable.",
+  "fourthBlock": [
+    {
+      "positionOne": "The Lab contributes systematic empirical analyses to help inform pressing social debates around postsecondary equity. At every stage of our research, we consult with valued non-profit policy advocates and policymakers. These individuals have both on-the-ground knowledge of the problems college students, workers and communities face—and a birds-eye-view of potential levers for change.",
+      "positionTwo": "The Lab also values the training and support of the next generation of higher education and socio-economic researchers. Increasingly, these researchers attend or work at Minority-Serving Institutions, like UC-Merced, and personally identify as first-generation, low-income, and/or racially underrepresented. This is the future of higher education and the economy—and the HERE Lab is part of the transformation.  "
+    }
+  ],
   "location": "The Higher Education Race and the Economy (HERE) Lab is located in the Department of Sociology at the University of California, Merced.",
   "labDetails": [
     "The Lab contributes systematic empirical analyses to help inform pressing social debates around postsecondary equity. At every stage of our research, we consult with valued non-profit policy advocates and policymakers. These individuals have both on-the-ground knowledge of the problems college students, workers and communities face—and a birds-eye-view of potential levers for change.",
     "The Lab also values the training and support of the next generation of higher education and socio-economic researchers. Increasingly, these researchers attend or work at Minority-Serving Institutions, like UC-Merced, and personally identify as first-generation, low-income, and/or racially underrepresented. This is the future of higher education and the economy—and the HERE Lab is part of the transformation."
   ],
   "labDetailsTwo": "The Lab also values the training and support of the next generation of higher education and socio-economic researchers. Increasingly, these researchers attend or work at Minority-Serving Institutions, like UC-Merced, and personally identify as first-generation, low-income, and/or racially underrepresented. This is the future of higher education and the economy—and the HERE Lab is part of the transformation.  ",
+  "secondBlock": [
+    {
+      "drive": "In the post-industrial U.S. economy, those without college degrees are increasingly excluded from economic security and social inclusion. Yet colleges and universities often do more to sort and rank people than to equitably empower. Racism and racial segregation are central to this system of educational and class inequality.",
+      "approach": "The realities of higher education for racially and economically marginalized students—from where they attend school, to how well that school is resourced, whether they will graduate, and how much it will cost them—dramatically diverge from those of their more privileged peers. Racial and class inequalities involving colleges and universities, which are unusually central organizations in U.S. social life, are in turn linked to parallel disparities in the organization of the economy. "
+    }
+  ],
   "positionHighlightOne": "In the post-industrial U.S. economy, those without college degrees are increasingly excluded from economic security and social inclusion. Yet colleges and universities often do more to sort and rank people than to equitably empower. Racism and racial segregation are central to this system of educational and class inequality.",
   "team": [
     {
@@ -43,6 +61,12 @@
       "bio": "Amber D. Villalobos is a postdoctoral fellow at the Higher Education Race and the Economy Lab at the University of California, Merced. Her research examines race and class differentials in access and returns to higher education. Sh e is particularly concerned with understanding how educational experiences e ffect one’s life chances. At the HERE lab she applies her expertise to work in the growing field of online higher education. Currently, she examines how attendance at four - year onl ine degree programs in both the for profit and non - profit sector shape students’ educational and economic outcomes.",
       "name": "Amber Villalobos",
       "thumbnail": "/images/ambervillalobos.jpg"
+    }
+  ],
+  "firstBlock": [
+    {
+      "location": "The DataHub is a project of the Higher Education Race and the Economy (HERE) Lab in the Department of Sociology at the University of California, Merced.",
+      "motive": "The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities."
     }
   ]
 }
