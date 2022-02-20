@@ -33,16 +33,32 @@ export const AboutUsPage = makeStyles(theme => ({
   },
   hlText: {
     maxWidth: theme.spacing(70),
-    marginTop: theme.spacing(3)
+    marginTop: theme.spacing(3),
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: theme.spacing(40),
+      marginTop: theme.spacing(1),
+    },
   },
   hlBox: {
     width: '587px',
-    paddingBottom: theme.spacing(3),
-    borderBottom: '.3em solid'
+    paddingBottom: theme.spacing(1),
+    borderBottom: '.3em solid',
+    marginBottom: theme.spacing(3),
+
+    [theme.breakpoints.down('sm')]: {
+      width: '300px',
+      paddingBottom: theme.spacing(1),
+      borderBottom: '.2em solid',
+      marginBottom: theme.spacing(1)
+    },
   },
   logo: {
     width: '587px',
     margin: '50px 0 0 0',
+
+    [theme.breakpoints.down('sm')]: {
+      width: '300px',
+    },
 
     '& > *': {
       paddingBottom: '15px'

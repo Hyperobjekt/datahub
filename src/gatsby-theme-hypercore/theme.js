@@ -142,6 +142,24 @@ const Theme = () => {
             [theme.breakpoints.down('sm')]: {
               fontSize: '15px',
             },
+          },
+          '&.dhHlText': {
+            fontFamily: FONT,
+            fontWeight: 600,
+            fontSize: 32,
+            lineHeight: 38 / 32,
+
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 20,
+            },
+          },
+          '&.dhHlBody': {
+            fontFamily: ALT_FONT,
+            fontSize: 16,
+
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 14
+            },
           }
         },
         body1: {

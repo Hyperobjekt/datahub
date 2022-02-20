@@ -88,6 +88,7 @@ const data = {
               widget: "string",
               hint: "enter your full name",
             },
+            { label: "Title", name: "title", widget: "string" },
             { label: "Bio", name: "bio", widget: "string" },
             { label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true }
           ],

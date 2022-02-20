@@ -26,11 +26,11 @@ const HighlightedText = (hlText, hlBox, highlight, lede) => {
   return (
     <Box className={hlText}>
       <Box className={hlBox}>
-        <Typography variant="h1" className="bold">
+        <Typography className="dhHlText">
           {highlight}
         </Typography>
       </Box>
-      <Typography variant="body1">
+      <Typography className="dhHlBody">
         {lede}
       </Typography>
     </Box>
@@ -78,23 +78,21 @@ const AboutUs = () => {
         bgcolor="#475865"
         color="grey.900"
         variant="overlay"
-      >
-      </Hero>
-
+      />
       <Block>
         <Box className={classes.aboutUs}>
           <Box>
-            <Typography variant='h5'>
-                ABOUT US
+            <Typography variant='h5' className="bold">
+              ABOUT US
             </Typography>
             {firstBlock(aboutUsObj.firstBlock[0])}
           </Box>
           {secondBlock(aboutUsObj.secondBlock[0])}
           {thirdBlock(aboutUsObj.thirdBlock[0])}
           <Box className={classes.logo}>
-            <img src={HereLabLogo} alt={'Here Lab logo'} />
-            <Typography variant="body1">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
-            <Typography variant="body1">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
+            <img className={classes.logoWidth} src={HereLabLogo} alt={'Here Lab logo'} />
+            <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
+            <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
           </Box>
           <OurTeam team={aboutUsObj.team}/>
         </Box>

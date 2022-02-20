@@ -51,19 +51,17 @@ const OurTeam = (props) => {
     })
   }
 
-  const cards = memberCards()
-
   return (
     <Box className={classes.blueContainer}>
       <Typography variant="overline">OUR TEAM</Typography>
       <Grid 
         container 
-        spacing={1}
+        spacing={0}
         direction="column"
         alignItems="center"
         justifyContent="center"
       >
-        {cards}
+        {memberCards()}
       </Grid>
     </Box>
   )

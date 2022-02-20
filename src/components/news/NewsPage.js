@@ -24,9 +24,7 @@ const NewsPage = () => {
         bgcolor="#475865"
         color="grey.900"
         variant="overlay"
-      >
-      </Hero>
-
+      />
       <Block>
         <Box className={classes.newsPage}>
           <Typography variant="h5" className="bold">
