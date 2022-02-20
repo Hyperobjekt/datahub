@@ -44,7 +44,8 @@ const NewsItem = (props) => {
 
 
   return (
-    <BlueBox 
+    <BlueBox
+      itemStyles={classes.item}
       thumbnail={<img className={classes.thumbnail} src={item.thumbnail} />}
       title={title}
       copy1={lede}

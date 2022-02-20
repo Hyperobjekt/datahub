@@ -14,6 +14,13 @@ export const NewsPageStyles = makeStyles(theme => ({
 }))
 
 export const NewsItemStyles = makeStyles(theme => ({
+  item: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(90),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0'
+  },
   thumbnail: {
     display: 'inline-block',
 

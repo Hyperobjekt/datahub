@@ -65,7 +65,17 @@ export const OurTeamStyles = makeStyles(theme => ({
 
     backgroundColor: '#E8F5FF',
 
-    maxWidth: theme.spacing(90),
+    maxWidth: theme.spacing(150),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0'
+  },
+  thumbnail: {
+    width: '150px'
+  },
+  itemStyles: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(40),
     padding: theme.spacing(3),
     margin: '0 0 40px 0'
   },
