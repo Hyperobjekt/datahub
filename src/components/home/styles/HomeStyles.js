@@ -44,7 +44,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
       },
     },
 
-    margin: '25px 0 50px 0'
+    margin: '25px 0 25px 0'
   },
   table: {
     '& .MuiTableCell-root.DhTable-projectHeader': {
@@ -89,7 +89,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
   },
   tableRow: {
     background: '#FFF8ED',
-  }
+  },
 }))
 
 export const CollapsibleRowStyles = makeStyles(theme => ({

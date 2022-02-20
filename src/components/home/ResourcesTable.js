@@ -18,7 +18,10 @@ import {
   OutlinedInput,
   useTheme,
   Box,
+  Button
 } from '@material-ui/core';
+
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
 import allProjects from '../../../content/data/projects.json';
 
@@ -113,6 +116,11 @@ const ResourcesTable = () => {
     );
   };
 
+  const handleClear = () => {
+    setSelectedTopics([])
+    setSelectedSources([])
+  }
+
   const tableHeader =
     <Box className={classes.centerAlign}>
       <Typography variant="h6" className="bold">RESOURCES</Typography>
@@ -175,6 +183,11 @@ const ResourcesTable = () => {
                 ))}
             </Select>
           </FormControl>
+          {(selectedTopics.length > 0 || selectedSources.length > 0) &&
+            <Button onClick={handleClear} className="dhTable-clearAll">
+              <HighlightOffIcon />
+            </Button>
+          }
         </Box>
       </Box>
     </Box>

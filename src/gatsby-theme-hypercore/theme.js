@@ -231,6 +231,9 @@ const Theme = () => {
           '&:focus': {
             backgroundColor: 'transparent',
           },
+          [theme.breakpoints.down('md')]: {
+            fontSize: '13px'
+          },
         },
       },
       MuiList: {
@@ -274,6 +277,14 @@ const Theme = () => {
           [theme.breakpoints.down('md')]: {
             marginLeft: '5px',
           },
+        }
+      },
+      MuiButton: {
+        root: {
+          '&.dhTable-clearAll': {
+            color: 'rgba(0, 0, 0, 0.54)',
+            minWidth: '24px'
+          }
         }
       },
       // make the page fill the viewport
