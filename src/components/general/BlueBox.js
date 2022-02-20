@@ -43,7 +43,7 @@ const BlueBox = (props) => {
       <Box className={copyStyles ? copyStyles : classes.copy}>
         {title}
         {copy1}
-        {copy2}
+        {copy2 ? copy2 : null}
       </Box>
     </Box>
   ) 

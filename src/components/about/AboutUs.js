@@ -13,6 +13,14 @@ import OurTeam from './OurTeam'
 
 import aboutUsObj from '../../../content/data/about.json'
 
+/**
+* Converts array to link or typography elements
+* @param {*} hlText - CSS class for container
+* @param {*} hlBox - CSS class for highlighted div
+* @param {*} highlight - highlight text
+* @param {*} lede - lede text
+* @returns {Object[Box]}
+*/
 const HighlightedText = (hlText, hlBox, highlight, lede) => {
   
   return (
@@ -88,6 +96,7 @@ const AboutUs = () => {
             <Typography variant="body1">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
             <Typography variant="body1">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
           </Box>
+          <OurTeam team={aboutUsObj.team}/>
         </Box>
       </Block>
     </>

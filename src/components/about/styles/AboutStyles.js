@@ -47,5 +47,36 @@ export const AboutUsPage = makeStyles(theme => ({
     '& > *': {
       paddingBottom: '15px'
     },
+  },
+  blueContainer: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(70),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0'
   }
+}))
+
+export const OurTeamStyles = makeStyles(theme => ({
+  blueContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(90),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0'
+  },
+  copyStyles: {
+    display: 'flex',
+    flexDirection: 'column',
+
+    padding: `${theme.spacing(3), 0}`,
+
+    '& > *': {
+      paddingBottom: theme.spacing(2)
+    },
+  },
 }))
