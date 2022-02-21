@@ -3,10 +3,17 @@ import React from 'react';
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import ResourcesTable from './ResourcesTable';
 import SplitHeader from './SplitHeader';
-import ScrollButton from './ScrollButton';
+import RoundedButton from '../general/RoundedButton';
 import HomeHero from "../../../static/icons/homeHero.png";
 
+const handleScrollClick = () => {
+  const scrollTo = document.getElementById('scrollTo')
+
+  scrollTo.scrollIntoView()
+}
+
 const HomePage = () => {
+
   return (
     <>
       <Hero
@@ -19,7 +26,10 @@ const HomePage = () => {
         color="grey.900"
         variant="overlay"
       >
-        <ScrollButton />
+        <RoundedButton
+          handleClick={handleScrollClick}
+          text={'View Resources'}
+        />
       </Hero>
 
       <SplitHeader />

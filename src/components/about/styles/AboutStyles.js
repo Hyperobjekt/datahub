@@ -99,10 +99,10 @@ export const OurTeamStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
 
-    padding: `${theme.spacing(3), 0}`,
+    padding: `theme.spacing(3) 0`,
 
     '& > *': {
       paddingBottom: theme.spacing(2)
     },
-  },
+  }
 }))

@@ -14,6 +14,10 @@
     {
       "name": "In the News",
       "link": "/news"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
     }
   ],
   "social": [

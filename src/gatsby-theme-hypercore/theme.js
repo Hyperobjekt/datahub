@@ -216,19 +216,6 @@ const Theme = () => {
           padding: '10px',
         },
       },
-      MuiInputBase: {
-        root: {
-          background: '#E8F5FF',
-          height: '40px',
-          [theme.breakpoints.down('md')]: {
-            width: '60px',
-            marginRight: '10px',
-          },
-          [theme.breakpoints.up('md')]: {
-            width: '200px',
-          }
-        }
-      },
       MuiOutlinedInput: {
         root: {
           '& $notchedOutline': {

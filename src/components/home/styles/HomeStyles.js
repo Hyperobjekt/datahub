@@ -1,4 +1,4 @@
-import { makeStyles, useTheme } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core"
 
 export const ResourcesTablesStyles = makeStyles(theme => ({
   centerAlign: {
@@ -7,8 +7,14 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
     alignItems: 'center',
 
     '& .MuiInputBase-root.Dh-inputFilterField': {
+      background: '#E8F5FF',
+      height: '40px',
       [theme.breakpoints.down('md')]: {
-        width: '120px',
+        width: '60px',
+        marginRight: '10px',
+      },
+      [theme.breakpoints.up('md')]: {
+        width: '200px',
       },
     }
   },
@@ -89,7 +95,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
   },
   tableRow: {
     background: '#FFF8ED',
-  },
+  }
 }))
 
 export const CollapsibleRowStyles = makeStyles(theme => ({
