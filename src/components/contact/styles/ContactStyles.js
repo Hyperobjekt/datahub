@@ -14,17 +14,22 @@ export const ContactPageStyles = makeStyles(theme => ({
   flexAlign: {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'flex-start',
 
-    marginBottom: '10px'
+    width: '100%',
+
+    marginTop: '10px',
+    marginBottom: '20px'
   },
   textField: {
-    width: '500px',
+    width: '100%',
     background: 'white',
 
+    padding: '2px',
     marginTop: '10px'
   },
   textFieldMessage: {
-    width: '500px',
+    width: '100%',
     height: '200px',
     background: 'white',
 
@@ -35,9 +40,12 @@ export const ContactPageStyles = makeStyles(theme => ({
   },
   submitButton: {
     borderColor: '#064493',
-    borderRadius: '5em'
+    borderRadius: '5em',
+
+    marginTop: '20px'
   },
   submitButtonText: {
-    textColor: '#064493'
+    color: '#064493',
+    fontWeight: 'bold'
   }
 }))

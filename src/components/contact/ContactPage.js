@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 
@@ -26,6 +26,10 @@ const CustomTextField = (props) => {
 
 const ContactPage = () => {
   const classes = ContactPageStyles()
+
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [message, setMessage] = useState()
 
   return (
     <Block className={classes.block}>
