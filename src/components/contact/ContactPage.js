@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useFormik } from "formik";
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 
@@ -35,8 +35,46 @@ const validate = (values) => {
   return errors;
 };
 
+
 const ContactPage = () => {
   const classes = ContactPageStyles()
+
+  const success = "Messsage received! Thanks for contacting us."
+  const failed = "Sorry, something went wrong with the form submission."
+
+  const honeypotRef = useRef(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmittedError, setIsSubmittedError] = useState(false);
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  // handler for form submission
+  const handleSubmit = (values) => {
+    // detect spam with honeypot
+    if (honeypotRef.current.value !== "") return;
+    // netlify forms submission
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...values }),
+    })
+      .then(() => {
+        formik.setSubmitting(false);
+        setIsSubmitted(true);
+        formik.resetForm();
+      })
+      .catch((error) => {
+        console.log("Submission error:", error);
+        formik.setSubmitting(false);
+        setIsSubmittedError(true);
+      });
+  };
 
   const formik = useFormik({
     initialValues: {
@@ -45,9 +83,7 @@ const ContactPage = () => {
       message: "",
     },
     validate,
-    onSubmit: (values) => {
-      console.log(values)
-    }
+    onSubmit: handleSubmit
   });
 
   const customTextFields =
@@ -102,7 +138,13 @@ const ContactPage = () => {
 
   return (
     <Block className={classes.block}>
-      <form onSubmit={formik.handleSubmit}>
+      <form
+        name="contact"
+        method="POST"
+        onSubmit={formik.handleSubmit}
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <Box className={classes.contactUs}>
           <Box>
             <Typography variant="h3">CONTACT US</Typography>
@@ -117,6 +159,22 @@ const ContactPage = () => {
             text={'SUBMIT FORM'}
             textStyles={classes.submitButtonText}
           />
+          <Box>
+            {isSubmitted && !isSubmittedError && (
+              <Typography
+                role="alert"
+              >
+                {success}
+              </Typography>
+            )}
+            {isSubmittedError && (
+              <Typography
+                role="alert"
+              >
+                {failed}
+              </Typography>
+            )}
+          </Box>
         </Box>
       </form>
     </Block>

@@ -9,11 +9,20 @@ import {
 import { OurTeamStyles } from './styles/AboutStyles';
 import BlueBox from '../general/BlueBox';
 
+/**
+* Grided memberCard objects
+* @param {*} member - member object from CMS
+* @param {*} thumbailStyles - CSS class for highlighted div
+* @param {*} itemStyles - CSS class for highlighted div
+* @param {*} copyStyles - CSS class for highlighted div
+* @returns {Grid[BlueBox]}
+*/
 const memberCard = (member, thumbnailStyles, itemStyles, copyStyles) => {
 
   const thumbnail = <img className={thumbnailStyles} src={member.thumbnail} alt={'Team member photo'} />
   const name = <Typography variant="overline">{member.name}</Typography>
-  const bio = <Typography variant="caption">{member.bio}</Typography>
+  const title = <Typography variant="caption" className="bold">{member.title}</Typography>
+  const bio = <Typography variant="caption">{member.bio.slice(0, 100).concat('...')}</Typography>
 
   return (
     <Grid>
@@ -22,7 +31,8 @@ const memberCard = (member, thumbnailStyles, itemStyles, copyStyles) => {
         copyStyles={copyStyles}
         thumbnail={thumbnail}
         title={name}
-        copy1={bio}
+        copy1={title}
+        copy2={bio}
       /> 
     </Grid>
   )
