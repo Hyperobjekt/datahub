@@ -16,7 +16,10 @@ export const ContactPageStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'flex-start',
 
-    width: '100%',
+    width: '680px',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
 
     marginTop: '10px',
     marginBottom: '20px'

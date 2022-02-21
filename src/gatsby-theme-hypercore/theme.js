@@ -160,6 +160,9 @@ const Theme = () => {
             [theme.breakpoints.down('sm')]: {
               fontSize: 14
             },
+          },
+          '&.cursor': {
+            cursor: 'pointer'
           }
         },
         body1: {
@@ -263,6 +266,8 @@ const Theme = () => {
 
           color: 'inherit',
           textDecoration: 'none',
+
+          cursor: 'pointer'
         },
       },
       HorizontalNavigation: {

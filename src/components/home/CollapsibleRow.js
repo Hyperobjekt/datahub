@@ -121,7 +121,7 @@ const CollapsibleRow = (props) => {
             </Box>
           ) : (
             <Box className={classes.evenAlign}>
-              <Typography onClick={() => setOpen(!open)} variant="body2">
+              <Typography onClick={() => setOpen(!open)} variant="body2" className="cursor">
                 {project.name}
                 <IconButton
                   className="DhTable-collapseRow"
