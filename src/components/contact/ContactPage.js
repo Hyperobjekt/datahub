@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { useFormik } from "formik";
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 
 import {
@@ -11,29 +11,98 @@ import {
 import { ContactPageStyles } from './styles/ContactStyles'
 import RoundedButton from '../general/RoundedButton'
 
-const CustomTextField = (props) => {
-  const { boxStyles, textFieldStyles, header } = props
-  return (
-    <Box className={boxStyles}>
-      <Typography variant="overline">{header}</Typography>
-      <TextField
-        InputProps={{ disableUnderline: true }}
-        className={textFieldStyles}
-      />
-    </Box>
-  )
-}
+//formik validator
+const validate = (values) => {
+  const errors = {};
+  if (!values.name) {
+    errors.name = 'Required';
+  } else if (values.name.length > 15) {
+    errors.firstName = 'Must be 15 characters or less';
+  }
+
+  if (!values.email) {
+    errors.email = 'Required';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address';
+  }
+
+  if (!values.message) {
+    errors.message = 'Required';
+  } else if (values.message.length > 15) {
+    errors.message = 'Must be 15 characters or less';
+  }
+
+  return errors;
+};
 
 const ContactPage = () => {
   const classes = ContactPageStyles()
 
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [message, setMessage] = useState()
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+    validate,
+    onSubmit: (values) => {
+      console.log(values)
+    }
+  });
+
+  const customTextFields =
+    <Box className={classes.flexAlign}>
+      <Box className={classes.flexAlign}>
+        <Typography variant="overline">NAME</Typography>
+        <TextField
+          id="name"
+          name="name"
+          InputProps={{ disableUnderline: true }}
+          className={classes.textField}
+          error={formik.touched.name && formik.errors.name}
+          helperText={formik.touched.name && formik.errors.name}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.name}
+        />
+        {formik.errors.name ? <div>{formik.errors.name}</div> : null}
+      </Box>
+      <Box className={classes.flexAlign}>
+        <Typography variant="overline">EMAIL</Typography>
+        <TextField
+          id="email"
+          name="email"
+          InputProps={{ disableUnderline: true }}
+          className={classes.textField}
+          error={formik.touched.email && formik.errors.email}
+          helperText={formik.touched.email && formik.errors.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.email}
+        />
+        {formik.errors.email ? <div>{formik.errors.email}</div> : null}
+      </Box>
+      <Box className={classes.flexAlign}>
+        <Typography variant="overline">MESSAGE</Typography>
+        <TextField
+          id="message"
+          name="message"
+          InputProps={{ disableUnderline: true }}
+          className={classes.textFieldMessage}
+          InputLabelProps={{ shrink: true }}
+          error={formik.touched.message && formik.errors.message}
+          helperText={formik.touched.message && formik.errors.message}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.message}
+        />
+        {formik.errors.message ? <div>{formik.errors.message}</div> : null}
+      </Box>
+    </Box>
 
   return (
     <Block className={classes.block}>
-      <form>
+      <form onSubmit={formik.handleSubmit}>
         <Box className={classes.contactUs}>
           <Box>
             <Typography variant="h3">CONTACT US</Typography>
@@ -41,13 +110,9 @@ const ContactPage = () => {
               Have a question? Please send us an email. We will get back to you as soon as possible.
             </Typography>
           </Box>
-          <Box className={classes.flexAlign}>
-            {<CustomTextField boxStyles={classes.flexAlign} textFieldStyles={classes.textField} header={'NAME'}/>}
-            {<CustomTextField boxStyles={classes.flexAlign} textFieldStyles={classes.textField} header={'EMAIL'}/>}
-            {<CustomTextField boxStyles={classes.flexAlign} textFieldStyles={classes.textFieldMessage} header={'MESSAGE'}/>}
-          </Box>
+          {customTextFields}
           <RoundedButton
-            handleClick={() => console.log('submitted')}
+            type={"submit"}
             buttonStyles={classes.submitButton}
             text={'SUBMIT FORM'}
             textStyles={classes.submitButtonText}

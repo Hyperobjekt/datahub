@@ -21,13 +21,15 @@ const RoundedButton = (props) => {
     handleClick,
     buttonStyles, 
     text,
-    textStyles
+    textStyles,
+    type
   } = props
 
   const classes = useStyles()
 
   return (
     <Button
+      type={type ? type : null}
       variant='outlined' 
       className={buttonStyles ? buttonStyles : classes.button}
       onClick={handleClick}>
