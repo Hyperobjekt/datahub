@@ -39,7 +39,8 @@ export const ContactPageStyles = makeStyles(theme => ({
     marginTop: '10px'
   },
   block: {
-    background: '#E8F5FF'
+    background: '#E8F5FF',
+    height: "100%"
   },
   submitButton: {
     borderColor: '#064493',

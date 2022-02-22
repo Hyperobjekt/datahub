@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core"
-import HomeHero from "../../../../static/graphics/heroHeader.svg"
 
 // export const HomePageStyles = makeStyles(theme => ({
 //   hero: {
@@ -17,7 +16,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
       background: '#E8F5FF',
       height: '40px',
       [theme.breakpoints.down('md')]: {
-        width: '60px',
+        width: '120px',
         marginRight: '10px',
       },
       [theme.breakpoints.up('md')]: {
