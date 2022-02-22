@@ -300,6 +300,9 @@ const Theme = () => {
           fontSize: 24,
           textDecoration: 'none',
         },
+        logo: {
+          width: '10%'
+        }
       },
       // hide the social links in the header
       HypSocialLinks: {

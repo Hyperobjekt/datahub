@@ -21,6 +21,7 @@ const HomePage = () => {
         ContainerProps={{
           justifyContent: 'flex-start',
         }}
+        height="600px"
         alignItems="flex-end"
         bgcolor="#475865"
         image={HomeHero}
