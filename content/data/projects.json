@@ -7,6 +7,7 @@
         "Income driven repayment",
         "Administrative burden"
       ],
+      "manuscript": "https://osf.io/82wzg",
       "summary": "Socially stratified take-up of income-driven repayment plans is shown among federal student loan borrowers with high debt payment burdens.",
       "discussion": "https://github.com/HigherEdData/Administrative-Burden-and-Student-Loans/issues",
       "authors": [
@@ -36,6 +37,7 @@
         "Public universities",
         "Private non-profit colleges"
       ],
+      "manuscript": "https://osf.io/274we",
       "summary": "Student level survey data is analyzed to assess predatory levels of adverse student outcomes in online degree programs.",
       "discussion": "https://github.com/HigherEdData/Assessing-Online-Education-With-BPS/issues",
       "authors": [
@@ -78,6 +80,7 @@
         "Online education",
         "Student debt"
       ],
+      "manuscript": "https://osf.io/524va",
       "summary": "IPEDS data are used to assess racial disparities in enrollments and educational outcomes in exclusively online higher education degree programs.",
       "discussion": "https://github.com/HigherEdData/Assessing-Online-Higher-Education-with-IPEDS/issues",
       "authors": [
@@ -117,6 +120,7 @@
         "Endowments",
         "Hedge funds"
       ],
+      "manuscript": "https://www.amazon.com/Bankers-Ivory-Tower-Troubling-Financiers-dp-022672042X/dp/022672042X/",
       "summary": "The book explains how finance has played a central role in the widening inequality in recent decades, both in American higher education and in American society at large. ",
       "discussion": "https://github.com/HigherEdData/BankersInTheIvoryTower/issues",
       "authors": [
@@ -215,6 +219,7 @@
         "Student debt",
         "Financial aid"
       ],
+      "manuscript": "https://osf.io/48m6j",
       "summary": "Student level survey data is analyzed to test for associations between Expected Family Contribution (EFC) financial aid formulas, race and household wealth.",
       "discussion": "https://github.com/HigherEdData/Financial-Aid-Race-and-Wealth/issues",
       "authors": [
@@ -254,6 +259,7 @@
         "Online education",
         "Private equity"
       ],
+      "manuscript": "https://osf.io/524va",
       "summary": "A dataset of 239 public university contracts that outsource online education to for-profit Online Program Managers (OPMs) are used to code structural features of the contracts that are potentially predatory.",
       "discussion": "https://github.com/HigherEdData/Outsourcing-Online-Education/issues",
       "authors": [
@@ -287,6 +293,7 @@
         "Shareholder value",
         "Degree completion"
       ],
+      "manuscript": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/blob/master/manuscripty_asymmetry_by_design_20210921.pdf",
       "summary": "Data on all U.S. for-profit colleges is used to show that colleges that are part of multi-brand companies invest less in instruction, have worse student outcomes, and are more likely to face legal and regulatory sanctions (relative to single-brand firms).",
       "discussion": "https://github.com/HigherEdData/Asymmetry-by-Design-in-For-Profit-Higher-Education/issues",
       "authors": [
@@ -349,6 +356,7 @@
         "Racial inequality",
         "Debt cancellation"
       ],
+      "manuscript": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/blob/main/manuscript_RI_StudentDebtCancellation_202106.pdf",
       "summary": "An analysis of household wealth data shows that student debt cancellation—at all proposed levels—is progressive.",
       "discussion": "https://github.com/HigherEdData/Student-Debt-Cancellation-IS-Progressive/issues",
       "authors": [
@@ -376,6 +384,7 @@
         "Hispanic Serving Institutions",
         "Admissions"
       ],
+      "manuscript": "https://github.com/HigherEdData/White-Flight/blob/main/manuscript_white_flight_20210521.pdf",
       "summary": "Thirty years of annual college-level IPEDS surveys are used for event studies and trend break analyses testing for statistically significant changes in race-specific first- year enrollment after Hispanic-Serving (HSI) designation at four-year universities.",
       "discussion": "https://github.com/HigherEdData/White-Flight/issues",
       "authors": [
@@ -423,6 +432,7 @@
         "Hedge funds",
         "Elites"
       ],
+      "manuscript": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/blob/master/manuscript_elite_embeddedness_20200901.pdf",
       "summary": "Universities are show to be social organizations parallel to the economy that provide a circuitry connecting financiers to other elites, despite growing complexity and fragmentation in finance.",
       "discussion": "https://github.com/HigherEdData/Elite-Embededdness-University-Boards-and-Alumni-Ties/issues",
       "authors": [
@@ -465,6 +475,7 @@
         "Shareholder value",
         "Degree completion"
       ],
+      "manuscript": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/blob/master/manuscript_agile_predators_2020.pdf",
       "summary": "Growth in private equity and publicly traded ownership of for-profit colleges is shown to create new shareholder-value pressures for schools to maximize returns for investors.",
       "discussion": "https://github.com/HigherEdData/Private-Equity-and-For-Profit-Colleges-as-Agile-Predators/issues",
       "authors": [
@@ -505,6 +516,7 @@
         "Student debt",
         "Public universities"
       ],
+      "manuscript": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/blob/main/manuscript_ecology_of_college_affordability.pdf",
       "summary": "Multiple dastasets are linked to provide the first comprehensive assessment for all 50 states of state-level need-based grant aid programs, which might alleviate loan repayment challenges.  ",
       "discussion": "https://github.com/HigherEdData/State-Grant-Aid-and-the-Ecology-of-College-Affordability/issues",
       "authors": [
@@ -550,6 +562,7 @@
         "Racial inequality",
         "Class inequality"
       ],
+      "manuscript": "https://github.com/HigherEdData/going_greek/blob/main/manuscript_going_greek.pdf",
       "summary": "At selective four-year schools, the presence of Greek letter societies is shown to be associated with greater class-based graduation gaps.",
       "discussion": "https://github.com/HigherEdData/Going-Greek/issues",
       "authors": [
@@ -596,6 +609,7 @@
         "Endowments",
         "For-profit colleges"
       ],
+      "manuscript": "https://github.com/HigherEdData/Financialization-of-Higher-Education/blob/main/manuscript_financialization_higher_ed_2016.pdf",
       "summary": "Using the case of US higher education, financialization is shown to involve both increasing reliance on financial investment returns and increasing costs from transactions to acquire capital.",
       "discussion": "https://github.com/HigherEdData/Financialization-of-Higher-Education/issues",
       "authors": [
