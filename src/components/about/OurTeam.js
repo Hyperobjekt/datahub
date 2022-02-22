@@ -1,27 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Typography,
   Box,
-  Grid
+  Grid,
+  IconButton,
+
 } from "@material-ui/core";
 
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { OurTeamStyles } from './styles/AboutStyles';
 import BlueBox from '../general/BlueBox';
 
 /**
-* Grided memberCard objects
+* Grided memberCard objects, popUp modals
 * @param {*} member - member object from CMS
 * @param {*} thumbailStyles - CSS class for highlighted div
 * @param {*} itemStyles - CSS class for highlighted div
 * @param {*} copyStyles - CSS class for highlighted div
 * @returns {Grid[BlueBox]}
 */
-const memberCard = (member, thumbnailStyles, itemStyles, copyStyles) => {
+const memberCard = (member, modalStyles, thumbnailStyles, itemStyles, copyStyles) => {
+  const thumbnail =
+    <Box display="inline-block">
+      <img className={thumbnailStyles} src={member.thumbnail} alt={'Team member photo'} />
+      {/* <IconButton onClick={() => setModal(true)}>
+        <AddCircleIcon />
+      </IconButton> */}
+    </Box>
 
-  const thumbnail = <img className={thumbnailStyles} src={member.thumbnail} alt={'Team member photo'} />
   const name = <Typography variant="overline">{member.name}</Typography>
   const title = <Typography variant="caption" className="bold">{member.title}</Typography>
+  const modalBio = <Typography variant="caption">{member.bio}</Typography>
   const bio = <Typography variant="caption">{member.bio.slice(0, 100).concat('...')}</Typography>
 
   return (
@@ -33,7 +43,7 @@ const memberCard = (member, thumbnailStyles, itemStyles, copyStyles) => {
         title={name}
         copy1={title}
         copy2={bio}
-      /> 
+      />
     </Grid>
   )
 }
@@ -54,7 +64,7 @@ const OurTeam = (props) => {
     return groupedTeam.map(team => {
       const teamRow =
         team.map(member => 
-          memberCard(member, classes.thumbnail, classes.itemStyles, classes.copyStyles)
+          memberCard(member, classes.modalStyles, classes.thumbnail, classes.itemStyles, classes.copyStyles)
         )
       
       return <Grid container item xs={12}>{teamRow}</Grid>

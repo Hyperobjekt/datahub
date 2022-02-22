@@ -28,8 +28,8 @@ const validate = (values) => {
 
   if (!values.message) {
     errors.message = 'Required';
-  } else if (values.message.length > 15) {
-    errors.message = 'Must be 15 characters or less';
+  } else if (values.message.length > 400) {
+    errors.message = 'Must be 400 characters or less';
   }
 
   return errors;
@@ -57,7 +57,7 @@ const ContactPage = () => {
   // handler for form submission
   const handleSubmit = (values) => {
     // detect spam with honeypot
-    if (honeypotRef.current.value !== "") return;
+    if (honeypotRef.current.values !== "") return;
     // netlify forms submission
     fetch("/", {
       method: "POST",
@@ -145,6 +145,13 @@ const ContactPage = () => {
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label htmlFor="botField">
+            Don't fill this out if you're human:{" "}
+            <input id="botField" name="bot-field" ref={honeypotRef} />
+          </label>
+        </p>
         <Box className={classes.contactUs}>
           <Box>
             <Typography variant="h3">CONTACT US</Typography>
