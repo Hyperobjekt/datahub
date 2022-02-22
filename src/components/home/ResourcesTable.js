@@ -254,7 +254,6 @@ const ResourcesTable = () => {
         </Table>
       </TableContainer>
       <TablePagination
-        className="Dh-inputFieldPagination"
         rowsPerPageOptions={[10, 25, 100]}
         component="div"
         count={rows ? rows.length : 0}

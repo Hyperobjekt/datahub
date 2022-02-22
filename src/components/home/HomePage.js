@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
+import { HomePageStyles } from './styles/HomeStyles';
 import ResourcesTable from './ResourcesTable';
 import SplitHeader from './SplitHeader';
 import RoundedButton from '../general/RoundedButton';
-import HomeHero from "../../../static/images/homeHero.png";
 
 const handleScrollClick = () => {
   const scrollTo = document.getElementById('scrollTo')
@@ -13,6 +13,7 @@ const handleScrollClick = () => {
 }
 
 const HomePage = () => {
+  const classes = HomePageStyles()
 
   return (
     <>
@@ -20,9 +21,8 @@ const HomePage = () => {
         ContainerProps={{
           justifyContent: 'flex-start',
         }}
-        height="600px"
+        height="500px"
         alignItems="flex-end"
-        image={HomeHero}
         color="grey.900"
         variant="overlay"
       >
