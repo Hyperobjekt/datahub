@@ -7,7 +7,7 @@ import {
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website'
 import { AboutUsPage } from './styles/AboutStyles'
-import HereLabLogo from '../../../static/icons/hereLabLogo.svg'
+import HereLabLogo from '../../../static/images/hereLabLogo.svg'
 import BlueBox from '../general/BlueBox';
 import OurTeam from './OurTeam'
 

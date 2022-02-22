@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { useFormik } from "formik";
-import { Block, Hero } from '@hyperobjekt/material-ui-website';
+import { Block } from '@hyperobjekt/material-ui-website';
 
 import {
   Typography,

@@ -6,7 +6,7 @@ import {
 } from "@hyperobjekt/material-ui-website";
 import { Box, Grid, Typography, withStyles } from "@material-ui/core";
 import GatsbyLink from "gatsby-link";
-import { ALT_FONT } from "../../gatsby-theme-hypercore/theme";
+import { FONT, ALT_FONT } from "../../gatsby-theme-hypercore/theme";
 
 // add navigation styles to base navigation component
 const FooterNavigation = withStyles((theme) => ({
@@ -29,17 +29,31 @@ const FooterNavigation = withStyles((theme) => ({
 // set footer colors and spacing
 const styles = (theme) => ({
   root: {
-    backgroundColor: theme.palette.background.dark,
+    backgroundColor: "#1D2D39",
     padding: theme.spacing(12, 0),
     "& .MuiTypography-root": {
       color: theme.palette.common.white,
       fontFamily: ALT_FONT,
     },
-    "& .footer__logoContainer": {},
+    "& .footer__logoContainer": {
+      display: 'flex',
+      justifyContent: 'center',
+      [theme.breakpoints.up("md")]: {
+        justifyContent: "flex-start",
+      },
+    },
+    "& .footer__logo": {
+      width: '250px',
+      height: '80px',
+      [theme.breakpoints.down("md")]: {
+        width: '200px',
+        height: '68px'
+      },
+    },
     "& .footer__textContainer": {
       "& .MuiTypography-root": {
         maxWidth: theme.spacing(40),
-        margin: "auto", // center in container
+        margin: "0 auto", // center in container
         [theme.breakpoints.up("md")]: {
           textAlign: "left",
           marginLeft: 0, // left align in container
@@ -48,10 +62,16 @@ const styles = (theme) => ({
       },
     },
     "& .footer__navContainer": {
-      justifyContent: "center",
-      alignItems: "center",
+      fontFamily: FONT,
+      fontWeight: 'bold',
     },
-    "& .footer__copyrightContainer": {},
+    "& .footer__copyrightContainer": {
+      display: 'flex',
+      justifyContent: 'center',
+      [theme.breakpoints.up("md")]: {
+        justifyContent: "flex-start",
+      },
+    },
   },
 });
 
@@ -61,27 +81,24 @@ const Footer = ({ copyright, links, social, ...props }) => {
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={3} className="footer__logoContainer">
-            <img src="/images/datahub_logo.png" alt="logo" />
+            <img className="footer__logo" src="/images/hereLabLogoFooter.svg" alt="logo" />
           </Grid>
           <Grid item xs={12} md={6} className="footer__textContainer">
             <Typography variant="body2">
-              Data Hub is Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor.
+              We publish code for linking data on thousands of colleges from dozens of sources, to facilitate research on the causes of connected inequalities in higher education and the economy.
             </Typography>
           </Grid>
           <Grid item xs={12} md={3} className="footer__navContainer">
             <FooterNavigation
               links={links}
+              className="footer__navContainer"
               LinkComponent={GatsbyLink}
               isGatsbyLink={true}
             />
           </Grid>
         </Grid>
         <Box mt={6} className="footer__copyrightContainer">
-          <Typography variant="body2">{copyright}</Typography>
+          <Typography variant="caption">{copyright}</Typography>
         </Box>
       </Container>
     </BaseFooter>

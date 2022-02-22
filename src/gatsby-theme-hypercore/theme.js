@@ -324,9 +324,16 @@ const Theme = () => {
       },
       HypNavigation: {
         link: {
-          padding: 0,
+          paddingBottom: '5px',
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '14px'
+          },
         },
-        
+        listItem: {
+          [theme.breakpoints.down('sm')]: {
+            alignItems: 'center'
+          },
+        }
       },
       HypFooter: {
         root: {

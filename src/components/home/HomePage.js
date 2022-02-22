@@ -4,7 +4,7 @@ import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import ResourcesTable from './ResourcesTable';
 import SplitHeader from './SplitHeader';
 import RoundedButton from '../general/RoundedButton';
-import HomeHero from "../../../static/icons/homeHero.png";
+import HomeHero from "../../../static/images/homeHero.png";
 
 const handleScrollClick = () => {
   const scrollTo = document.getElementById('scrollTo')
