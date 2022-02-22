@@ -56,9 +56,9 @@ const ContactPage = () => {
 
   // handler for form submission
   const handleSubmit = (values) => {
-    // detect spam with honeypot
-    if (honeypotRef.current.values !== "") return;
-    // netlify forms submission
+    // // detect spam with honeypot
+    // if (honeypotRef.current.values !== "") return;
+    // // netlify forms submission
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
