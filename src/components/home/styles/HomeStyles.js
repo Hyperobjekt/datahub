@@ -1,11 +1,11 @@
 import { makeStyles } from "@material-ui/core"
 import HomeHero from "../../../../static/graphics/heroHeader.svg"
 
-export const HomePageStyles = makeStyles(theme => ({
-  hero: {
-    backgroundImage: `url(${HomeHero})`
-  }
-}))
+// export const HomePageStyles = makeStyles(theme => ({
+//   hero: {
+//     backgroundImage: `url(${HomeHero})`
+//   }
+// }))
 
 export const ResourcesTablesStyles = makeStyles(theme => ({
   centerAlign: {

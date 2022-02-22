@@ -7,10 +7,11 @@ import {
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website'
 import { AboutUsPage } from './styles/AboutStyles'
-import HereLabLogo from '../../../static/images/hereLabLogo.svg'
 import BlueBox from '../general/BlueBox';
 import OurTeam from './OurTeam'
 
+import HereLabLogo from '../../../static/images/hereLabLogo.svg'
+import AboutHero from "../../../static/graphics/heroAboutStatic.png"
 import aboutUsObj from '../../../content/data/about.json'
 
 /**
@@ -75,6 +76,7 @@ const AboutUs = () => {
           justifyContent: "flex-start",
         }}
         alignItems="flex-end"
+        image={AboutHero}
         bgcolor="#475865"
         color="grey.900"
         variant="overlay"

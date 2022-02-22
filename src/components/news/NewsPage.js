@@ -9,6 +9,8 @@ import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import { NewsPageStyles } from './styles/NewsStyles'
 import NewsItem from './NewsItem'
 
+import NewsHero from "../../../static/graphics/heroNewsStatic.png"
+
 import newsObj from '../../../content/data/news.json'
 
 const NewsPage = () => {
@@ -21,6 +23,7 @@ const NewsPage = () => {
           justifyContent: "flex-start",
         }}
         alignItems="flex-end"
+        image={NewsHero}
         bgcolor="#475865"
         color="grey.900"
         variant="overlay"
