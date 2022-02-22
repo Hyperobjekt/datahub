@@ -1,26 +1,38 @@
 {
   "title": "DATA HUB",
-  "description": "HERE Lab's DATAHUB",
+  "description": "Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Material UI. Incorporates gatsby-theme-hyperobjekt-core.",
   "keywords": ["gatsby", "theme", "react"],
   "author": "Lane Olson",
-  "image": "/images/social.png",
   "copyright": "Copyright Hyperobjekt © 2021",
   "siteUrl": "https://gatsby-starter-hypersite.netlify.app",
+  "image": "/images/social.jpg",
   "menuLinks": [
     {
       "name": "About The Here Lab",
-      "link": "/about",
-      "location": "all"
+      "link": "/about"
     },
     {
       "name": "In the News",
-      "link": "/news",
-      "location": "all"
+      "link": "/news"
     },
     {
       "name": "Contact",
-      "link": "/contact",
-      "location": "all"
+      "link": "/contact"
+    }
+  ],
+  "social": [
+    {
+      "name": "Email",
+      "value": "hyperobjekt@hyperobjekt.com",
+      "location": "footer"
+    },
+    {
+      "name": "Twitter",
+      "value": "hyperobjekt"
+    },
+    {
+      "name": "Github",
+      "value": "Hyperobjekt"
     }
   ]
 }

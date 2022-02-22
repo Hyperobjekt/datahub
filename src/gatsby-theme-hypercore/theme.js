@@ -206,7 +206,10 @@ const Theme = () => {
       HypHeader: {
         root: {
           "& .HypNavigation-listItem": {
-            background: "none"
+            background: "none",
+          },
+          "& .HypNavigation-link": {
+            color: 'black',
           }
         },
         toolbar: {
@@ -270,18 +273,6 @@ const Theme = () => {
           cursor: 'pointer'
         },
       },
-      HorizontalNavigation: {
-        listItem: {
-          background: 'white',
-        },
-        link: {
-          color: 'black',
-        },
-        linkActive: {
-          color: '#064493',
-          fontWeight: 'none',
-        },
-      },
       MuiTablePagination: {
         actions: {
           [theme.breakpoints.down('md')]: {
@@ -320,6 +311,12 @@ const Theme = () => {
       HypBreadcrumb: {
         root: {
           display: 'none',
+        },
+      },
+      HorizontalNavigation: {
+        linkActive: {
+          color: '#064493',
+          fontWeight: 'none',
         },
       },
       HypNavigation: {
