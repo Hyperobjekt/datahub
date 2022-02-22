@@ -66,8 +66,13 @@ const OurTeam = (props) => {
         team.map(member => 
           memberCard(member, classes.modalStyles, classes.thumbnail, classes.itemStyles, classes.copyStyles)
         )
-      
-      return <Grid container item xs={12}>{teamRow}</Grid>
+
+      const gridItem =
+        (teamRow.length < 2) ?
+          <Grid container item alignItems="center" xs={12}>{teamRow}</Grid> : 
+          <Grid container item xs={12}>{teamRow}</Grid>
+
+      return gridItem
     })
   }
 

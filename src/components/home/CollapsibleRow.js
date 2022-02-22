@@ -17,6 +17,8 @@ import {
 
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
+import clsx from 'clsx';
+
 /**
 * Converts array to link or typography elements
 * @param {*} array - array of topics to include projects for
@@ -108,7 +110,7 @@ const CollapsibleRow = (props) => {
         <TableCell>
           {open ? (
             <Box className={classes.evenAlign}>
-              <Typography onClick={() => setOpen(!open)} variant="body2" className="bold">
+              <Typography onClick={() => setOpen(!open)} variant="body2" className={clsx("bold", "cursor")}>
                 {project.name}
                 <IconButton
                   className="DhTable-collapseRow"
