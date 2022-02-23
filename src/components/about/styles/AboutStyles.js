@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core"
 
 export const AboutUsPage = makeStyles(theme => ({
-  aboutUs: {
+  centerAlign: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -70,6 +70,14 @@ export const AboutUsPage = makeStyles(theme => ({
     maxWidth: theme.spacing(70),
     padding: theme.spacing(3),
     margin: '0 0 40px 0'
+  },
+  ourFriends: {
+    width: "800px",
+    [theme.breakpoints.down('md')]: {
+      width: '400px',
+    },
+
+    marginTop: "20px"
   }
 }))
 

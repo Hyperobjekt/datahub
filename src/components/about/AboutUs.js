@@ -2,7 +2,8 @@ import React from 'react'
 
 import {
   Typography,
-  Box
+  Box,
+  useMediaQuery
 } from "@material-ui/core";
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website'
@@ -12,6 +13,9 @@ import OurTeam from './OurTeam'
 
 import HereLabLogo from '../../../static/images/hereLabLogo.svg'
 import AboutHero from "../../../static/graphics/heroAboutStatic.png"
+import OurFriends from "../../../static/graphics/ourFriends.png"
+import OurFriendsSmall from "../../../static/graphics/ourFriendsSmall.png"
+
 import aboutUsObj from '../../../content/data/about.json'
 
 /**
@@ -40,6 +44,8 @@ const HighlightedText = (hlText, hlBox, highlight, lede) => {
 
 const AboutUs = () => {
   const classes = AboutUsPage()
+
+  const isMediumScreen = useMediaQuery(theme => theme.breakpoints.down("md"))
 
   const firstBlock = (firstBlock) => {
     const highlight = firstBlock.motive, lede = firstBlock.location
@@ -82,7 +88,7 @@ const AboutUs = () => {
         variant="overlay"
       />
       <Block>
-        <Box className={classes.aboutUs}>
+        <Box className={classes.centerAlign}>
           <Box>
             <Typography variant='h5' className="bold">
               ABOUT US
@@ -97,6 +103,15 @@ const AboutUs = () => {
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
           </Box>
           <OurTeam team={aboutUsObj.team}/>
+          <Box className={classes.centerAlign}>
+            <Typography variant="overline">
+              Our Friends
+            </Typography>
+            {isMediumScreen ?
+              <img className={classes.ourFriends} src={OurFriendsSmall} alt={'Organizations we work with'} /> :
+              <img className={classes.ourFriends} src={OurFriends} alt={'Organizations we work with'} />
+            }
+          </Box>
         </Box>
       </Block>
     </>
