@@ -116,6 +116,9 @@ const OurTeam = (props) => {
         {memberCards()}
       </Grid>
       <Modal
+        disableAutoFocus
+        disablePortal
+        disableRestoreFocus
         open={modal}
         onClose={() => setModal(false)}
       >
