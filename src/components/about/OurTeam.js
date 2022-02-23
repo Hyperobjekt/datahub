@@ -51,11 +51,8 @@ const OurTeam = (props) => {
       </Grid>
     )
   }
-  /**
-  * Grided memberCard objects, popUp modals
-  * @param {*} member - member object from CMS
-  * @returns {Grid[BlueBox]}
-  */
+
+  //open modal handler
   const handleIconClick = (member) => {
     setModal(true)
     setModalBio(
@@ -78,7 +75,7 @@ const OurTeam = (props) => {
     <Box display="inline-block">
       <img className={classes.thumbnail} src={member.thumbnail} alt={'Team member photo'} />
       {!isSmallScreen &&
-        <IconButton className={classes.iconButton} onClick={() => handleIconClick(member)}>
+        <IconButton className={classes.iconButton} onClick={(e) => handleIconClick(member)}>
           <AddCircleIcon className={classes.icon} />
         </IconButton>
       }
