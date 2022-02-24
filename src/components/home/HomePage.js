@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import ResourcesTable from './ResourcesTable';
@@ -15,9 +15,16 @@ const handleScrollClick = () => {
 
 const HomePage = () => {
 
+  useEffect(() => {
+    const homePage = document.getElementById('heroScrollTo')
+
+    homePage.scrollIntoView()
+  }, [])
+
   return (
-    <>
+    <div id="heroScrollTo">
       <Hero
+        id="heroScrollTo"
         ContainerProps={{
           justifyContent: 'flex-start',
         }}
@@ -40,7 +47,7 @@ const HomePage = () => {
           <ResourcesTable />
         </div>
       </Block>
-    </>
+    </div>
   );
 };
 

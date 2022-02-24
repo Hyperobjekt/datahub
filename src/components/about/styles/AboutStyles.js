@@ -74,7 +74,7 @@ export const AboutUsPage = makeStyles(theme => ({
   ourFriends: {
     width: "800px",
     [theme.breakpoints.down('md')]: {
-      width: '400px',
+      width: '360px',
     },
 
     marginTop: "20px"
