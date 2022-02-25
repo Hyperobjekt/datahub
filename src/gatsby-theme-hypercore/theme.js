@@ -205,8 +205,8 @@ const Theme = () => {
           margin: '1rem 0',
         },
         body2: {
+          color: 'black',
           [theme.breakpoints.down('sm')]: {
-            color: 'green',
             fontFamily: ALT_FONT,
             fontStyle: 'normal',
             fontWeight: 'normal',
@@ -289,9 +289,6 @@ const Theme = () => {
       MuiListItem: {
         button: {
           fontFamily: ALT_FONT,
-        },
-        root: {
-          color: 'black',
         },
       },
       MuiTablePagination: {
