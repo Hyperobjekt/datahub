@@ -1,3 +1,31 @@
 {
-  
+  "headers": [
+    {
+      "leftPanel": [
+        {
+          "heading": "LATEST DATA AND RESEARCH",
+          "subheading": "University of Chicago Press just published Bankers in the Ivory Tower by HERE Lab cofounder Charlie Eaton.",
+          "source": [
+            {
+              "copy": "View our repository of the data, code, and visualizations for this research",
+              "link": "https://github.com/HigherEdData/BankersInTheIvoryTower"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rightPanel": [
+        {
+          "heading": "Which colleges are student debt free?",
+          "source": [
+            {
+              "copy": "View our repository of the data, code, and visualizations for this research",
+              "link": "https://github.com/HigherEdData/BankersInTheIvoryTower/blob/main/chapter1/f1_1debtfree_by_strata.ipynb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
