@@ -1,5 +1,8 @@
 import { createTheme } from '@material-ui/core/styles';
 import { deepmerge } from '@material-ui/utils';
+
+import FlyoutBg from '../../static/graphics/flyoutMobile.svg'
+
 export const FONT = 'source-code-pro, sans-serif';
 export const ALT_FONT = 'zeitung, sans-serif';
 
@@ -205,16 +208,11 @@ const Theme = () => {
       },
       HypHeader: {
         root: {
-          "& .HypNavigation-listItem": {
-            background: "none",
-          },
-          "& .HypNavigation-link": {
-            color: 'black',
-          }
+          fontFamily: FONT,
         },
         toolbar: {
           backgroundColor: 'white',
-        },
+        }
       },
       MuiTableCell: {
         root: {
@@ -254,12 +252,15 @@ const Theme = () => {
       },
       MuiListItem: {
         button: {
-          fontFamily: 'zeitung',
+          fontFamily: ALT_FONT,
         },
+        root: {
+          color: "white"
+        }
       },
       MuiTablePagination: {
         caption: {
-          fontFamily: 'zeitung',
+          fontFamily: ALT_FONT,
         },
       },
       MuiLink: {
@@ -270,7 +271,7 @@ const Theme = () => {
           color: 'inherit',
           textDecoration: 'none',
 
-          cursor: 'pointer'
+          cursor: 'pointer',
         },
       },
       MuiTablePagination: {
@@ -286,6 +287,23 @@ const Theme = () => {
             color: 'rgba(0, 0, 0, 0.54)',
             minWidth: '24px'
           }
+        },
+        label: {
+          color: "#064493"
+        }
+      },
+      MuiIconButton: {
+        label: {
+          color: "white"
+        }
+      },
+      MuiDrawer: {
+        paper: {
+          width: "100%",
+          background: "#1D2D39",
+          backgroundPosition: "100% 75%",
+          backgroundImage: `url(${FlyoutBg})`,
+          backgroundSize: "cover"
         }
       },
       // make the page fill the viewport
@@ -317,30 +335,39 @@ const Theme = () => {
         },
       },
       HorizontalNavigation: {
-        linkActive: {
-          color: '#064493',
-          fontWeight: 'none',
-        },
-      },
-      HypNavigation: {
-        link: {
-          paddingBottom: '5px',
-          [theme.breakpoints.down('sm')]: {
-            fontSize: '14px'
-          },
-        },
         listItem: {
-          [theme.breakpoints.down('sm')]: {
-            alignItems: 'center'
-          },
+          background: 'none'
+        },
+        link: {
+          color: 'black'
+        },
+        linkActive: {
+          color: '#064493'
         }
       },
-      HypFooter: {
+      HypNavigation: {
         root: {
-          textAlign: 'center',
-          alignContent: 'center',
+          flex: "none",
+          height: "80%",
+          alignItems: "center",
+        },
+        link: {
+          [theme.breakpoints.down('sm')]: {
+            color: "white",
+            fontFamily: FONT,
+            fontSize: "23px",
+            fontWeight: "700",
+
+
+            justifyContent: "center"
+          },
         },
       },
+      MobileNavigation: {
+        close: {
+          color: "green"
+        }
+      }
     },
   };
 

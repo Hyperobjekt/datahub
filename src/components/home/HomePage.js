@@ -36,7 +36,7 @@ const HomePage = () => {
       >
         <RoundedButton
           handleClick={handleScrollClick}
-          text={'View Resources'}
+          text={'BROWSE OUR DATA AND CODE'}
         />
       </Hero>
 

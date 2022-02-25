@@ -123,5 +123,11 @@ export const CollapsibleRowStyles = makeStyles(theme => ({
     margin: '12px 0 22px 0',
     padding: '21px 32px',
     background: '#FFF8ED',
+  },
+  icon: {
+    color: "#000000",
+    [theme.breakpoints.down('md')]: {
+      color: "#000000",
+    },
   }
 }))

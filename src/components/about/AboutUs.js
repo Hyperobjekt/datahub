@@ -3,8 +3,11 @@ import React from 'react'
 import {
   Typography,
   Box,
+  Link,
   useMediaQuery
 } from "@material-ui/core";
+
+import clsx from "clsx";
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website'
 import { AboutUsPage } from './styles/AboutStyles'
@@ -75,6 +78,32 @@ const AboutUs = () => {
     return HighlightedText(classes.hlText, classes.hlBox, highlight, lede)
   }
 
+  const fifthBlock =
+    <Typography className="dhHlBody">
+      <Typography display="inline" className={clsx("dhHlBody", "bold")}>Building on DuBois: </Typography>
+      Our website and logos incorporate elements of the data visualization style developed by sociologist W. E. B. Du Bois and his collaborators at the beginning of the 20th century. The
+      <Link href={'https://www.dignityanddebt.org/projects/du-boisian-resources'}>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+        <Typography display="inline" className={clsx("dhHlBody", "bold")}>
+          Du Boisian Visualization Tool Kit
+        </Typography>
+      </Link> from
+      <Link href={'https://www.dignityanddebt.org/'}>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+        <Typography display="inline" className={clsx("dhHlBody", "bold")}>
+            Dignity + Debt 
+        </Typography>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+      </Link>
+      provides a clearinghouse of information on Du Bois's work and coding tools for data visualization in the Du Boisian style.
+    </Typography>
+
   return (
     <>
       <Hero
@@ -101,6 +130,7 @@ const AboutUs = () => {
             <img className={classes.logoWidth} src={HereLabLogo} alt={'Here Lab logo'} />
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
+            {fifthBlock}
           </Box>
           <OurTeam team={aboutUsObj.team}/>
           <Box className={classes.centerAlign}>
