@@ -7,6 +7,8 @@ import {
   Link
 } from '@material-ui/core'
 
+import TertiaryHero from '../../../static/graphics/tertiaryHero.svg'
+
 import headersObj from '../../../content/data/headers.json'
 
 const useStyles = makeStyles(theme => ({
@@ -51,6 +53,8 @@ const useStyles = makeStyles(theme => ({
     margin: '0 auto',
     textAlign: 'center',
     
+    background: `url(${TertiaryHero}) no-repeat center center`,
+    backgroundSize: 'cover',
     backgroundColor: '#E4D3C3',
 
     [theme.breakpoints.down('md')]: {
@@ -70,6 +74,7 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(20),
     paddingRight: theme.spacing(10),
     paddingLeft: theme.spacing(10),
+
     [theme.breakpoints.down('sm')]: {
       paddingTop: theme.spacing(10),
       paddingBottom: theme.spacing(10),
