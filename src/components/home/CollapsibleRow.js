@@ -19,8 +19,6 @@ import clsx from 'clsx';
 
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
-import clsx from 'clsx';
-
 /**
 * Converts array to link or typography elements
 * @param {*} array - array of topics to include projects for
