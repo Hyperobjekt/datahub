@@ -9,7 +9,7 @@ export const HomePageStyles = makeStyles(theme => ({
 
     alignItems: "flex-end",
     backgroundColor: "rgb(65 83 97)",
-    background: `url(${HomeHero}) no-repeat center center fixed`,
+    background: `url(${HomeHero}) no-repeat top center fixed`,
     backgroundSize: "1440px 600px"
   }
 }))
