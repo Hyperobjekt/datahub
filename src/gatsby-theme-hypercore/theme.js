@@ -298,12 +298,43 @@ const Theme = () => {
         }
       },
       MuiDrawer: {
+        root: {
+          "&. HypNavigation-link": {
+            color: "#fff",
+          },
+        },
         paper: {
+          root: {
+            "&. HypNavigation-link": {
+              color: "#fff",
+            }
+          },
           width: "100%",
           background: "#1D2D39",
           backgroundPosition: "100% 75%",
           backgroundImage: `url(${FlyoutBg})`,
-          backgroundSize: "cover"
+          backgroundSize: "cover",
+          "&. HypNavigation-link": {
+            color: "#fff",
+          },
+          // "&.HypNavigation": {
+          //   root: {
+          //     flex: "none",
+          //     height: "80%",
+          //     alignItems: "center",
+          //   },
+          //   link: {
+          //     [theme.breakpoints.down('sm')]: {
+          //       color: "#fff",
+          //       fontFamily: FONT,
+          //       fontSize: "23px",
+          //       fontWeight: "700",
+
+
+          //       justifyContent: "center"
+          //     },
+          //   },
+          // }
         }
       },
       // make the page fill the viewport
@@ -353,21 +384,15 @@ const Theme = () => {
         },
         link: {
           [theme.breakpoints.down('sm')]: {
-            color: "white",
+            color: "#fff",
             fontFamily: FONT,
             fontSize: "23px",
             fontWeight: "700",
-
 
             justifyContent: "center"
           },
         },
       },
-      MobileNavigation: {
-        close: {
-          color: "green"
-        }
-      }
     },
   };
 

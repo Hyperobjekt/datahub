@@ -124,12 +124,12 @@ const OurTeam = (props) => {
         onClose={() => setModal(false)}
       >
         <Box className={classes.modal}>
-          <Box display="inline">
-            {modalBio}
+          <Box display="flex" justifyContent="flex-end">
             <IconButton className={classes.iconButton} onClick={() => setModal(false)}>
               <CloseIcon className={classes.icon} />
             </IconButton>
           </Box>
+          {modalBio}
         </Box>
       </Modal>
     </Box>

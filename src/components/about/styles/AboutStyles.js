@@ -100,6 +100,11 @@ export const OurTeamStyles = makeStyles(theme => ({
     maxHeight: theme.spacing(200),
     padding: theme.spacing(3),
 
+    [theme.breakpoints.down('md')]: {
+      width: theme.spacing(70),
+      height: theme.spacing(50),
+    },
+
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -124,7 +129,7 @@ export const OurTeamStyles = makeStyles(theme => ({
 
     maxWidth: theme.spacing(200),
     height: theme.spacing(40),
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
 
     margin: '0 0 10px 0'
   },
