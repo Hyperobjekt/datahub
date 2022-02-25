@@ -97,7 +97,7 @@ const Theme = () => {
             borderRadius: '4px',
             display: 'inline-block',
           },
-          // '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
+          '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
         },
       },
       MuiTypography: {
