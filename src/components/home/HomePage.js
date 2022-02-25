@@ -11,6 +11,7 @@ import RoundedButton from '../general/RoundedButton';
 import { HomePageStyles } from './styles/HomeStyles';
 
 import HomeHero from "../../../static/graphics/heroHeaderStatic.png"
+import HeroText from '../general/HeroText';
 
 const handleScrollClick = () => {
   const scrollTo = document.getElementById('scrollTo')
@@ -28,7 +29,7 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div id="heroScrollTo">
+    <div id="heroScrollTo" className={classes.backgroundDiv}>
       <Hero
         id="heroScrollTo"
         ContainerProps={{
@@ -36,6 +37,10 @@ const HomePage = () => {
         }}
         className={classes.hero}
       >
+        <HeroText
+          heading={"THE DATA HUB AT UC MERCED"}
+          subheading={"We seek to explain and reverse inequalities in higher education systems and economies."}
+        />
         <RoundedButton
           handleClick={handleScrollClick}
           text={'BROWSE OUR DATA AND CODE'}

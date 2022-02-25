@@ -1,5 +1,13 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
+
+import { 
+  makeStyles,
+  Box,
+  Typography,
+  Link
+} from '@material-ui/core'
+
+import TertiaryHero from '../../../static/graphics/tertiaryHero.svg'
 
 const useStyles = makeStyles(theme => ({
   centerAlign: {
@@ -24,12 +32,26 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
     },
 
-    height: '475px'
+    height: '600px'
   },
   panel: {
     backgroundColor: '#FFF8ED',
 
-    width: '100%',
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
+
+    width: '50%',
+    height: '100%'
+  },
+  rightPanel: {
+    backgroundColor: '#E4D3C3',
+
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
+
+    width: '50%',
     height: '100%'
   }
 }))
@@ -38,10 +60,18 @@ const SplitHeader = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.centerAlign}>
-      <div className={classes.panel}></div>
-      <div className={classes.panel} style={{background: '#484F55'}}></div>
-    </div>
+    <Box className={classes.centerAlign}>
+      <Box className={classes.panel}>
+        <Typography></Typography>
+        <Typography></Typography>
+        <Link></Link>
+        <Link></Link>
+      </Box>
+      <Box className={classes.rightPanel}>
+        <Typography></Typography>
+        <Link></Link>
+      </Box>
+    </Box>
   )
 }
 

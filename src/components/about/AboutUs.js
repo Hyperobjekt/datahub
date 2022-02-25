@@ -20,6 +20,7 @@ import OurFriends from "../../../static/graphics/ourFriends.png"
 import OurFriendsSmall from "../../../static/graphics/ourFriendsSmall.png"
 
 import aboutUsObj from '../../../content/data/about.json'
+import HeroText from '../general/HeroText';
 
 /**
 * Converts array to link or typography elements
@@ -108,14 +109,21 @@ const AboutUs = () => {
     <>
       <Hero
         ContainerProps={{
-          justifyContent: "flex-start",
+          justifyContent: "center",
+          alignItems: "center"
         }}
         alignItems="flex-end"
         image={AboutHero}
-        bgcolor="#475865"
+        bgcolor="rgb(65 83 97)"
         color="grey.900"
         variant="overlay"
-      />
+      >
+        <HeroText
+          heading={"ABOUT"}
+          subheading={"THE HIGHER EDUCATION RACE & ECONOMY LAB"}
+          textBoxStyles={classes.textBoxStyles}
+        />
+      </Hero>
       <Block>
         <Box className={classes.centerAlign}>
           <Box>

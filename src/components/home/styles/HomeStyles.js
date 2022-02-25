@@ -1,17 +1,32 @@
 import { makeStyles } from "@material-ui/core"
 
-import HomeHero from "../../../../static/graphics/heroHeaderStatic.png"
+import HomeHero from "../../../../static/graphics/heroHeader.svg"
+import HomeHeroMobile from "../../../../static/graphics/heroHeaderMobile.svg"
 
 export const HomePageStyles = makeStyles(theme => ({
   hero: {
     height: "600px",
     width: "100%",
 
-    alignItems: "flex-end",
     backgroundColor: "rgb(65 83 97)",
-    background: `url(${HomeHero}) no-repeat top center fixed`,
-    backgroundSize: "1440px 600px"
-  }
+    background: `url(${HomeHero}) no-repeat top right fixed`,
+    [theme.breakpoints.up('lg')]: {
+      backgroundSize: "1440px 600px",
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundSize: "660px 600px",
+    },
+    [theme.breakpoints.down('xs')]: {
+      height: "250px",
+
+      backgroundColor: "rgb(65 83 97)",
+      background: `url(${HomeHeroMobile}) no-repeat bottom center fixed`,
+      backgroundSize: "1440px 600px",
+    },
+    headingStyles: {
+      paddingBottom: '20px'
+    }
+  },
 }))
 
 export const ResourcesTablesStyles = makeStyles(theme => ({

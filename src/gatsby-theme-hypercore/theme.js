@@ -97,14 +97,6 @@ const Theme = () => {
             borderRadius: '4px',
             display: 'inline-block',
           },
-          // '.HypNavigation-root .HorizontalNavigation': {
-          //   listItem: {
-          //     background: 'none'
-          //   },
-          //   linkActive: {
-          //     color: 'blue'
-          //   }
-          // },
           '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
           '.MuiBox-root .HypBranding-logo': {
             padding: '10px',
@@ -120,6 +112,13 @@ const Theme = () => {
       },
       MuiTypography: {
         root: {
+          '&.overlineHero': {
+            color: "#FFC101",
+            paddingBottom: '20px'
+          },
+          '&.h3Hero': {
+            color: 'white'
+          },
           '&.sourceCode': {
             fontFamily: FONT,
           },
@@ -221,6 +220,11 @@ const Theme = () => {
             fontSize: '18px',
           },
         },
+        h1: {
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '26px',
+          },
+        }
       },
       MuiDivider: {
         root: { margin: '1rem 0' },

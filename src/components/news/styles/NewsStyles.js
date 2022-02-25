@@ -10,6 +10,12 @@ export const NewsPageStyles = makeStyles(theme => ({
     '& > :first-child': {
       margin: '0 0 20px 0'
     },
+  },
+  textBoxStyles: {
+    margin: '0 auto',
+    textAlign: 'center',
+
+    paddingBottom: theme.spacing(18)
   }
 }))
 
