@@ -112,6 +112,21 @@ const Theme = () => {
       },
       MuiTypography: {
         root: {
+          '&.overlineSplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 13,
+            },
+          },
+          '&.h3SplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 18,
+            },
+          },
+          '&.body1SplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 15,
+            },
+          },
           '&.overlineHero': {
             color: "#FFC101",
             paddingBottom: '20px'
@@ -223,6 +238,11 @@ const Theme = () => {
         h1: {
           [theme.breakpoints.down('sm')]: {
             fontSize: '26px',
+          },
+        },
+        h3: {
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '20px',
           },
         }
       },

@@ -39,7 +39,7 @@ const HomePage = () => {
       >
         <HeroText
           heading={"THE DATA HUB AT UC MERCED"}
-          subheading={"We seek to explain and reverse inequalities in higher education systems and economies."}
+          subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges."}
         />
         <RoundedButton
           handleClick={handleScrollClick}

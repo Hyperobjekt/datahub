@@ -22,22 +22,19 @@
       "value": "Hyperobjekt"
     }
   ],
-  "title": "DATA HUB",
+  "title": "DATAHUB",
   "menuLinks": [
     {
       "name": "About The Here Lab",
-      "link": "/about",
-      "location": "all"
+      "link": "/about"
     },
     {
       "name": "In the News",
-      "link": "/news",
-      "location": "all"
+      "link": "/news"
     },
     {
       "name": "Contact",
-      "link": "/contact",
-      "location": "all"
+      "link": "/contact"
     }
   ],
   "image": "/images/social.png",

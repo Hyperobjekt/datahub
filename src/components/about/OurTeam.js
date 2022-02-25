@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 
 import AddCircleIcon from '@material-ui/icons/AddCircle';
-import CloseIcon from '@material-ui/icons/Close';
+import CancelIcon from '@material-ui/icons/Cancel';
 import { OurTeamStyles } from './styles/AboutStyles';
 import BlueBox from '../general/BlueBox';
 
@@ -126,7 +126,7 @@ const OurTeam = (props) => {
         <Box className={classes.modal}>
           <Box display="flex" justifyContent="flex-end">
             <IconButton className={classes.iconButton} onClick={() => setModal(false)}>
-              <CloseIcon className={classes.icon} />
+              <CancelIcon className={classes.icon} />
             </IconButton>
           </Box>
           {modalBio}

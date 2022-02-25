@@ -9,7 +9,7 @@ export const HomePageStyles = makeStyles(theme => ({
     width: "100%",
 
     backgroundColor: "rgb(65 83 97)",
-    background: `url(${HomeHero}) no-repeat top right fixed`,
+    background: `url(${HomeHero}) no-repeat top right`,
     [theme.breakpoints.up('lg')]: {
       backgroundSize: "1440px 600px",
     },
