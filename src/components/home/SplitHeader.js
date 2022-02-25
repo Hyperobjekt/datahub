@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     
     background: `url(${TertiaryHero}) no-repeat center center`,
-    backgroundSize: 'cover',
+    backgroundSize: '140%',
     backgroundColor: '#E4D3C3',
 
     [theme.breakpoints.down('md')]: {
@@ -69,6 +69,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    height: '100%',
     
     paddingTop: theme.spacing(20),
     paddingBottom: theme.spacing(20),
@@ -106,9 +107,9 @@ const SplitHeader = () => {
         </Box>
       <Box className={classes.rightPanel}>
         <Box className={classes.panelAlign}>
-          <Typography variant="h3" className="h3SplitHero">{rightPanel.heading}</Typography>
+          <Typography variant="h3" className="h3SplitHero h3SplitHero-right">{rightPanel.heading}</Typography>
           <Link href={rightPanel.source[0].link}>
-            <Typography variant="body1" className="body1SplitHero">{rightPanel.source[0].copy}</Typography>
+            <Typography variant="overline" className="body1SplitHero">{rightPanel.source[0].copy}</Typography>
           </Link>
         </Box>
       </Box>

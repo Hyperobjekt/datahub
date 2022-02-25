@@ -29,7 +29,7 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div id="heroScrollTo" className={classes.backgroundDiv}>
+    <div id="heroScrollTo" className={classes.backgroundDiv} className="homeHero">
       <Hero
         id="heroScrollTo"
         ContainerProps={{

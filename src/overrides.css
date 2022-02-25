@@ -1,1 +1,21 @@
 /** PUT ANY CSS OVERRIDES HERE */
+.h3Hero {
+    margin-top: 1.6rem !important;
+}
+
+@media (min-width: 600px) {
+    .h3Hero {
+        margin: 1.6rem 0 !important;
+    }
+    .homeHero button {
+        margin-top: 1.6rem !important;
+    }
+}
+.body1SplitHero {
+    margin: 1.6rem 0 !important;
+}
+.h3SplitHero-right {
+    margin-bottom: 1.6rem !important;
+}
+
+
