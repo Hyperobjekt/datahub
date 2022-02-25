@@ -98,6 +98,16 @@ const Theme = () => {
             display: 'inline-block',
           },
           '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
+          '.MuiBox-root .HypBranding-logo': {
+            padding: '10px',
+            width: '180px',
+
+            [theme.breakpoints.down('sm')]: {
+              padding: 0,
+              display: 'flex',
+              alignItems: 'center'
+            },
+          }
         },
       },
       MuiTypography: {
@@ -315,26 +325,6 @@ const Theme = () => {
           backgroundPosition: '100% 75%',
           backgroundImage: `url(${FlyoutBg})`,
           backgroundSize: 'cover',
-          '&. HypNavigation-link': {
-            color: '#fff',
-          },
-          // "&.HypNavigation": {
-          //   root: {
-          //     flex: "none",
-          //     height: "80%",
-          //     alignItems: "center",
-          //   },
-          //   link: {
-          //     [theme.breakpoints.down('sm')]: {
-          //       color: "#fff",
-          //       fontFamily: FONT,
-          //       fontSize: "23px",
-          //       fontWeight: "700",
-
-          //       justifyContent: "center"
-          //     },
-          //   },
-          // }
         },
       },
       // make the page fill the viewport
@@ -350,7 +340,7 @@ const Theme = () => {
           textDecoration: 'none',
         },
         logo: {
-          width: '10%',
+          width: '200px',
         },
       },
       // hide the social links in the header
@@ -384,7 +374,6 @@ const Theme = () => {
         },
         link: {
           [theme.breakpoints.down('sm')]: {
-            color: '#fff',
             fontFamily: FONT,
             fontSize: '23px',
             fontWeight: '700',

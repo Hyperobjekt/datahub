@@ -8,10 +8,6 @@
   "image": "/images/social.jpg",
   "menuLinks": [
     {
-      "name": "Home",
-      "link": "/"
-    },
-    {
       "name": "About The Here Lab",
       "link": "/about"
     },

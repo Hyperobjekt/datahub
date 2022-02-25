@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
 
+import { 
+  Box
+} from '@material-ui/core';
+
 import { Block, Hero } from '@hyperobjekt/material-ui-website';
 import ResourcesTable from './ResourcesTable';
 import SplitHeader from './SplitHeader';
 import RoundedButton from '../general/RoundedButton';
+import { HomePageStyles } from './styles/HomeStyles';
 
 import HomeHero from "../../../static/graphics/heroHeaderStatic.png"
 
@@ -14,6 +19,7 @@ const handleScrollClick = () => {
 }
 
 const HomePage = () => {
+  const classes = HomePageStyles()
 
   useEffect(() => {
     const homePage = document.getElementById('heroScrollTo')
@@ -28,11 +34,7 @@ const HomePage = () => {
         ContainerProps={{
           justifyContent: 'flex-start',
         }}
-        height="600px"
-        alignItems="flex-end"
-        bgcolor="#475865"
-        image={HomeHero}
-        variant="overlay"
+        className={classes.hero}
       >
         <RoundedButton
           handleClick={handleScrollClick}

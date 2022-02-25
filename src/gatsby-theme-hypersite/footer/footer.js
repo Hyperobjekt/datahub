@@ -76,9 +76,7 @@ const styles = (theme) => ({
       paddingBottom: '5px',
       [theme.breakpoints.down('sm')]: {
         fontSize: '14px',
-        color: "#fff"
       },
-      color: "#fff"
     },
     "& .HypNavigation-listItem": {
       [theme.breakpoints.down('sm')]: {

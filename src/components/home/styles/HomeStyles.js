@@ -1,10 +1,18 @@
 import { makeStyles } from "@material-ui/core"
 
-// export const HomePageStyles = makeStyles(theme => ({
-//   hero: {
-//     backgroundImage: `url(${HomeHero})`
-//   }
-// }))
+import HomeHero from "../../../../static/graphics/heroHeaderStatic.png"
+
+export const HomePageStyles = makeStyles(theme => ({
+  hero: {
+    height: "600px",
+    width: "100%",
+
+    alignItems: "flex-end",
+    backgroundColor: "rgb(65 83 97)",
+    backgroundImage: `url(${HomeHero})`,
+    backgroundRepeat: "no-repeat",
+  }
+}))
 
 export const ResourcesTablesStyles = makeStyles(theme => ({
   centerAlign: {
