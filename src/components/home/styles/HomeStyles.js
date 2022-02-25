@@ -9,8 +9,8 @@ export const HomePageStyles = makeStyles(theme => ({
 
     alignItems: "flex-end",
     backgroundColor: "rgb(65 83 97)",
-    backgroundImage: `url(${HomeHero})`,
-    backgroundRepeat: "no-repeat",
+    background: `url(${HomeHero}) no-repeat center center fixed`,
+    backgroundSize: "1440px 600px"
   }
 }))
 

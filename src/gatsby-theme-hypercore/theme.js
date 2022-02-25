@@ -97,6 +97,14 @@ const Theme = () => {
             borderRadius: '4px',
             display: 'inline-block',
           },
+          // '.HypNavigation-root .HorizontalNavigation': {
+          //   listItem: {
+          //     background: 'none'
+          //   },
+          //   linkActive: {
+          //     color: 'blue'
+          //   }
+          // },
           '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
           '.MuiBox-root .HypBranding-logo': {
             padding: '10px',
@@ -217,14 +225,6 @@ const Theme = () => {
       MuiDivider: {
         root: { margin: '1rem 0' },
       },
-      HypHeader: {
-        root: {
-          fontFamily: FONT,
-        },
-        toolbar: {
-          backgroundColor: 'white',
-        },
-      },
       MuiTableCell: {
         root: {
           borderBottom: 'none',
@@ -276,7 +276,6 @@ const Theme = () => {
       },
       MuiLink: {
         root: {
-          fontFamily: FONT,
           fontSize: '.5em',
 
           color: 'inherit',
@@ -309,22 +308,31 @@ const Theme = () => {
         },
       },
       MuiDrawer: {
-        root: {
-          '&. HypNavigation-link': {
-            color: '#fff',
-          },
-        },
         paper: {
-          root: {
-            '&. HypNavigation-link': {
-              color: '#fff',
-            },
-          },
           width: '100%',
           background: '#1D2D39',
           backgroundPosition: '100% 75%',
           backgroundImage: `url(${FlyoutBg})`,
           backgroundSize: 'cover',
+        },
+      },
+      HypHeader: {
+        root: {
+          fontFamily: FONT,
+          "& .HypNavigation-listItem": {
+              background: "none",
+          },
+          "& .HypNavigation-link": {
+            fontFamily: FONT,
+            color: 'black',
+          },
+          "& .HypNavigation-linkActive": {
+            fontFamily: FONT,
+            color: '#064493',
+          }
+        },
+        toolbar: {
+          backgroundColor: 'white',
         },
       },
       // make the page fill the viewport
@@ -338,10 +346,7 @@ const Theme = () => {
           color: 'black',
           fontSize: 24,
           textDecoration: 'none',
-        },
-        logo: {
-          width: '200px',
-        },
+        }
       },
       // hide the social links in the header
       HypSocialLinks: {
@@ -355,17 +360,11 @@ const Theme = () => {
           display: 'none',
         },
       },
-      HorizontalNavigation: {
-        listItem: {
-          background: 'none',
-        },
-        link: {
-          color: 'black',
-        },
-        linkActive: {
-          color: '#064493',
-        },
-      },
+      // HorizontalNavigation: {
+      //   linkActive: {
+      //     color: '#064493',
+      //   },
+      // },
       HypNavigation: {
         root: {
           flex: 'none',
