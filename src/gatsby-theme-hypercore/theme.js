@@ -206,6 +206,7 @@ const Theme = () => {
         },
         body2: {
           [theme.breakpoints.down('sm')]: {
+            color: 'green',
             fontFamily: ALT_FONT,
             fontStyle: 'normal',
             fontWeight: 'normal',
@@ -290,7 +291,7 @@ const Theme = () => {
           fontFamily: ALT_FONT,
         },
         root: {
-          color: 'white',
+          color: 'black',
         },
       },
       MuiTablePagination: {
