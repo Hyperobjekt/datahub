@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
   },
   rightPanel: {
     margin: '0 auto',
+    textAlign: 'center',
     
     backgroundColor: '#E4D3C3',
 
@@ -81,29 +82,28 @@ const useStyles = makeStyles(theme => ({
 const SplitHeader = () => {
   const classes = useStyles()
 
+  const leftPanel = headersObj.leftPanel[0]
+  const rightPanel = headersObj.rightPanel[0]
+
   return (
-    console.log(headersObj),
+    console.log(leftPanel, rightPanel),
     <Box className={classes.centerAlign}>
       <Box className={classes.panel}>
         <Box className={classes.panelAlign}>
-          <Typography variant="h3" className="h3SplitHero">LATEST DATA AND RESEARCH</Typography>
-          <Typography variant="body1" className="body1SplitHero">University of Chicago Press just published Bankers in the Ivory Tower by HERE Lab cofounder Charlie Eaton</Typography>
-          <Link href={'https://github.com/HigherEdData/BankersInTheIvoryTower'}>
+          <Typography variant="h3" className="h3SplitHero">{leftPanel.heading}</Typography>
+          <Typography variant="body1" className="body1SplitHero">{leftPanel.subheading}</Typography>
+          <Link href={leftPanel.source[0].link}>
             <Typography variant="overline" className="overlineSplitHero">
-              View our repository of the data, code, and visualizations for this research
+            {leftPanel.source[0].copy}
             </Typography>
           </Link>
       </Box>
         </Box>
       <Box className={classes.rightPanel}>
         <Box className={classes.panelAlign}>
-          <Typography variant="h3" className="h3SplitHero">
-
-          </Typography>
-          <Link href={'github.com'}>
-            <Typography variant="overline" className="overlineSplitHero">
-              
-            </Typography>
+          <Typography variant="h3" className="h3SplitHero">{rightPanel.heading}</Typography>
+          <Link href={rightPanel.source[0].link}>
+            <Typography variant="body1" className="body1SplitHero">{rightPanel.source[0].copy}</Typography>
           </Link>
         </Box>
       </Box>
