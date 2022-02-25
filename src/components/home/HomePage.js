@@ -29,24 +29,25 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div id="heroScrollTo" className={classes.backgroundDiv} className="homeHero">
-      <Hero
-        id="heroScrollTo"
-        ContainerProps={{
-          justifyContent: 'flex-start',
-        }}
-        className={classes.hero}
-      >
-        <HeroText
-          heading={"THE DATA HUB AT UC MERCED"}
-          subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges."}
-        />
-        <RoundedButton
-          handleClick={handleScrollClick}
-          text={'BROWSE OUR DATA AND CODE'}
-        />
-      </Hero>
-
+    <div id="heroScrollTo" className={classes.backgroundDiv}>
+      <div id="homeHero">
+        <Hero
+          id="heroScrollTo"
+          ContainerProps={{
+            justifyContent: 'flex-start',
+          }}
+          className={classes.hero}
+        >
+          <HeroText
+            heading={"THE DATA HUB AT UC MERCED"}
+            subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges."}
+          />
+          <RoundedButton
+            handleClick={handleScrollClick}
+            text={'BROWSE OUR DATA AND CODE'}
+          />
+        </Hero>
+        </div>
       <SplitHeader />
 
       <Block>
