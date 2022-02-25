@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core"
 
 export const AboutUsPage = makeStyles(theme => ({
-  aboutUs: {
+  centerAlign: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -70,6 +70,20 @@ export const AboutUsPage = makeStyles(theme => ({
     maxWidth: theme.spacing(70),
     padding: theme.spacing(3),
     margin: '0 0 40px 0'
+  },
+  ourFriends: {
+    width: "800px",
+    [theme.breakpoints.down('md')]: {
+      width: '360px',
+    },
+
+    marginTop: "20px"
+  },
+  textBoxStyles: {
+    margin: '0 auto',
+    textAlign: 'center',
+
+    paddingBottom: theme.spacing(18)
   }
 }))
 
@@ -85,26 +99,45 @@ export const OurTeamStyles = makeStyles(theme => ({
     padding: theme.spacing(3),
     margin: '0 0 40px 0'
   },
-  modalStyles: {
+  modal: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(70),
+    maxHeight: theme.spacing(200),
+    padding: theme.spacing(3),
+
+    [theme.breakpoints.down('md')]: {
+      width: theme.spacing(70),
+      height: theme.spacing(50),
+    },
+
     position: 'absolute',
     top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
+
+    transform: 'translate(-50%, -50%)'
   },
   thumbnail: {
-    width: '150px'
+    width: '150px',
+    height: '150px',
+    marginRight: '10px'
   },
   itemStyles: {
     backgroundColor: '#E8F5FF',
 
     maxWidth: theme.spacing(40),
     padding: theme.spacing(3),
-    margin: '0 0 40px 0'
+    margin: '0 0 10px 0'
+  },
+  modalItemStyles: {
+    display: 'flex',
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(200),
+    height: theme.spacing(40),
+    padding: theme.spacing(1),
+
+    margin: '0 0 10px 0'
   },
   copyStyles: {
     display: 'flex',
@@ -115,5 +148,13 @@ export const OurTeamStyles = makeStyles(theme => ({
     '& > *': {
       paddingBottom: theme.spacing(2)
     },
+  },
+  iconButton: {
+    padding: 0,
+    marginLeft: "2px",
+    verticalAlign: "top",
+  },
+  icon: {
+    color: "#064493",
   }
 }))

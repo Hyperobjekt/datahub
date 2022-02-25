@@ -36,13 +36,19 @@
       "name": "Charlie Eaton",
       "bio": "Charlie Eaton is Assistant Professor of Sociology at the University of California, Merced, where he co - founded the HERE Lab. His book Bankers in the Ivory Tower: The Troubling Rise of Financiers in U.S. Higher Education was published by University of Chicago Press in 2022. He is broadly interested in the role of race and organizations in struggles for power and economic resources between elites and non - elites. His recent research has particularly focused on the consolidation of power and wealth by private equity and hedge fund financiers -- and successful initiatives to reverse these inequalities.",
       "thumbnail": "/images/eaton.png",
-      "title": "Associate Professor of Sociology; HERE Lab co-founder"
+      "title": "Assistant Professor of Sociology; HERE Lab Co-Founder"
     },
     {
       "name": "Laura Hamilton",
       "bio": "Laura Hamilton is Professor of Sociology at the University of California, Merced, and co - founder of the HERE Lab. Her books include: Paying for the Party: How College Maintains Inequality, Parenting to a Degree: How Family Matters for College Women’s Success, and most recently Broke: The Racial Consequences of Underfunding Public Universities. Her work examines the ways in which postsecondary organizations and higher education funding structures, work to create and maintain racial and class inequities.",
       "thumbnail": "/images/hamilton_laura_190503-1.jpg",
       "title": "Professor of Sociology; HERE Lab co-founder"
+    },
+    {
+      "name": "Camila Alvarez",
+      "title": "Assistant Professor of Sociology",
+      "bio": "Camila Alvarez is Assistant Professor of Sociology at the University of California, Merced. She leads studies with the HERE Lab to develop and test DuBoisian approaches to research methods, data visualization, and inclusive STEM curriculum. She also contributes expertise in geo-spatial data analysis to the Lab's DataHub. \"Professor Alvarez leads studies with the HERE Lab to develop and test Du Boisian approaches to research methods, data visualization, and inclusive STEM curriculum. She also contributes expertise in geo-spatial data analysis to the Lab's Datahub.\"",
+      "thumbnail": "/images/alvarez.png"
     },
     {
       "name": "Heather Daniels",
@@ -52,9 +58,9 @@
     },
     {
       "name": "Alisha Jones",
-      "bio": "Alisha Jones is a PhD student in the Higher Education Race and the Economy Lab at the University of California, Merced. Her broad research interests are race and health. Her recent research focuses on the influence of Colorism on the mental health of Black Americans. Her current work in the HERE lab explores racial disparities in financial aid awards. She examines the role of family wealth in FAFSA awards of undergraduate students.",
+      "bio": "Alisha Jones is a doctoral student in the Higher Education Race and the Economy Lab at the University of California, Merced. Her broad research interests are race and health. Her recent research focuses on the influence of Colorism on the mental health of Black Americans. Her current work in the HERE lab explores racial disparities in financial aid awards. She examines the role of family wealth in FAFSA awards of undergraduate students.",
       "thumbnail": "/images/jones_alisha_20220125-1.jpg",
-      "title": "PhD Student"
+      "title": "Doctoral Student"
     },
     {
       "name": "Christian Smith",

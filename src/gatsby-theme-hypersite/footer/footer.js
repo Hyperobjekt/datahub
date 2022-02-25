@@ -72,6 +72,19 @@ const styles = (theme) => ({
         justifyContent: "flex-start",
       },
     },
+    "& .HypNavigation-link": {
+      paddingBottom: '5px',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '14px',
+      },
+    },
+    "& .HypNavigation-listItem": {
+      [theme.breakpoints.down('sm')]: {
+        alignItems: 'center'
+      },
+    },
+    textAlign: 'center',
+    alignContent: 'center',
   },
 });
 
@@ -85,7 +98,7 @@ const Footer = ({ copyright, links, social, ...props }) => {
           </Grid>
           <Grid item xs={12} md={6} className="footer__textContainer">
             <Typography variant="body2">
-              We publish code for linking data on thousands of colleges from dozens of sources, to facilitate research on the causes of connected inequalities in higher education and the economy.
+              The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities.
             </Typography>
           </Grid>
           <Grid item xs={12} md={3} className="footer__navContainer">

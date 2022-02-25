@@ -15,6 +15,8 @@ import {
   Link
 } from '@material-ui/core';
 
+import clsx from 'clsx';
+
 import { KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons';
 
 import clsx from 'clsx';
@@ -104,20 +106,20 @@ const CollapsibleRow = (props) => {
       <TableRow style={{ backgroundColor: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
         <TableCell className="DhTable-collapseCol">
           <IconButton size="small" onClick={() => setOpen(!open)}>
-            {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+            {open ? <KeyboardArrowUp className={classes.icon} /> : <KeyboardArrowDown className={classes.icon} />}
           </IconButton>
         </TableCell>
         <TableCell>
           {open ? (
             <Box className={classes.evenAlign}>
-              <Typography onClick={() => setOpen(!open)} variant="body2" className={clsx("bold", "cursor")}>
+              <Typography onClick={() => setOpen(!open)} variant="body2" className={clsx("cursor", "bold")}>
                 {project.name}
                 <IconButton
                   className="DhTable-collapseRow"
                   size="small"
                   onClick={() => setOpen(!open)}
                 >
-                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  {open ? <KeyboardArrowUp className={classes.icon} /> : <KeyboardArrowDown className={classes.icon} />}
                 </IconButton>
               </Typography>
             </Box>
@@ -130,7 +132,7 @@ const CollapsibleRow = (props) => {
                   size="small"
                   onClick={() => setOpen(!open)}
                 >
-                  {open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  {open ? <KeyboardArrowUp className={classes.icon} /> : <KeyboardArrowDown className={classes.icon} />}
                 </IconButton>
               </Typography>
             </Box>

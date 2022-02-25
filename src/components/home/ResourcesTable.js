@@ -150,7 +150,7 @@ const ResourcesTable = () => {
                     value={name}
                     style={getStyles(name, selectedTopics, theme)}
                   >
-                    {name}
+                    <Typography variant="body2">{name}</Typography>
                   </MenuItem>
                 ))}
             </Select>

@@ -2,8 +2,12 @@ import React from 'react'
 
 import {
   Typography,
-  Box
+  Box,
+  Link,
+  useMediaQuery
 } from "@material-ui/core";
+
+import clsx from "clsx";
 
 import { Block, Hero } from '@hyperobjekt/material-ui-website'
 import { AboutUsPage } from './styles/AboutStyles'
@@ -12,7 +16,11 @@ import OurTeam from './OurTeam'
 
 import HereLabLogo from '../../../static/images/hereLabLogo.svg'
 import AboutHero from "../../../static/graphics/heroAboutStatic.png"
+import OurFriends from "../../../static/graphics/ourFriends.png"
+import OurFriendsSmall from "../../../static/graphics/ourFriendsSmall.png"
+
 import aboutUsObj from '../../../content/data/about.json'
+import HeroText from '../general/HeroText';
 
 /**
 * Converts array to link or typography elements
@@ -40,6 +48,8 @@ const HighlightedText = (hlText, hlBox, highlight, lede) => {
 
 const AboutUs = () => {
   const classes = AboutUsPage()
+
+  const isMediumScreen = useMediaQuery(theme => theme.breakpoints.down("md"))
 
   const firstBlock = (firstBlock) => {
     const highlight = firstBlock.motive, lede = firstBlock.location
@@ -69,20 +79,53 @@ const AboutUs = () => {
     return HighlightedText(classes.hlText, classes.hlBox, highlight, lede)
   }
 
+  const fifthBlock =
+    <Typography className="dhHlBody">
+      <Typography display="inline" className={clsx("dhHlBody", "bold")}>Building on DuBois: </Typography>
+      Our website and logos incorporate elements of the data visualization style developed by sociologist W. E. B. Du Bois and his collaborators at the beginning of the 20th century. The
+      <Link href={'https://www.dignityanddebt.org/projects/du-boisian-resources'}>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+        <Typography display="inline" className={clsx("dhHlBody", "bold")}>
+          Du Boisian Visualization Tool Kit
+        </Typography>
+      </Link> from
+      <Link href={'https://www.dignityanddebt.org/'}>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+        <Typography display="inline" className={clsx("dhHlBody", "bold")}>
+            Dignity + Debt 
+        </Typography>
+        <Typography display="inline" className="dhHlBody">
+          &nbsp;
+        </Typography>
+      </Link>
+      provides a clearinghouse of information on Du Bois's work and coding tools for data visualization in the Du Boisian style.
+    </Typography>
+
   return (
     <>
       <Hero
         ContainerProps={{
-          justifyContent: "flex-start",
+          justifyContent: "center",
+          alignItems: "center"
         }}
         alignItems="flex-end"
         image={AboutHero}
-        bgcolor="#475865"
+        bgcolor="rgb(65 83 97)"
         color="grey.900"
         variant="overlay"
-      />
+      >
+        <HeroText
+          heading={"ABOUT"}
+          subheading={"THE HIGHER EDUCATION RACE & ECONOMY LAB"}
+          textBoxStyles={classes.textBoxStyles}
+        />
+      </Hero>
       <Block>
-        <Box className={classes.aboutUs}>
+        <Box className={classes.centerAlign}>
           <Box>
             <Typography variant='h5' className="bold">
               ABOUT US
@@ -95,8 +138,18 @@ const AboutUs = () => {
             <img className={classes.logoWidth} src={HereLabLogo} alt={'Here Lab logo'} />
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
+            {fifthBlock}
           </Box>
           <OurTeam team={aboutUsObj.team}/>
+          <Box className={classes.centerAlign}>
+            <Typography variant="overline">
+              Our Friends
+            </Typography>
+            {isMediumScreen ?
+              <img className={classes.ourFriends} src={OurFriendsSmall} alt={'Organizations we work with'} /> :
+              <img className={classes.ourFriends} src={OurFriends} alt={'Organizations we work with'} />
+            }
+          </Box>
         </Box>
       </Block>
     </>

@@ -1,11 +1,32 @@
 import { makeStyles } from "@material-ui/core"
-import HomeHero from "../../../../static/graphics/heroHeader.svg"
 
-// export const HomePageStyles = makeStyles(theme => ({
-//   hero: {
-//     backgroundImage: `url(${HomeHero})`
-//   }
-// }))
+import HomeHero from "../../../../static/graphics/heroHeader.svg"
+import HomeHeroMobile from "../../../../static/graphics/heroHeaderMobile.svg"
+
+export const HomePageStyles = makeStyles(theme => ({
+  hero: {
+    height: "600px",
+    width: "100%",
+
+    backgroundColor: "rgb(65 83 97)",
+    background: `url(${HomeHero}) no-repeat top right`,
+    [theme.breakpoints.up('lg')]: {
+      backgroundSize: "1440px 600px",
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundSize: "800px 600px",
+    },
+    [theme.breakpoints.down('xs')]: {
+      height: "250px",
+
+      backgroundColor: "rgb(65 83 97)",
+      background: `url(${HomeHeroMobile}) no-repeat center center fixed`,
+    },
+    headingStyles: {
+      paddingBottom: '20px'
+    }
+  },
+}))
 
 export const ResourcesTablesStyles = makeStyles(theme => ({
   centerAlign: {
@@ -17,7 +38,7 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
       background: '#E8F5FF',
       height: '40px',
       [theme.breakpoints.down('md')]: {
-        width: '60px',
+        width: '120px',
         marginRight: '10px',
       },
       [theme.breakpoints.up('md')]: {
@@ -124,5 +145,11 @@ export const CollapsibleRowStyles = makeStyles(theme => ({
     margin: '12px 0 22px 0',
     padding: '21px 32px',
     background: '#FFF8ED',
+  },
+  icon: {
+    color: "#000000",
+    [theme.breakpoints.down('md')]: {
+      color: "#000000",
+    },
   }
 }))

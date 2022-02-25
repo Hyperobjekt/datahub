@@ -12,6 +12,7 @@ import NewsItem from './NewsItem'
 import NewsHero from "../../../static/graphics/heroNewsStatic.png"
 
 import newsObj from '../../../content/data/news.json'
+import HeroText from '../general/HeroText';
 
 const NewsPage = () => {
   const classes = NewsPageStyles()
@@ -20,14 +21,21 @@ const NewsPage = () => {
     <>
       <Hero
         ContainerProps={{
-          justifyContent: "flex-start",
+          justifyContent: "center",
+          alignItems: "center"
         }}
         alignItems="flex-end"
         image={NewsHero}
-        bgcolor="#475865"
+        bgcolor="rgb(65 83 97)"
         color="grey.900"
         variant="overlay"
+      >
+      <HeroText
+        heading={"IN THE NEWS"}
+        subheading={"THE HERE LAB IN THE NEWS"}
+        textBoxStyles={classes.textBoxStyles}
       />
+      </Hero>
       <Block>
         <Box className={classes.newsPage}>
           <Typography variant="h5" className="bold">

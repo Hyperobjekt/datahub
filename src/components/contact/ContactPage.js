@@ -42,7 +42,7 @@ const ContactPage = () => {
   const success = "Messsage received! Thanks for contacting us."
   const failed = "Sorry, something went wrong with the form submission."
 
-  const honeypotRef = useRef(null);
+  const honeypotRef = useRef("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmittedError, setIsSubmittedError] = useState(false);
 
@@ -56,9 +56,9 @@ const ContactPage = () => {
 
   // handler for form submission
   const handleSubmit = (values) => {
-    // // detect spam with honeypot
-    // if (honeypotRef.current.values !== "") return;
-    // // netlify forms submission
+    // detect spam with honeypot
+    if (honeypotRef.current.value !== "") return;
+    // netlify forms submission
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

@@ -1,5 +1,8 @@
 import { createTheme } from '@material-ui/core/styles';
 import { deepmerge } from '@material-ui/utils';
+
+import FlyoutBg from '../../static/graphics/flyoutMobile.svg';
+
 export const FONT = 'source-code-pro, sans-serif';
 export const ALT_FONT = 'zeitung, sans-serif';
 
@@ -61,14 +64,14 @@ let base = {
       fontWeight: 'bold',
       fontSize: 15,
       lineHeight: 19 / 15,
-      letterSpacing: '0.03em'
+      letterSpacing: '0.03em',
     },
     caption: {
       fontFamily: ALT_FONT,
       fontWeight: 150,
       fontSize: 13,
       lineHeight: 18 / 13,
-      letterSpacing: '-0.02em'
+      letterSpacing: '-0.02em',
     },
   },
 };
@@ -94,39 +97,72 @@ const Theme = () => {
             borderRadius: '4px',
             display: 'inline-block',
           },
+          '.MuiDrawer-paper .HypNavigation-link': { color: '#fff' },
+          '.MuiBox-root .HypBranding-logo': {
+            padding: '10px',
+            width: '180px',
+
+            [theme.breakpoints.down('sm')]: {
+              padding: 0,
+              display: 'flex',
+              alignItems: 'center'
+            },
+          }
         },
       },
       MuiTypography: {
         root: {
+          '&.overlineSplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 13,
+            },
+          },
+          '&.h3SplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 18,
+            },
+          },
+          '&.body1SplitHero': {
+            [theme.breakpoints.down('sm')]: {
+              fontSize: 15,
+            },
+          },
+          '&.overlineHero': {
+            color: "#FFC101",
+            paddingBottom: '20px'
+          },
+          '&.h3Hero': {
+            color: 'white'
+          },
           '&.sourceCode': {
-            fontFamily: FONT
+            fontFamily: FONT,
           },
           '&.zeitung': {
-            fontFamily: ALT_FONT
+            fontFamily: ALT_FONT,
           },
           '&.bold': {
             fontWeight: '600',
           },
           '&.margin': {
-            margin: '10px 0 10px 0'
+            margin: '10px 0 10px 0',
           },
           '&.mono': {
             fontFamily: FONT,
           },
           '&.dhTopicsDataSets': {
             fontFamily: ALT_FONT,
-            fontStyle: "normal",
-            fontWeight: "bold",
-            fontSize: "12px",
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '12px',
 
-            margin: 0
+            margin: 0,
           },
           '&.dhTableRow': {
             fontFamily: FONT,
-            fontStyle: "normal",
-            fontWeight: "bold",
-            fontSize: "15px",
-            color: "#064493",
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '15px',
+            color: '#064493',
 
             [theme.breakpoints.down('sm')]: {
               fontSize: '12px',
@@ -134,9 +170,9 @@ const Theme = () => {
           },
           '&.dhNewsHeader': {
             fontFamily: FONT,
-            fontStyle: "normal",
-            fontWeight: "bold",
-            fontSize: "24px",
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '24px',
             marginTop: 0,
 
             [theme.breakpoints.down('sm')]: {
@@ -158,17 +194,18 @@ const Theme = () => {
             fontSize: 16,
 
             [theme.breakpoints.down('sm')]: {
-              fontSize: 14
+              fontSize: 14,
             },
           },
           '&.cursor': {
-            cursor: 'pointer'
-          }
+            cursor: 'pointer',
+          },
         },
         body1: {
           margin: '1rem 0',
         },
         body2: {
+          color: 'black',
           [theme.breakpoints.down('sm')]: {
             fontFamily: ALT_FONT,
             fontStyle: 'normal',
@@ -187,7 +224,7 @@ const Theme = () => {
         subtitle2: {
           fontFamily: ALT_FONT,
           fontSize: '12px',
-          
+
           display: 'inline-block',
 
           [theme.breakpoints.down('sm')]: {
@@ -198,23 +235,20 @@ const Theme = () => {
           [theme.breakpoints.down('sm')]: {
             fontSize: '18px',
           },
+        },
+        h1: {
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '26px',
+          },
+        },
+        h3: {
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '20px',
+          },
         }
       },
       MuiDivider: {
         root: { margin: '1rem 0' },
-      },
-      HypHeader: {
-        root: {
-          "& .HypNavigation-listItem": {
-            background: "none",
-          },
-          "& .HypNavigation-link": {
-            color: 'black',
-          }
-        },
-        toolbar: {
-          backgroundColor: 'white',
-        },
       },
       MuiTableCell: {
         root: {
@@ -243,7 +277,7 @@ const Theme = () => {
             backgroundColor: 'transparent',
           },
           [theme.breakpoints.down('md')]: {
-            fontSize: '13px'
+            fontSize: '13px',
           },
         },
       },
@@ -254,23 +288,22 @@ const Theme = () => {
       },
       MuiListItem: {
         button: {
-          fontFamily: 'zeitung',
+          fontFamily: ALT_FONT,
         },
       },
       MuiTablePagination: {
         caption: {
-          fontFamily: 'zeitung',
+          fontFamily: ALT_FONT,
         },
       },
       MuiLink: {
         root: {
-          fontFamily: FONT,
           fontSize: '.5em',
 
           color: 'inherit',
           textDecoration: 'none',
 
-          cursor: 'pointer'
+          cursor: 'pointer',
         },
       },
       MuiTablePagination: {
@@ -278,15 +311,51 @@ const Theme = () => {
           [theme.breakpoints.down('md')]: {
             marginLeft: '5px',
           },
-        }
+        },
       },
       MuiButton: {
         root: {
           '&.dhTable-clearAll': {
             color: 'rgba(0, 0, 0, 0.54)',
-            minWidth: '24px'
+            minWidth: '24px',
+          },
+        },
+        label: {
+          color: '#064493',
+        },
+      },
+      MuiIconButton: {
+        label: {
+          color: 'white',
+        },
+      },
+      MuiDrawer: {
+        paper: {
+          width: '100%',
+          background: '#1D2D39',
+          backgroundPosition: '100% 75%',
+          backgroundImage: `url(${FlyoutBg})`,
+          backgroundSize: 'cover',
+        },
+      },
+      HypHeader: {
+        root: {
+          fontFamily: FONT,
+          "& .HypNavigation-listItem": {
+              background: "none",
+          },
+          "& .HypNavigation-link": {
+            fontFamily: FONT,
+            color: 'black',
+          },
+          "& .HypNavigation-linkActive": {
+            fontFamily: FONT,
+            color: '#064493',
           }
-        }
+        },
+        toolbar: {
+          backgroundColor: 'white',
+        },
       },
       // make the page fill the viewport
       HypPage: {
@@ -299,9 +368,6 @@ const Theme = () => {
           color: 'black',
           fontSize: 24,
           textDecoration: 'none',
-        },
-        logo: {
-          width: '10%'
         }
       },
       // hide the social links in the header
@@ -316,29 +382,25 @@ const Theme = () => {
           display: 'none',
         },
       },
-      HorizontalNavigation: {
-        linkActive: {
-          color: '#064493',
-          fontWeight: 'none',
-        },
-      },
+      // HorizontalNavigation: {
+      //   linkActive: {
+      //     color: '#064493',
+      //   },
+      // },
       HypNavigation: {
-        link: {
-          paddingBottom: '5px',
-          [theme.breakpoints.down('sm')]: {
-            fontSize: '14px'
-          },
-        },
-        listItem: {
-          [theme.breakpoints.down('sm')]: {
-            alignItems: 'center'
-          },
-        }
-      },
-      HypFooter: {
         root: {
-          textAlign: 'center',
-          alignContent: 'center',
+          flex: 'none',
+          height: '80%',
+          alignItems: 'center',
+        },
+        link: {
+          [theme.breakpoints.down('sm')]: {
+            fontFamily: FONT,
+            fontSize: '23px',
+            fontWeight: '700',
+
+            justifyContent: 'center',
+          },
         },
       },
     },
