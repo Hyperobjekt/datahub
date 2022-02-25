@@ -136,44 +136,38 @@ const data = {
       file: "content/data/headers.json",
       fields: [
         {
-          label: "Headers",
-          name: "headers",
+          label: "Left Panel",
+          name: "leftPanel",
+          widget: "list",
           fields: [
+            { label: "Heading", name: "heading", widget: "string" },
+            { label: "Subheading", name: "subheading", widget: "string" },
             {
-              label: "Left Panel",
-              name: "leftPanel",
+              label: "Source",
+              name: "source",
               widget: "list",
               fields: [
-                { label: "Heading", name: "heading", widget: "string" },
-                { label: "Subheading", name: "subheading", widget: "string" },
-                {
-                  label: "Source",
-                  name: "source",
-                  widget: "list",
-                  fields: [
-                    { label: "Copy", name: "copy", widget: "string" },
-                    { label: "Link", name: "link", widget: "string" },
-                  ],
-                }
+                { label: "Copy", name: "copy", widget: "string" },
+                { label: "Link", name: "link", widget: "string" },
               ],
-            },
+            }
+          ],
+        },
+        {
+          label: "Right Panel",
+          name: "rightPanel",
+          widget: "list",
+          fields: [
+            { label: "Heading", name: "heading", widget: "string" },
             {
-              label: "Right Panel",
-              name: "rightPanel",
+              label: "Source",
+              name: "source",
               widget: "list",
               fields: [
-                { label: "Heading", name: "heading", widget: "string" },
-                {
-                  label: "Source",
-                  name: "source",
-                  widget: "list",
-                  fields: [
-                    { label: "Copy", name: "copy", widget: "string" },
-                    { label: "Link", name: "link", widget: "string" },
-                  ],
-                }
+                { label: "Copy", name: "copy", widget: "string" },
+                { label: "Link", name: "link", widget: "string" },
               ],
-            },
+            }
           ],
         },
       ],
