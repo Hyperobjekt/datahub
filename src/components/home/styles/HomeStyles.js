@@ -14,14 +14,13 @@ export const HomePageStyles = makeStyles(theme => ({
       backgroundSize: "1440px 600px",
     },
     [theme.breakpoints.between('md', 'lg')]: {
-      backgroundSize: "660px 600px",
+      backgroundSize: "800px 600px",
     },
     [theme.breakpoints.down('xs')]: {
       height: "250px",
 
       backgroundColor: "rgb(65 83 97)",
-      background: `url(${HomeHeroMobile}) no-repeat bottom center fixed`,
-      backgroundSize: "1440px 600px",
+      background: `url(${HomeHeroMobile}) no-repeat center center fixed`,
     },
     headingStyles: {
       paddingBottom: '20px'
