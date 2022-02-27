@@ -18,4 +18,10 @@
     margin-bottom: 1.6rem !important;
 }
 
+/* About page */
+
+.thumbnailWrapper img {
+    cursor: pointer;
+}
+
 
