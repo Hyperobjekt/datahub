@@ -17,5 +17,16 @@
 .h3SplitHero-right {
     margin-bottom: 1.6rem !important;
 }
+@media (max-width: 1279px) {
+    #scrollTo h6 {
+        text-align: center;
+    }
+}
+
+/* About page */
+
+.thumbnailWrapper img {
+    cursor: pointer;
+}
 
 

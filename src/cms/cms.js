@@ -10,9 +10,9 @@ CMS.init({
     // remember to run npx netlify-cms-proxy-server if running locally
     local_backend: process.env.CI !== true,
     backend: {
-      name: "github",
+      name: "git-gateway",
       repo: "Hyperobjekt/datahub",
-      branch: "development",
+      branch: "production",
     },
     media_folder: "/static/images",
     public_folder: "/images",

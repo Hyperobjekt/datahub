@@ -36,7 +36,18 @@ module.exports = {
           id: "iam2opj",
         },
       },
-    }
+    },
+    // manifest configuration for home screen options
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `HigherEd DataHub`,
+        short_name: `HigherEd DataHub`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: "static/images/datahub-favicon.png",
+      },
+    },
   ],
   flags: { FAST_DEV: true },
 };

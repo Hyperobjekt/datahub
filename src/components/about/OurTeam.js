@@ -73,14 +73,16 @@ const OurTeam = (props) => {
   * @returns {Box[Thumbnail]}
   */
   const makeThumbnail = (member) =>
-    <Box display="inline-block">
-      <img className={classes.thumbnail} src={member.thumbnail} alt={'Team member photo'} />
-      {!isSmallScreen &&
-        <IconButton className={classes.iconButton} onClick={(e) => handleIconClick(member)}>
-          <AddCircleIcon className={classes.icon} />
-        </IconButton>
-      }
-    </Box>
+    <div className='thumbnailWrapper'>
+      <Box display="inline-block">
+          <img className={classes.thumbnail} src={member.thumbnail} onClick={(e) => handleIconClick(member)} alt={'Team member photo'} />
+        {!isSmallScreen &&
+          <IconButton className={classes.iconButton} onClick={(e) => handleIconClick(member)}>
+            <AddCircleIcon className={classes.icon} />
+          </IconButton>
+        }
+      </Box>
+    </div>
 
   const memberCards = () => {
 

@@ -1,6 +1,6 @@
 {
   "copyright": "©2022 DataHub. All rights reserved.",
-  "siteUrl": "https://gatsby-starter-hypersite.netlify.app",
+  "siteUrl": "https://highereddatahub.org",
   "keywords": [
     "gatsby",
     "theme",
@@ -42,5 +42,5 @@
     }
   ],
   "image": "/images/social.png",
-  "description": "Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Material UI. Incorporates gatsby-theme-hyperobjekt-core."
+  "description": "We publish code for linking organizational and socio-economic data for thousands of US colleges."
 }
