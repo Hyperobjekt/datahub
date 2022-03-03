@@ -39,7 +39,7 @@ const HomePage = () => {
           className={classes.hero}
         >
           <HeroText
-            heading={"THE DATA HUB AT UC MERCED"}
+            heading={"DataHub"}
             subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges."}
           />
           <RoundedButton

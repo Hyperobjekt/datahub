@@ -119,8 +119,8 @@ const AboutUs = () => {
         variant="overlay"
       >
         <HeroText
-          heading={"ABOUT"}
-          subheading={"THE HIGHER EDUCATION RACE & ECONOMY LAB"}
+          heading={"THE HIGHER EDUCATION RACE & THE ECONOMY (HERE) LAB"}
+          subheading={"The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities."}
           textBoxStyles={classes.textBoxStyles}
         />
       </Hero>
