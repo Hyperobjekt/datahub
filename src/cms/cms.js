@@ -2,7 +2,7 @@ import CMS from "netlify-cms-app";
 import pages from "./pages";
 import { config } from "@hyperobjekt/cms-config";
 import data from "./data/data";
-//window.CMS_MANUAL_INIT = true;
+window.CMS_MANUAL_INIT = true;
 
 CMS.init({
   config: {
@@ -12,7 +12,7 @@ CMS.init({
     backend: {
       name: "github",
       repo: "Hyperobjekt/datahub",
-      branch: "development",
+      branch: "production",
     },
     media_folder: "/static/images",
     public_folder: "/images",
