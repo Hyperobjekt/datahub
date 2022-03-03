@@ -12,7 +12,7 @@ CMS.init({
     backend: {
       name: "github",
       repo: "Hyperobjekt/datahub",
-      branch: "development",
+      branch: "production",
     },
     media_folder: "/static/images",
     public_folder: "/images",
