@@ -13,6 +13,16 @@ import aboutUsObj from '../../../content/data/about.json';
 import HeroText from '../general/HeroText';
 import BlueBoxCopy from '../general/BlueBoxCopy';
 import AboutUsWrapper from './AboutUsWrapper';
+import DD from '../../../static/graphics/friends-logos/header-logo.svg';
+import Fisk from '../../../static/graphics/friends-logos/FISK COLLEGIATE SPIRE V1 COLOR.png';
+import SDCC from '../../../static/graphics/friends-logos/SDCC-Icon.png';
+import SHE from '../../../static/graphics/friends-logos/SHE-Lab-Logo-2-2048x2048.jpeg';
+import UCI from '../../../static/graphics/friends-logos/UCi19_LAW_StudentLoanLaw_Int_LF_blue.png';
+import Merced from '../../../static/graphics/friends-logos/LRrvuTz9_400x400.jpeg';
+import TICAS from '../../../static/graphics/friends-logos/ticas.png';
+import Roosevelt from '../../../static/graphics/friends-logos/Roosevelt.png';
+import SBPC from '../../../static/graphics/friends-logos/sbpc-logo.png';
+
 
 const AboutUs = () => {
   const classes = AboutUsPage();
@@ -128,19 +138,73 @@ const AboutUs = () => {
           <OurTeam team={aboutUsObj.team} />
           <Box className={classes.centerAlign}>
             <Typography variant="overline">Our Friends</Typography>
-            {isMediumScreen ? (
+            {
+              <div className="ourFriendsLogos">
+              <a href="https://www.dignityanddebt.org/">
+                <img
+                  className={classes.ourFriends}
+                  src={DD}
+                  alt={'Organizations we work with'}
+                />
+              </a>
+              <a href="https://herutech.com/whitneylpirtle/?page_id=391#:~:text=Mission,root%20causes%20to%20health%20disparities">
               <img
-                className={classes.ourFriends}
-                src={OurFriendsSmall}
+                className="img__smaller"
+                src={SHE}
                 alt={'Organizations we work with'}
               />
-            ) : (
+             </a>
+              <a href="https://www.law.uci.edu/centers/slli/">
               <img
                 className={classes.ourFriends}
-                src={OurFriends}
+                src={UCI}
                 alt={'Organizations we work with'}
               />
-            )}
+              </a>
+             <a href="https://www.fisk.edu/">
+              <img
+                className="img__smaller"
+                src={Fisk}
+                alt={'Organizations we work with'}
+              />
+             </a>
+             <a href="https://studentdebtcrisis.org/">
+              <img
+                className="img__smaller"
+                src={SDCC}
+                alt={'Organizations we work with'}
+              />
+             </a>
+             <a href="https://protectborrowers.org/">
+              <img
+                className={classes.ourFriends}
+                src={SBPC}
+                alt={'Organizations we work with'}
+              />
+             </a>
+             <a href="https://ticas.org/">
+              <img
+                className={classes.ourFriends}
+                src={TICAS}
+                alt={'Organizations we work with'}
+              />
+             </a>
+             <a href="https://clc.ucmerced.edu/">
+              <img
+                className="img__smaller"
+                src={Merced}
+                alt={'Organizations we work with'}
+              />
+             </a>
+             <a href="https://rooseveltinstitute.org/">
+              <img
+                className={classes.ourFriends}
+                src={Roosevelt}
+                alt={'Organizations we work with'}
+              />
+             </a>
+            </div>
+            }
           </Box>
         </Box>
       </Block>
