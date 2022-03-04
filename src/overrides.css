@@ -19,7 +19,7 @@
 }
 @media (max-width: 1279px) {
     #scrollTo h6 {
-        text-align: center;
+       /* text-align: center; */
     }
 }
 

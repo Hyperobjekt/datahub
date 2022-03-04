@@ -32,7 +32,7 @@ const NewsPage = () => {
       >
       <HeroText
         heading={"IN THE NEWS"}
-        subheading={"THE HERE LAB IN THE NEWS"}
+        subheading={"Media coverage of our work, interviews, and more."}
         textBoxStyles={classes.textBoxStyles}
       />
       </Hero>
