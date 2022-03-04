@@ -98,7 +98,7 @@ const Footer = ({ copyright, links, social, ...props }) => {
           </Grid>
           <Grid item xs={12} md={6} className="footer__textContainer">
             <Typography variant="body2">
-              The Lab seeks to explain uneven racial and class distributions of resources and risk in higher education systems and economies—and to help reverse those inequalities.
+              Our website and logos incorporate elements of the data visualization style developed by sociologist W. E. B. Du Bois and his collaborators at the beginning of the 20th century. <a href="https://www.dignityanddebt.org/projects/du-boisian-resources/">The Du Boisian Visualization Tool Kit</a> from <a href="https://www.dignityanddebt.org/">Dignity + Debt</a> provides a clearinghouse of information on Du Bois's work and coding tools for data visualization in the Du Boisian style.
             </Typography>
           </Grid>
           <Grid item xs={12} md={3} className="footer__navContainer">

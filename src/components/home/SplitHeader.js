@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'flex',
       justifyContent: 'center',
       flexDirection: 'column',
@@ -33,8 +33,13 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'center',
       alignItems: 'center',
     },
-
-    height: '600px'
+    height: '600px',
+    [theme.breakpoints.up('md')]: {
+      height: '540px'
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '600px'
+    },
   },
   panel: {
     margin: '0 auto',
@@ -42,7 +47,7 @@ const useStyles = makeStyles(theme => ({
 
     backgroundColor: '#FFF8ED',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
     },
 
@@ -57,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: '140%',
     backgroundColor: '#E4D3C3',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
     },
 
@@ -92,7 +97,6 @@ const SplitHeader = () => {
   const rightPanel = headersObj.rightPanel[0]
 
   return (
-    console.log(leftPanel, rightPanel),
     <Box className={classes.centerAlign}>
       <Box className={classes.panel}>
         <Box className={classes.panelAlign}>

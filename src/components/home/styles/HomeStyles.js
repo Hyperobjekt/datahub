@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core"
 import HomeHero from "../../../../static/graphics/heroHeader.svg"
 import HomeHeroMobile from "../../../../static/graphics/heroHeaderMobile.svg"
 
+
 export const HomePageStyles = makeStyles(theme => ({
   hero: {
     height: "600px",
@@ -108,13 +109,16 @@ export const ResourcesTablesStyles = makeStyles(theme => ({
     '& .MuiTableCell-root.DhTable-collapseCol': {
       width: '3%',
       [theme.breakpoints.down('md')]: {
-        display: 'none',
+       // display: 'none',
       },
+      [theme.breakpoints.down('sm')]: {
+       padding: '10px 0px',
+       },
     },
     '& .MuiButtonBase-root.DhTable-collapseRow': {
-      [theme.breakpoints.up('md')]: {
+     
         display: 'none',
-      },
+      
     },
     '& .MuiTableCell-root.DhTable-collapseHl': {
       paddingBottom: 0,
@@ -136,8 +140,8 @@ export const CollapsibleRowStyles = makeStyles(theme => ({
     },
   },
   collapseContainer: {
-    [theme.breakpoints.down('md')]: {
-      margin: 0
+    [theme.breakpoints.down('sm')]: {
+      margin: '0 8px 0 32px',
     },
     margin: '0 60px'
   },

@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core"
+import { makeStyles } from '@material-ui/core';
 
-export const AboutUsPage = makeStyles(theme => ({
+export const AboutUsPage = makeStyles((theme) => ({
   centerAlign: {
     display: 'flex',
     flexDirection: 'column',
@@ -9,28 +9,9 @@ export const AboutUsPage = makeStyles(theme => ({
     margin: '0 auto',
     [theme.breakpoints.down('sm')]: {
       margin: '0',
-    }
-  },
-  itemStyles: {
-    backgroundColor: '#E8F5FF',
-
-    maxWidth: theme.spacing(90),
-    padding: theme.spacing(3),
-    margin: '20px 0 40px 0'
-  },
-  copyStyles: {
-    display: 'flex',
-    flexDirection: 'column',
-
-    padding: theme.spacing(3),
-
-    '& > :first-child': {
-      textAlign: 'center'
-    },
-    '& > *': {
-      paddingBottom: theme.spacing(2)
     },
   },
+
   hlText: {
     maxWidth: theme.spacing(70),
     marginTop: theme.spacing(3),
@@ -41,15 +22,15 @@ export const AboutUsPage = makeStyles(theme => ({
   },
   hlBox: {
     width: '587px',
-    paddingBottom: theme.spacing(1),
-    borderBottom: '.3em solid',
+    paddingBottom: theme.spacing(0),
+    borderBottom: '0em solid',
     marginBottom: theme.spacing(3),
 
     [theme.breakpoints.down('sm')]: {
       width: '300px',
       paddingBottom: theme.spacing(1),
       borderBottom: '.2em solid',
-      marginBottom: theme.spacing(1)
+      marginBottom: theme.spacing(1),
     },
   },
   logo: {
@@ -61,7 +42,7 @@ export const AboutUsPage = makeStyles(theme => ({
     },
 
     '& > *': {
-      paddingBottom: '15px'
+      paddingBottom: '15px',
     },
   },
   blueContainer: {
@@ -69,25 +50,26 @@ export const AboutUsPage = makeStyles(theme => ({
 
     maxWidth: theme.spacing(70),
     padding: theme.spacing(3),
-    margin: '0 0 40px 0'
+    margin: '0 0 40px 0',
   },
   ourFriends: {
-    width: "800px",
+    width: '800px',
     [theme.breakpoints.down('md')]: {
       width: '360px',
     },
 
-    marginTop: "20px"
+    marginTop: '20px',
   },
   textBoxStyles: {
     margin: '0 auto',
     textAlign: 'center',
+    maxWidth: '800px',
 
-    paddingBottom: theme.spacing(18)
-  }
-}))
+    paddingBottom: theme.spacing(0),
+  },
+}));
 
-export const OurTeamStyles = makeStyles(theme => ({
+export const OurTeamStyles = makeStyles((theme) => ({
   blueContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -97,7 +79,7 @@ export const OurTeamStyles = makeStyles(theme => ({
 
     maxWidth: theme.spacing(150),
     padding: theme.spacing(3),
-    margin: '0 0 40px 0'
+    margin: '0 0 40px 0',
   },
   modal: {
     backgroundColor: '#E8F5FF',
@@ -115,19 +97,19 @@ export const OurTeamStyles = makeStyles(theme => ({
     top: '50%',
     left: '50%',
 
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
   },
   thumbnail: {
     width: '150px',
     height: '150px',
-    marginRight: '10px'
+    marginRight: '10px',
   },
   itemStyles: {
     backgroundColor: '#E8F5FF',
 
     maxWidth: theme.spacing(40),
     padding: theme.spacing(3),
-    margin: '0 0 10px 0'
+    margin: '0 0 10px 0',
   },
   modalItemStyles: {
     display: 'flex',
@@ -137,7 +119,7 @@ export const OurTeamStyles = makeStyles(theme => ({
     height: theme.spacing(40),
     padding: theme.spacing(1),
 
-    margin: '0 0 10px 0'
+    margin: '0 0 10px 0',
   },
   copyStyles: {
     display: 'flex',
@@ -146,15 +128,15 @@ export const OurTeamStyles = makeStyles(theme => ({
     padding: `theme.spacing(3) 0`,
 
     '& > *': {
-      paddingBottom: theme.spacing(2)
+      paddingBottom: theme.spacing(2),
     },
   },
   iconButton: {
     padding: 0,
-    marginLeft: "2px",
-    verticalAlign: "top",
+    marginLeft: '2px',
+    verticalAlign: 'top',
   },
   icon: {
-    color: "#064493",
-  }
-}))
+    color: '#064493',
+  },
+}));

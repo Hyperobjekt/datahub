@@ -19,28 +19,29 @@ const NewsPage = () => {
 
   return (
     <>
-      <Hero
+      <Hero className="newsHero"
         ContainerProps={{
           justifyContent: "center",
           alignItems: "center"
         }}
-        alignItems="flex-end"
+        alignItems="center"
         image={NewsHero}
         bgcolor="rgb(65 83 97)"
         color="grey.900"
         variant="overlay"
+
       >
       <HeroText
         heading={"IN THE NEWS"}
-        subheading={"THE HERE LAB IN THE NEWS"}
+        subheading={"Media coverage of our work, interviews, and more."}
         textBoxStyles={classes.textBoxStyles}
       />
       </Hero>
       <Block>
         <Box className={classes.newsPage}>
-          <Typography variant="h5" className="bold">
+         {/*} <Typography variant="h5" className="bold">
               NEWS
-          </Typography>
+      </Typography> */}
           {newsObj &&
             newsObj.news.map(item => <NewsItem item={item} />)
           }

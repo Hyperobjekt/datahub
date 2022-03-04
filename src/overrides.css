@@ -17,5 +17,47 @@
 .h3SplitHero-right {
     margin-bottom: 1.6rem !important;
 }
+@media (max-width: 1279px) {
+    #scrollTo h6 {
+       /* text-align: center; */
+    }
+}
 
+/* About page */
+
+.thumbnailWrapper img {
+    cursor: pointer;
+}
+
+.ourFriendsLogos {
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ourFriendsLogos a {
+    max-width: 240px;
+    /* height: 140px; */
+    display: block;
+    padding: 24px;
+}
+.ourFriendsLogos a img {
+    max-width: 100%;
+}
+.ourFriendsLogos a img.img__smaller {
+    max-width: 160px;
+}
+
+/* News */
+
+.newsHero img {
+    object-fit: fill !important;
+}
+
+/* Footer */
+
+footer p a {
+    color: white;
+}
 

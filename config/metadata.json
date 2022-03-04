@@ -25,7 +25,11 @@
   "title": "DATAHUB",
   "menuLinks": [
     {
-      "name": "About The Here Lab",
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "About The HERE Lab",
       "link": "/about"
     },
     {
