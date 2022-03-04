@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Link, Typography, Box } from '@material-ui/core';
-
-import BlueBox from '../general/BlueBox';
-import { NewsItemStyles } from './styles/NewsStyles';
-import BlueBoxCopy from '../general/BlueBoxCopy';
+import { 
+  Link, 
+  Typography, 
+  Box,
+  withStyles
+} from '@material-ui/core';
 
 const editLede = (lede) => {
   const maxLen = 198;
@@ -17,13 +18,36 @@ const editLede = (lede) => {
   return editedLede;
 };
 
+const NewsItemWrapper = withStyles(theme => ({
+  root: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(90),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0',
+
+    display: 'flex',
+    //thumbnail styles
+    '& .news_thumbnail': {
+      width: '248px',
+      height: '248px',
+      [theme.breakpoints.down('sm')]: {
+        width: '100px',
+        height: '100px',
+      },
+      objectFit: 'cover',
+  
+      margin: '0 20px 0 0'
+    }
+  }
+}))(Box)
+
 const NewsItem = (props) => {
   const { item } = props;
-  const classes = NewsItemStyles();
   return (
-    <BlueBox>
-      <img className={classes.thumbnail} src={item.thumbnail} />
-      <BlueBoxCopy>
+    <NewsItemWrapper>
+      <img className="news_thumbnail" src={item.thumbnail} />
+      <Box>
         <Link href={item.article[0].url}>
           <Typography className="dhNewsHeader">
             {item.article[0].title}
@@ -33,9 +57,10 @@ const NewsItem = (props) => {
         <Typography variant="caption">
           {item.source[0].name} | {item.source[0].date}
         </Typography>
-      </BlueBoxCopy>
-    </BlueBox>
+      </Box>
+    </NewsItemWrapper>
   );
 };
 
 export default NewsItem;
+ 

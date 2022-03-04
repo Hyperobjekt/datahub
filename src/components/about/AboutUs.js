@@ -57,17 +57,15 @@ const AboutUs = () => {
               </Typography>
             </Box>
           </Box>
-          <BlueBox className="what-drives-us">
-            <BlueBoxCopy>
-              <Typography variant="overline" align="center">
-                WHAT DRIVES US TO DO THIS WORK?
-              </Typography>
-              <Typography variant="body2" className="bold">
-                {secondBlock.drive}
-              </Typography>
-              <Typography variant="body2">{secondBlock.approach}</Typography>
-            </BlueBoxCopy>
-          </BlueBox>
+          <Box className="what-drives-us">
+            <Typography className="dhAboutDrive" align="center">
+              WHAT DRIVES US TO DO THIS WORK?
+            </Typography>
+            <Typography variant="body2" className="bold">
+              {secondBlock.drive}
+            </Typography>
+            <Typography variant="body2">{secondBlock.approach}</Typography>
+          </Box>
           <Box className={classes.hlText}>
             <Box className={classes.hlBox}>
               <Typography className="dhHlText">{thirdBlock.motive}</Typography>
