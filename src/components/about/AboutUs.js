@@ -138,7 +138,7 @@ const AboutUs = () => {
             <img className={classes.logoWidth} src={HereLabLogo} alt={'Here Lab logo'} />
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionOne}</Typography>
             <Typography className="dhHlBody">{aboutUsObj.fourthBlock[0].positionTwo}</Typography>
-            {fifthBlock}
+            {/*fifthBlock*/}
           </Box>
           <OurTeam team={aboutUsObj.team}/>
           <Box className={classes.centerAlign}>

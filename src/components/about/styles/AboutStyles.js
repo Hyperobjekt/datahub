@@ -41,8 +41,8 @@ export const AboutUsPage = makeStyles(theme => ({
   },
   hlBox: {
     width: '587px',
-    paddingBottom: theme.spacing(1),
-    borderBottom: '.3em solid',
+    paddingBottom: theme.spacing(0),
+    borderBottom: '0em solid',
     marginBottom: theme.spacing(3),
 
     [theme.breakpoints.down('sm')]: {

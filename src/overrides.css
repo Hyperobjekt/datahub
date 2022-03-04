@@ -29,4 +29,9 @@
     cursor: pointer;
 }
 
+/* Footer */
+
+footer p a {
+    color: white;
+}
 
