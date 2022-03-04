@@ -49,6 +49,12 @@
     max-width: 160px;
 }
 
+/* News */
+
+.newsHero img {
+    object-fit: fill !important;
+}
+
 /* Footer */
 
 footer p a {

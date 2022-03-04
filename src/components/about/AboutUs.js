@@ -38,7 +38,7 @@ const AboutUs = () => {
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        alignItems="flex-end"
+        alignItems="center"
         image={AboutHero}
         bgcolor="rgb(65 83 97)"
         color="grey.900"

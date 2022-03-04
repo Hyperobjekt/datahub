@@ -19,16 +19,17 @@ const NewsPage = () => {
 
   return (
     <>
-      <Hero
+      <Hero className="newsHero"
         ContainerProps={{
           justifyContent: "center",
           alignItems: "center"
         }}
-        alignItems="flex-end"
+        alignItems="center"
         image={NewsHero}
         bgcolor="rgb(65 83 97)"
         color="grey.900"
         variant="overlay"
+
       >
       <HeroText
         heading={"IN THE NEWS"}
