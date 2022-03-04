@@ -51,6 +51,25 @@ const CollapsibleRow = (props) => {
 
   const info = (
     <>
+     <MobileOnly>
+        <Box className={classes.evenAlign}>
+          <Box className={classes.evenAlign}>
+            <img src={LinkIcon} alt="chatIcon" />
+            <Link href={project.repo}>
+              <Typography className="dhTableRow">REPO</Typography>
+            </Link> 
+          </Box>
+          <Box className={classes.evenAlign}>
+            <img src={LinkIcon} alt="chatIcon" />
+            {project.manuscript ?
+              <Link href={project.manuscript}>
+                <Typography className="dhTableRow">MANUSCRIPT</Typography>
+              </Link> :
+              <Typography className="dhTableRow">MANUSCRIPT</Typography>
+            }           
+          </Box>
+        </Box>
+      </MobileOnly>
       <Typography variant="body2" className="margin">
         {project.summary}
       </Typography>
@@ -71,25 +90,7 @@ const CollapsibleRow = (props) => {
       <Typography variant="h6" className="bold">
         Get Help with the Data
       </Typography>
-      <MobileOnly>
-        <Box className={classes.evenAlign}>
-          <Box className={classes.evenAlign}>
-            <img src={LinkIcon} alt="chatIcon" />
-            <Link href={project.repo}>
-              <Typography className="dhTableRow">REPO</Typography>
-            </Link> 
-          </Box>
-          <Box className={classes.evenAlign}>
-            <img src={LinkIcon} alt="chatIcon" />
-            {project.manuscript ?
-              <Link href={project.manuscript}>
-                <Typography className="dhTableRow">MANUSCRIPT</Typography>
-              </Link> :
-              <Typography className="dhTableRow">MANUSCRIPT</Typography>
-            }           
-          </Box>
-        </Box>
-      </MobileOnly>
+     
       <Box className={classes.evenAlign}>
         <img src={Chat} alt="chatIcon" />
         <Link href={project.discussion}>
@@ -163,7 +164,7 @@ const CollapsibleRow = (props) => {
           </Box>
         </Typography>
         </TableCell>
-        </MobileNot>
+        </MobileNot> 
       </TableRow>
       <TableRow style={{ padding: '0', background: index % 2 ? '#E8F5FF' : '#FFFFFF' }}>
         <TableCell className="DhTable-collapseHl" colSpan={6}>

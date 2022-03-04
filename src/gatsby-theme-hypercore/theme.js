@@ -179,6 +179,16 @@ const Theme = () => {
               fontSize: '15px',
             },
           },
+          '&.dhAboutDrive': {
+            fontFamily: FONT,
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '15px',
+
+            [theme.breakpoints.down('sm')]: {
+              fontSize: '12px',
+            },
+          },
           '&.dhHlText': {
             fontFamily: FONT,
             fontWeight: 600,
@@ -326,7 +336,7 @@ const Theme = () => {
       },
       MuiIconButton: {
         label: {
-          color: 'white',
+          color: 'black',
         },
       },
       MuiDrawer: {

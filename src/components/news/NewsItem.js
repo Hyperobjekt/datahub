@@ -1,57 +1,66 @@
-import React from 'react'
+import React from 'react';
 
-import {
+import { 
   Link, 
-  Typography,
-  Box
-} from "@material-ui/core"
-
-import BlueBox from '../general/BlueBox.js'
-import { NewsItemStyles } from './styles/NewsStyles'
+  Typography, 
+  Box,
+  withStyles
+} from '@material-ui/core';
 
 const editLede = (lede) => {
-  const maxLen = 198
-  let editedLede
+  const maxLen = 198;
+  let editedLede;
 
-  lede.length > maxLen ?
-    editedLede = lede.slice(0, 197).concat('...') :
-    editedLede = lede
+  lede.length > maxLen
+    ? (editedLede = lede.slice(0, 197).concat('...'))
+    : (editedLede = lede);
 
-  return editedLede
-}
+  return editedLede;
+};
+
+const NewsItemWrapper = withStyles(theme => ({
+  root: {
+    backgroundColor: '#E8F5FF',
+
+    maxWidth: theme.spacing(90),
+    padding: theme.spacing(3),
+    margin: '0 0 40px 0',
+
+    display: 'flex',
+    //thumbnail styles
+    '& .news_thumbnail': {
+      width: '248px',
+      height: '248px',
+      [theme.breakpoints.down('sm')]: {
+        width: '100px',
+        height: '100px',
+      },
+      objectFit: 'cover',
+  
+      margin: '0 20px 0 0'
+    }
+  }
+}))(Box)
 
 const NewsItem = (props) => {
-  const { item } = props
-
-  const classes = NewsItemStyles()
-
-  const title =
-    <Link href={item.article[0].url}>
-      <Typography className="dhNewsHeader">
-        {item.article[0].title}
-      </Typography>
-    </Link>
-
-  const lede = 
-    <Typography variant="subtitle1">
-        {editLede(item.lede)}
-    </Typography>
-
-  const source =
-    <Typography variant="caption">
-        {item.source[0].name} | {item.source[0].date}
-    </Typography>
-
-
+  const { item } = props;
   return (
-    <BlueBox
-      itemStyles={classes.item}
-      thumbnail={<img className={classes.thumbnail} src={item.thumbnail} />}
-      title={title}
-      copy1={lede}
-      copy2={source}
-    />
-  )
-}
+    <NewsItemWrapper>
+      <img className="news_thumbnail" src={item.thumbnail} />
+      <Box>
+        <Link href={item.article[0].url}>
+          <Typography className="dhNewsHeader">
+            {item.article[0].title}
+          </Typography>
+        </Link>
+        <Typography variant="subtitle1">{editLede(item.lede)}</Typography>
+        <Typography variant="caption">
+          {item.source[0].name} | {item.source[0].date}
+        </Typography>
+      </Box>
+    </NewsItemWrapper>
+  );
+};
 
-export default NewsItem
+export default NewsItem;
+ 
