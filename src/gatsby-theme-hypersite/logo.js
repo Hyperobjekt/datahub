@@ -1,26 +1,18 @@
-import React from "react"
-
-import { useMediaQuery } from "@material-ui/core";
-
-import { Branding } from "@hyperobjekt/material-ui-website"
-
-import DataHubLogo from '../../static/icons/dataHubLogo.svg'
-import DataHubLogoMobile from '../../static/icons/dataHubLogoMobile.svg'
+import React from 'react';
+import { useMediaQuery } from '@material-ui/core';
+import DataHubLogo from '../../static/icons/dataHubLogo.svg';
+import DataHubLogoMobile from '../../static/icons/dataHubLogoMobile.svg';
+import { Link } from 'gatsby';
 
 const Logo = () => {
-  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("sm"))
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  const title = 'DATAHUB';
+  const logo = isSmallScreen ? (
+    <img src={DataHubLogoMobile} width="150" alt={title} />
+  ) : (
+    <img src={DataHubLogo} width="160" alt={title} />
+  );
+  return <Link to="/">{logo}</Link>;
+};
 
-  const title = 'DATAHUB'
-  const logo = 
-    isSmallScreen ? 
-      <img src={DataHubLogoMobile} alt={title} /> :
-      <img src={DataHubLogo} alt={title} />
-
-  return (
-    <Branding logo={logo}>
-      {!logo && title}
-    </Branding>
-  )
-}
-
-export default Logo
+export default Logo;

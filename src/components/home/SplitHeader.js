@@ -97,7 +97,6 @@ const SplitHeader = () => {
   const rightPanel = headersObj.rightPanel[0]
 
   return (
-    console.log(leftPanel, rightPanel),
     <Box className={classes.centerAlign}>
       <Box className={classes.panel}>
         <Box className={classes.panelAlign}>
