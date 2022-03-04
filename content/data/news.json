@@ -4,23 +4,6 @@
       "id": "news",
       "article": [
         {
-          "url": "https://www.businessinsider.com/cancel-student-loan-debt-payments-paused-two-years-economy-2022-1",
-          "title": "The US economy has been 'more than fine' without your student debt"
-        }
-      ],
-      "lede": "Student-loan payments have been on pause for nearly two years, with a recent extension through May 1. There's controversy over the merits of broad relief, with some arguing it's bad for the economy. But experts told Insider it gave borrowers more financial flexibility, allowing for the pursuit of better jobs.",
-      "thumbnail": "https://i.insider.com/61d5ceb857bd6c001858a7e9?width=1000&format=jpeg&auto=webp",
-      "source": [
-        {
-          "name": "Insider",
-          "date": "Jan 9, 2022"
-        }
-      ]
-    },
-    {
-      "id": "news",
-      "article": [
-        {
           "title": "College endowments aren’t piggy banks. But some experts say wealthy schools could spend more.",
           "url": "https://www.washingtonpost.com/education/2022/02/19/wealthy-university-endowments/"
         }
@@ -31,6 +14,23 @@
         {
           "name": "The Washington Post",
           "date": "Feb 19, 2022"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
+          "url": "https://www.businessinsider.com/cancel-student-loan-debt-payments-paused-two-years-economy-2022-1",
+          "title": "The US economy has been 'more than fine' without your student debt"
+        }
+      ],
+      "lede": "Student-loan payments have been on pause for nearly two years, with a recent extension through May 1. There's controversy over the merits of broad relief, with some arguing it's bad for the economy. But experts told Insider it gave borrowers more financial flexibility, allowing for the pursuit of better jobs.",
+      "thumbnail": "https://i.insider.com/61d5ceb857bd6c001858a7e9?width=1000&format=jpeg&auto=webp",
+      "source": [
+        {
+          "name": "Insider",
+          "date": "Jan 9, 2022"
         }
       ]
     },
