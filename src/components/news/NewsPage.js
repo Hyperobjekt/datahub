@@ -39,9 +39,9 @@ const NewsPage = () => {
       </Hero>
       <Block>
         <Box className={classes.newsPage}>
-          <Typography variant="h5" className="bold">
+         {/*} <Typography variant="h5" className="bold">
               NEWS
-          </Typography>
+      </Typography> */}
           {newsObj &&
             newsObj.news.map(item => <NewsItem item={item} />)
           }
