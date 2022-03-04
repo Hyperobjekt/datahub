@@ -1,6 +1,7 @@
 import { makeStyles } from "@material-ui/core"
 
 export const NewsPageStyles = makeStyles(theme => ({
+
   newsPage: {
     margin: '0 auto',
     [theme.breakpoints.down('sm')]: {
@@ -15,7 +16,7 @@ export const NewsPageStyles = makeStyles(theme => ({
     margin: '0 auto',
     textAlign: 'center',
 
-    paddingBottom: theme.spacing(18)
+    paddingBottom: 0,
   }
 }))
 

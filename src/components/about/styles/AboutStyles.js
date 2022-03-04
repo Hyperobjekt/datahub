@@ -63,8 +63,9 @@ export const AboutUsPage = makeStyles((theme) => ({
   textBoxStyles: {
     margin: '0 auto',
     textAlign: 'center',
+    maxWidth: '800px',
 
-    paddingBottom: theme.spacing(18),
+    paddingBottom: theme.spacing(0),
   },
 }));
 

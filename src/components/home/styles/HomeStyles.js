@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core"
 import HomeHero from "../../../../static/graphics/heroHeader.svg"
 import HomeHeroMobile from "../../../../static/graphics/heroHeaderMobile.svg"
 
+
 export const HomePageStyles = makeStyles(theme => ({
   hero: {
     height: "600px",

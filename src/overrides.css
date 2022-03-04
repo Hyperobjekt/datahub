@@ -29,6 +29,32 @@
     cursor: pointer;
 }
 
+.ourFriendsLogos {
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ourFriendsLogos a {
+    max-width: 240px;
+    /* height: 140px; */
+    display: block;
+    padding: 24px;
+}
+.ourFriendsLogos a img {
+    max-width: 100%;
+}
+.ourFriendsLogos a img.img__smaller {
+    max-width: 160px;
+}
+
+/* News */
+
+.newsHero img {
+    object-fit: fill !important;
+}
+
 /* Footer */
 
 footer p a {
