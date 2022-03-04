@@ -84,7 +84,7 @@ const AboutUs = () => {
             <Typography className="dhHlBody">
               {aboutUsObj.fourthBlock[0].positionTwo}
             </Typography>
-            <Typography className="dhHlBody">
+           {/* } <Typography className="dhHlBody">
               <Typography display="inline" className={clsx('dhHlBody', 'bold')}>
                 Building on DuBois:{' '}
               </Typography>
@@ -123,7 +123,7 @@ const AboutUs = () => {
               </Link>
               provides a clearinghouse of information on Du Bois's work and
               coding tools for data visualization in the Du Boisian style.
-            </Typography>
+              </Typography> */}
           </Box>
           <OurTeam team={aboutUsObj.team} />
           <Box className={classes.centerAlign}>
