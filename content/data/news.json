@@ -21,6 +21,23 @@
       "id": "news",
       "article": [
         {
+          "title": "College endowments aren’t piggy banks. But some experts say wealthy schools could spend more.",
+          "url": "https://www.washingtonpost.com/education/2022/02/19/wealthy-university-endowments/"
+        }
+      ],
+      "lede": "\"Record annual yields and 10-year returns nearing double digits for the biggest endowments proves the wealthiest schools can afford to loosen their purse strings, said Charlie Eaton, a sociology professor at the University of California, Merced, who studies endowments.\"",
+      "thumbnail": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/DF2B4THZZQI6VBPXLFARRCUYZU.jpg&w=691",
+      "source": [
+        {
+          "name": "The Washington Post",
+          "date": "Feb 19, 2022"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
           "url": "https://www.chronicle.com/article/our-broke-public-universities",
           "title": "Our Broke Public Universities"
         }
