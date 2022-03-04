@@ -205,13 +205,14 @@ const ResourcesTable = () => {
     let projects = allProjects['projects'];
 
     setProjects(projects);
-    setTopics([...new Set(projects.map((p) => p['topics']).flat())]);
+    setTopics([...new Set(projects.map((p) => p['topics']).flat().sort())]);
     setSources([
       ...new Set(
         projects
           .map((p) => p['data'])
           .flat()
           .map((d) => d['set'])
+          .sort()
       ),
     ]);
   }, []);
