@@ -33,7 +33,7 @@ const AboutUs = () => {
 
   return (
     <AboutUsWrapper>
-      <Hero
+      <Hero className="aboutHero"
         ContainerProps={{
           justifyContent: 'center',
           alignItems: 'center',
