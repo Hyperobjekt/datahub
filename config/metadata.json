@@ -39,6 +39,10 @@
     {
       "name": "Contact",
       "link": "/contact"
+    },
+    {
+      "name": "",
+      "link": "https://twitter.com/HERE_Lab"
     }
   ],
   "image": "/images/social.png",
