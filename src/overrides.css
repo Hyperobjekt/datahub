@@ -86,3 +86,6 @@ footer .social a {
         }
     }
 
+header nav ul li:nth-child(5) a:before {
+    content: url('/icons/twitter-blue.svg');
+}
