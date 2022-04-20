@@ -9,12 +9,12 @@ import {
 
 const useStyles = makeStyles(theme => ({
   textBox: {
-    maxHeight: theme.spacing(15),
+    //maxHeight: theme.spacing(15),
     maxWidth: theme.spacing(80),
 
     marginBottom: theme.spacing(3),
     [theme.breakpoints.down('xs')]: {
-      marginBottom: theme.spacing(10)
+      /* marginBottom: theme.spacing(10) */
     }
   }
 }))

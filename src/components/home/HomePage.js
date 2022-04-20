@@ -25,7 +25,7 @@ const HomePage = () => {
         >
           <HeroText
             heading={"The DataHub At UC Merced"}
-            subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges."}
+            subheading={"We publish code for linking organizational and socio-economic data for thousands of US colleges, with the goal of identifying and addressing racial and class disparities in higher education."}
           />
           <RoundedButton
             handleClick={handleScrollClick}
