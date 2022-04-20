@@ -7,9 +7,9 @@
     .h3Hero {
         margin: 1.6rem 0 !important;
     }
-    #homeHero button {
+   /* #homeHero button {
         margin-top: 1.6rem !important;
-    }
+    } */
 }
 .body1SplitHero {
     margin: 1.6rem 0 !important;
@@ -86,3 +86,14 @@ footer .social a {
         }
     }
 
+header nav ul li:nth-child(5) a:before {
+    content: url('/icons/twitter-blue.svg');
+}
+
+.MuiDrawer-modal nav ul li:nth-child(5) a:before {
+    content: url('/icons/twitter.svg');
+}
+
+.MuiDrawer-modal button svg path {
+    fill: #fff;
+}
