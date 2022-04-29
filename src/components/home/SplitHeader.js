@@ -112,9 +112,14 @@ const SplitHeader = () => {
       <Box className={classes.rightPanel}>
         <Box className={classes.panelAlign}>
           <Typography variant="h3" className="h3SplitHero h3SplitHero-right">{rightPanel.heading}</Typography>
-          <Link href={rightPanel.source[0].link}>
+         {/* <Link href={rightPanel.source[0].link}>
             <Typography variant="overline" className="body1SplitHero">{rightPanel.source[0].copy}</Typography>
-          </Link>
+           </Link> */}
+          { rightPanel.source.map((data, index) => {
+           return <Link href={data.link}>
+              <Typography variant="overline" className="body1SplitHero">{data.copy}</Typography>
+             </Link>
+          }) }
         </Box>
       </Box>
     </Box>
