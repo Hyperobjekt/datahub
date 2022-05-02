@@ -124,6 +124,7 @@ const ResourcesTable = () => {
   const tableHeader =
     <Box className={classes.centerAlign}>
       <Typography variant="h6" className="bold">RESOURCES</Typography>
+      <Typography variant="body" className="resources-intro">Our open science data and code allow researchers to replicate analyses and support new avenues of research and data exploration. Click below to view our ongoing projects.</Typography>
       <Box className={classes.filterGroup}>
         <Typography variant="subtitle1">Filter by:</Typography>
         <Box className={classes.evenAlign}>
