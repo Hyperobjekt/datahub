@@ -4,6 +4,23 @@
       "id": "news",
       "article": [
         {
+          "title": "Op-Ed: How the pandemic unfairly saddled low-income California college students with debt ",
+          "url": "https://www.latimes.com/opinion/story/2022-03-31/college-debt-california-pandemic-pell-grants"
+        }
+      ],
+      "thumbnail": "https://ca-times.brightspotcdn.com/dims4/default/a3a342d/2147483647/strip/true/crop/1024x682+0+0/resize/840x559!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb2%2F1a%2F504bd1654a7d809123b20bb14217%2Fucsd.JPG",
+      "lede": "\"Institutional debts have compounded the pain of the pandemic on lower-income students. The Legislature should act now to lift the unfair burden.\"",
+      "source": [
+        {
+          "name": "Los Angeles Times",
+          "date": "March 31, 2022"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "article": [
+        {
           "title": "College endowments aren’t piggy banks. But some experts say wealthy schools could spend more.",
           "url": "https://www.washingtonpost.com/education/2022/02/19/wealthy-university-endowments/"
         }
