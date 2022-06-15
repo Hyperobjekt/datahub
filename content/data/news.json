@@ -4,6 +4,23 @@
       "id": "news",
       "source": [
         {
+          "name": "New York Times",
+          "date": "May 17, 2022"
+        }
+      ],
+      "article": [
+        {
+          "url": "https://www.nytimes.com/2022/05/17/opinion/student-debt-forgiveness.html",
+          "title": "The Government Gave Out Bad Loans. Students Deserve a Bailout."
+        }
+      ],
+      "lede": "Biden’s $10,000 in relief isn’t enough.",
+      "thumbnail": "https://static01.nyt.com/images/2022/05/18/opinion/17eaton-wherry/merlin_206760144_4335f054-d65c-4f6d-a7cc-222d3f361837-superJumbo.jpg?quality=75&auto=webp"
+    },
+    {
+      "id": "news",
+      "source": [
+        {
           "name": "TIME",
           "date": "May 11, 2022"
         }
