@@ -34,9 +34,9 @@
   "team": [
     {
       "name": "Charlie Eaton",
-      "bio": "Charlie Eaton is Assistant Professor of Sociology at the University of California, Merced, where he co - founded the HERE Lab. His book Bankers in the Ivory Tower: The Troubling Rise of Financiers in U.S. Higher Education was published by University of Chicago Press in 2022. He is broadly interested in the role of race and organizations in struggles for power and economic resources between elites and non - elites. His recent research has particularly focused on the consolidation of power and wealth by private equity and hedge fund financiers -- and successful initiatives to reverse these inequalities.",
+      "bio": "Charlie Eaton is Associate Professor of Sociology at the University of California, Merced, where he co - founded the HERE Lab. His book Bankers in the Ivory Tower: The Troubling Rise of Financiers in U.S. Higher Education was published by University of Chicago Press in 2022. He is broadly interested in the role of race and organizations in struggles for power and economic resources between elites and non - elites. His recent research has particularly focused on the consolidation of power and wealth by private equity and hedge fund financiers -- and successful initiatives to reverse these inequalities.",
       "thumbnail": "/images/eaton.png",
-      "title": "Assistant Professor of Sociology; HERE Lab Co-Founder"
+      "title": "Associate Professor of Sociology; HERE Lab Co-Founder"
     },
     {
       "name": "Laura Hamilton",
@@ -78,7 +78,7 @@
   "firstBlock": [
     {
       "location": "The DataHub is a project of the Higher Education Race and the Economy (HERE) Lab in the Department of Sociology at the University of California, Merced.",
-      "motive": ""
+      "motive": " "
     }
   ]
 }
